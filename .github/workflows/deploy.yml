@@ -32,11 +32,8 @@ jobs:
 
       # Build/Deploy
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build
-        run: npm run build
+      - run: npm ci
+      - run: npm run build
 
       - id: "deploy"
         name: "Deploy to App Engine"
