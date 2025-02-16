@@ -18,8 +18,12 @@ jobs:
 
       - name: Get the version
         id: get_version
-        run: echo ::set-output name=VERSION::v1
-#        run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3)
+        run: |
+          if [[ $GITHUB_REF == refs/tags/* ]]; then
+            echo "VERSION=$(echo $GITHUB_REF | cut -d / -f 3)" >> $GITHUB_STATE
+          else
+            echo "VERSION=vdev" >> $GITHUB_STATE
+          fi
 
       - uses: actions/setup-node@v4
         with:
