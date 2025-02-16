@@ -35,13 +35,11 @@ jobs:
       - run: |
           npm install
           npm run build
-          cp .appengine/app.yaml out/
 
       - id: "deploy"
         name: "Deploy to App Engine"
         uses: "google-github-actions/deploy-appengine@v2"
         with:
-          deliverables: "out/app.yaml"
 #          promote: true
           version: ${{ steps.get_version.outputs.VERSION }}
           project_id: 'devfest2025-451108'
