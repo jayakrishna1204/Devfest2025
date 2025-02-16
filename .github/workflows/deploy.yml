@@ -2,6 +2,8 @@ name: deploy
 
 on:
   push:
+    branches:
+      - *
     tags:
       - v*
 
@@ -32,9 +34,11 @@ jobs:
 
       # Build/Deploy
 
-      - run: |
-          npm install
-          npm run build
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
 
       - id: "deploy"
         name: "Deploy to App Engine"
