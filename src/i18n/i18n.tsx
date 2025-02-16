@@ -1,14 +1,24 @@
 import { createInstance, i18n, TFunction } from 'i18next';
 import i18nConfig from './i18nConfig';
 
-export default async function initTranslations(locale: string) {
-  const i18nInstance = createInstance();
-
-  const resources: { [l: string]: { translation: any } } = {};
+async function getI18nResources(resources: any) {
+  resources = {};
   for (const locale of i18nConfig.locales) {
     resources[locale] = {
       translation: await import(`../locales/${locale}/translation.json`),
     };
+  }
+  return resources;
+}
+
+export default async function initTranslations(
+  locale: string,
+  resources?: any
+) {
+  const i18nInstance = createInstance();
+
+  if (!resources) {
+    resources = await getI18nResources(resources);
   }
 
   let options = {
@@ -22,7 +32,11 @@ export default async function initTranslations(locale: string) {
   };
   await i18nInstance.init(options);
 
-  return i18nInstance;
+  return {
+    i18n: i18nInstance,
+    resources: i18nInstance.services.resourceStore.data,
+    t: i18nInstance.t,
+  };
 }
 
 const i18nInstances: { [key: string]: i18n } = {};
@@ -35,6 +49,6 @@ export const getTranslation = async (
   const locale = _params.locale || i18nConfig.defaultLocale;
   const instance =
     i18nInstances[locale] ||
-    (i18nInstances[locale] = await initTranslations(locale));
+    (i18nInstances[locale] = (await initTranslations(locale)).i18n);
   return instance.getFixedT(locale, 'translation', keyPrefix);
 };

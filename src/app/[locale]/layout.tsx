@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import i18nConfig from '@/i18n/i18nConfig';
-import { Footer } from '@/components/footer/footer';
 import { bodyClass, MuiProvider } from '@/layout/theme';
+import { Footer } from '@/layout/footer/footer';
+import { Navbar } from '@/layout/navbar/navbar';
 
 export const metadata: Metadata = {
   title: 'Devfest Nantes 2025',
@@ -23,6 +24,7 @@ export default async function RootLayout({ children, params }: RootLayoutType) {
     <html lang={locale}>
       <body className={bodyClass}>
         <MuiProvider>
+          <Navbar params={params} />
           <main>{children}</main>
           <Footer params={params} />
         </MuiProvider>
