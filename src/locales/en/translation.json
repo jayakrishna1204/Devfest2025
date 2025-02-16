@@ -1,0 +1,149 @@
+{
+  "site": {
+    "description": "The Devfest (i.e Developers Festival), is a technical conference destined to developers. It's meant for students, professionals, or any curious techie",
+    "theme": "This year's edition will be scary!"
+  },
+  "pages": {
+    "home": {
+      "name": "Home",
+      "what-is": "What is DevFest Nantes?",
+      "jumbo": {
+        "come-back": "Devfest Nantes will be back",
+        "date": "on October 16th and 17th, 2025",
+        "cfp": "Become speaker",
+        "previous": "2024 Edition",
+        "schedule": "Schedule",
+        "generate-ticket": "Edit my ticket",
+        "bring-ecocup": "Don't forget your own eco-cup and bag !",
+        "resend-tickets": "Resend my tickets",
+        "get-app": "Get the App",
+        "offers": "Jobs"
+      },
+      "newsletter": "Get notified about conference updates",
+      "numbers": {
+        "attendees": "Attendees",
+        "days": "Days",
+        "sessions": "Sessions",
+        "tracks": "Tracks",
+        "speakers": "Speakers",
+        "our-values": "Our values"
+      },
+      "tickets": {
+        "name": "Tickets",
+        "description": "The ticket sales will take place in two sessions, one on June 6th, and the second on September 5th. Student and job seeker tickets are distributed directly through schools and local employment agencies. Please contact us if your institution has not been reached.",
+        "2daysEarly": "Early Bird",
+        "2days-1st": "2 days ticket",
+        "1day": "1 day ticket",
+        "reduced": "Reduced price",
+        "2days-2nd": "2 days ticket"
+      },
+      "speakers": {
+        "title": "Speakers",
+        "seeAll": "See all speakers"
+      },
+      "photos": {
+        "p1": "Some pictures of the 2023 DevFest Nantes",
+        "p2": "on the film theme 🎨",
+        "button": "See all photos"
+      },
+      "animations": {
+        "citd": {
+          "title": "Code in the Dark",
+          "description": "Enter Code in the Dark, where coding blindly for 30 minutes becomes a nightmare. One mistake, and everything can go wrong. Who will triumph over the digital chaos? Come and find out… if you dare!"
+        },
+        "secret": {
+          "title": "Secret Animation",
+          "description": "Come and discover the frightening secrets of our animation!",
+          "coming-soon": "Coming soon"
+        },
+        "sessions": "Sessions",
+        "learn-more": "Learn more"
+      }
+    },
+    "attending": {
+      "name": "Attending",
+      "map": {
+        "title": "The Venue",
+        "description": "Located in the center of Nantes, the event takes place in the “Cité des Congrès” with more than 3000m² of conference rooms, hand’s on and networking space…"
+      }
+    },
+    "partners": {
+      "name": "Partners",
+      "platinium-partners": "Platinium partners",
+      "platinium": "Platinium",
+      "gold": "Gold",
+      "virtual": "Virtual",
+      "velotypie": "Velotype",
+      "partners": "Our partners"
+    },
+    "speakers": {
+      "name": "Speakers"
+    },
+    "blog": {
+      "name": "Blog"
+    },
+    "menu": {
+      "name": "Menu",
+      "allergenes": {
+        "gluten": "Gluten",
+        "crustaces": "Shellfish",
+        "vegetarien": "Vegetarian",
+        "vegan": "Vegan",
+        "oeufs": "Eggs",
+        "poissons": "Fish",
+        "arachides": "Peanuts",
+        "soja": "Soy",
+        "lactose": "Milk",
+        "fruits-a-coques": "Nuts",
+        "celeri": "Celery",
+        "moutarde": "Mustard",
+        "sesame": "Sesame",
+        "sulfites": "Sulfites",
+        "lupin": "Lupine",
+        "mollusques": "Molluscs"
+      }
+    },
+    "jobs": {
+      "name": "Jobs"
+    },
+    "schedule": {
+      "name": "Schedule",
+      "day1-number": "Thursday 17th",
+      "day2-number": "Friday 18th",
+      "day1": "Thursday",
+      "day2": "Friday",
+      "opening": "Opening",
+      "keynote": "Keynote",
+      "break": "Break",
+      "lunch": "Lunch",
+      "party": "After Party"
+    },
+    "team": {
+      "name": "Team"
+    },
+    "code-of-conduct": {
+      "name": "Code of conduct"
+    },
+    "legal-mentions": {
+      "name": "Legal Mentions"
+    }
+  },
+  "404": {
+    "main": "You seem lost...",
+    "button": "Back to a safe place"
+  },
+  "sessions": {
+    "cancelled": "Cancelled"
+  },
+  "footer": {
+    "about": "About",
+    "follow": "Follow us",
+    "partnership-kit": "Partnership Kit",
+    "media-kit": "Media Kit",
+    "previous-editions": "Previous editions",
+    "partners": "For Partners",
+    "organizers": "Organized with ❤️ by GDG Nantes",
+    "no-spam": "No spam, only the latest news and updates!",
+    "news-button": "Discover"
+  }
+}

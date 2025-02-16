@@ -1,0 +1,149 @@
+{
+  "site": {
+    "description": "Le DevFest, ou 'Developers Festival', est une conférence technique destinée aux développeuses et développeurs. Elle s'adresse aussi bien aux étudiantes et étudiants, aux professionnels ou tout simplement aux curieuses et curieux technophiles.",
+    "theme": "Cette année le Devfest Nantes sera un évènement effrayant !"
+  },
+  "pages": {
+    "home": {
+      "name": "Accueil",
+      "what-is": "Le DevFest Nantes",
+      "jumbo": {
+        "come-back": "De retour avec un nouveau thème",
+        "date": "les 16 et 17 Octobre 2025",
+        "cfp": "Devenir speaker",
+        "previous": "Édition 2024",
+        "schedule": "Programme",
+        "generate-ticket": "Générer mon billet",
+        "bring-ecocup": "N'oubliez pas de prendre vos propres eco-cups et sac !",
+        "resend-tickets": "Renvoyer mes billets",
+        "get-app": "Appli mobile",
+        "offers": "Offres d'emploi"
+      },
+      "newsletter": "Soyez notifié des dernières informations !",
+      "numbers": {
+        "attendees": "Participants",
+        "days": "Jours",
+        "sessions": "Conférences",
+        "tracks": "Tracks",
+        "speakers": "Speakers",
+        "our-values": "Nos valeurs"
+      },
+      "tickets": {
+        "name": "Tickets",
+        "description": "La vente des places se fera en 2 sessions, une le 6 juin, la seconde le 5 septembre. Les billets étudiants et demandeurs d'emplois sont partagés directement avec les écoles et les missions locales. Merci de nous contacter si votre établissement n'a pas été contacté.",
+        "2daysEarly": "Pass 2 jours",
+        "2days-1st": "Pass 2 jours",
+        "1day": "Pass 1 jour",
+        "reduced": "Tarif réduit",
+        "2days-2nd": "Pass 2 jours"
+      },
+      "speakers": {
+        "title": "Les Speakers",
+        "seeAll": "Voir tous les speakers"
+      },
+      "photos": {
+        "p1": "Quelques photos du DevFest Nantes 2023",
+        "p2": "sur le thème des films",
+        "button": "Voir toutes les photos"
+      },
+      "animations": {
+        "citd": {
+          "title": "Code in the dark",
+          "description": "Entrez dans Code in the Dark, où coder à l'aveugle pendant 30 minutes devient un cauchemar. Une erreur, et tout peut basculer. Qui triomphera du chaos numérique ? Venez le découvrir… si vous l'osez !"
+        },
+        "secret": {
+          "title": "Animations fouloscopie",
+          "description": "Vous suivez Fouloscopie et vous avez toujours voulu participer à une de ces \"expériences\" ? Ça tombe bien il est là pour ça ! Retrouvez donc Medhi jeudi uniquement à 10h et à 14h dans la zone d'animation (emplacement 13 sur le plan). Pour participer, il suffit d'être à l'heure à l'espace dédié. Attention, le nombre de place est limité, seuls 50 participant·es seront accepté par session.",
+          "coming-soon": "Bientôt disponible"
+        },
+        "sessions": "Sessions",
+        "learn-more": "En savoir plus"
+      }
+    },
+    "attending": {
+      "name": "Attending",
+      "map": {
+        "title": "Le Lieu",
+        "description": "Située en plein cœur de ville, La Cité des Congrès de Nantes propose pour le DevFest Nantes plus de 3000m² de salles de conférences, codelabs et lieu de rencontre…"
+      }
+    },
+    "partners": {
+      "name": "Partenaires",
+      "platinium-partners": "Nos Sponsors Platinium",
+      "platinium": "Platinium",
+      "gold": "Gold",
+      "virtual": "Virtual",
+      "velotypie": "velotypie",
+      "partners": "Nos partenaires"
+    },
+    "blog": {
+      "name": "Blog"
+    },
+    "menu": {
+      "name": "Menu",
+      "allergenes": {
+        "gluten": "Gluten",
+        "crustaces": "Crustacés",
+        "vegetarien": "Végétariens",
+        "vegan": "Vegan",
+        "oeufs": "Oeufs",
+        "poissons": "Poissons",
+        "arachides": "Arachides",
+        "soja": "Soja",
+        "lactose": "Lactose",
+        "fruits-a-coques": "Fruits à coques",
+        "celeri": "Célerie",
+        "moutarde": "Moutarde",
+        "sesame": "Sésame",
+        "sulfites": "Sulfites",
+        "lupin": "Lupin",
+        "mollusques": "Mollusques"
+      }
+    },
+    "jobs": {
+      "name": "Jobs"
+    },
+    "speakers": {
+      "name": "Speakers"
+    },
+    "schedule": {
+      "name": "Programme",
+      "day1-number": "Jeudi 17",
+      "day2-number": "Vendredi 18",
+      "day1": "Jeudi",
+      "day2": "Vendredi",
+      "opening": "Ouverture",
+      "keynote": "Keynote",
+      "break": "Pause",
+      "lunch": "Déjeuner",
+      "party": "After Party"
+    },
+    "team": {
+      "name": "L'Équipe"
+    },
+    "code-of-conduct": {
+      "name": "Code de conduite"
+    },
+    "legal-mentions": {
+      "name": "Mentions Légales"
+    }
+  },
+  "sessions": {
+    "cancelled": "Annulé"
+  },
+  "404": {
+    "main": "Vous avez l'air perdu...",
+    "button": "Retour en lieu sûr"
+  },
+  "footer": {
+    "about": "À propos",
+    "follow": "Nous suivre",
+    "partnership-kit": "Kit partenaires",
+    "media-kit": "Kit Média",
+    "previous-editions": "Éditions précédentes",
+    "partners": "Partenaires",
+    "organizers": "Organisé avec ❤️ par le GDG Nantes",
+    "no-spam": "Pas de spam, seulement les dernières infos",
+    "news-button": "Découvrir"
+  }
+}
