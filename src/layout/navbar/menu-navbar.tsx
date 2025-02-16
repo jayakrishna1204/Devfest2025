@@ -19,11 +19,12 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { Flag } from '@/components/commun/flags';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ToggleDrawerType = (openTarget: boolean) => (event: any) => void;
 
 export const MenuNavbar: React.FC<React.PropsWithChildren> = ({ children }) => {
   const [isOpen, setDrawerOpen] = React.useState(false);
-  const pathname = usePathname().replace(/^\/en\//, '/');
+  const pathname = usePathname().replace(/^\/en\/?/, '/');
 
   const toggleDrawer: ToggleDrawerType = (openTarget) => (event) => {
     if (
@@ -134,15 +135,15 @@ const DrawerMenu: React.FC<
   </Drawer>
 );
 
-export const ToggleLanguage = () => {
-  const pathname = usePathname();
-  const pathnameWithoutLocale = pathname.replace(/^\/en\//, '/');
-  const targetLocale = pathname.startsWith('/en/') ? 'fr' : 'en';
+export const ToggleLanguage: React.FC<{ locale: string }> = ({ locale }) => {
+  const targetLocale = locale == 'en' ? 'fr' : 'en';
   return (
     <Link
-      href={pathnameWithoutLocale}
-      hrefLang={targetLocale}
-      onClick={() => (document.cookie = `NEXT_LOCALE=${targetLocale}`)}
+      href='#'
+      onClick={() => {
+        document.cookie = `NEXT_LOCALE=${targetLocale}; path=/`;
+        location.reload();
+      }}
     >
       <Flag lang={targetLocale} />
     </Link>

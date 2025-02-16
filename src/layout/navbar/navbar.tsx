@@ -39,7 +39,7 @@ const ListMenuButtons: MyComponent = async ({ params }) => {
         </MyLink>
       ))}
       <ListItemButton aria-label='change language'>
-        <ToggleLanguage />
+        <ToggleLanguage locale={(await params).locale} />
       </ListItemButton>
     </>
   );

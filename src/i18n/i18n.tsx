@@ -1,8 +1,8 @@
-import { createInstance, i18n, TFunction } from 'i18next';
+import { createInstance, i18n, Resource, TFunction } from 'i18next';
 import i18nConfig from './i18nConfig';
 
-async function getI18nResources(resources: any) {
-  resources = {};
+async function getI18nResources() {
+  const resources: Resource = {};
   for (const locale of i18nConfig.locales) {
     resources[locale] = {
       translation: await import(`../locales/${locale}/translation.json`),
@@ -13,15 +13,15 @@ async function getI18nResources(resources: any) {
 
 export default async function initTranslations(
   locale: string,
-  resources?: any
+  resources?: Resource
 ) {
   const i18nInstance = createInstance();
 
   if (!resources) {
-    resources = await getI18nResources(resources);
+    resources = await getI18nResources();
   }
 
-  let options = {
+  const options = {
     lng: locale,
     fallbackLng: i18nConfig.defaultLocale,
     supportedLngs: i18nConfig.locales,
