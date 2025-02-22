@@ -119,7 +119,8 @@
       "party": "After Party"
     },
     "team": {
-      "name": "L'Équipe"
+      "name": "L'Équipe",
+      "membersTitle": "Core Team"
     },
     "code-of-conduct": {
       "name": "Code de conduite"

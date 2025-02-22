@@ -119,7 +119,8 @@
       "party": "After Party"
     },
     "team": {
-      "name": "Team"
+      "name": "Team",
+      "membersTitle": "Core Team"
     },
     "code-of-conduct": {
       "name": "Code of conduct"

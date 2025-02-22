@@ -46,7 +46,7 @@ export const SocialLink: React.FC<
 
   if (social.type === 'linkedin') {
     icon = <LinkedIn />;
-    url = `https://www.linkedin.com/in/${social.login}`;
+    url = `https://www.linkedin.com/company/${social.login}`;
   } else if (social.type === 'github') {
     icon = <GitHub />;
     url = `https://github.com/${social.login}`;
