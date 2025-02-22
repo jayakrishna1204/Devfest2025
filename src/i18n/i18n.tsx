@@ -1,5 +1,6 @@
 import { createInstance, i18n, Resource, TFunction } from 'i18next';
 import i18nConfig from './i18nConfig';
+import { CommonParams } from '@/types';
 
 async function getI18nResources() {
   const resources: Resource = {};
@@ -42,7 +43,7 @@ export default async function initTranslations(
 const i18nInstances: { [key: string]: i18n } = {};
 
 export const getTranslation = async (
-  params: Promise<{ locale: string }>,
+  params: CommonParams['params'],
   keyPrefix?: string
 ): Promise<TFunction> => {
   const _params = await params;

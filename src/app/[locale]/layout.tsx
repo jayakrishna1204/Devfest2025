@@ -1,23 +1,23 @@
-import type { Metadata } from 'next';
 import i18nConfig from '@/i18n/i18nConfig';
 import { bodyClass, MuiProvider } from '@/layout/theme';
 import { Footer } from '@/layout/footer/footer';
 import { Navbar } from '@/layout/navbar/navbar';
+import { CommonParams, MyComponent } from '@/types';
+import { getTranslation } from '@/i18n/i18n';
 
-export const metadata: Metadata = {
-  title: 'Devfest Nantes 2025',
-  description: 'Devfest Nantes 2025',
-};
+export async function generateMetadata({ params }: CommonParams) {
+  const t = await getTranslation(params);
+  return {
+    title: 'Devfest Nantes',
+    description: t('pages.home.description'),
+  };
+}
 
 export function generateStaticParams() {
   return i18nConfig.locales.map((locale) => ({ locale }));
 }
 
-type RootLayoutType = Readonly<{
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}>;
-export default async function RootLayout({ children, params }: RootLayoutType) {
+const RootLayout: MyComponent = async ({ children, params }) => {
   const { locale } = await params;
 
   return (
@@ -31,4 +31,6 @@ export default async function RootLayout({ children, params }: RootLayoutType) {
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

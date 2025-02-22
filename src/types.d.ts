@@ -5,5 +5,5 @@ export type MyComponent<T = unknown> = React.FC<
 >;
 
 export type CommonParams<T = unknown> = {
-  params: Promise<{ locale: string } & T>;
-};
+  params: Promise<{ locale: string }>;
+} & T;
