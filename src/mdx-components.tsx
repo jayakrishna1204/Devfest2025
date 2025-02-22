@@ -7,10 +7,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     ...components,
     img: async (props) => {
-      if (props.height && props.width) {
-        return <Image {...props} loading='lazy' />;
-      }
-      return <img {...props} loading='lazy' />;
+      return <Image alt='image' {...props} loading='lazy' />;
     },
     h1: (props) => <Typography variant='h1' {...props} />,
     h2: (props) => <Typography variant='h2' {...props} />,

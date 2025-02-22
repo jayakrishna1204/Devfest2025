@@ -90,7 +90,6 @@
     margin: auto;
 
     background-color: #c6353b;
-    background-image: url('/images/jumbo-blood.svg');
     background-repeat: no-repeat;
     background-blend-mode: difference;
     height: 300px;
@@ -152,7 +151,6 @@
 
     &::before {
       background-color: var(--primary-dark);
-      background-image: url("/images/devfest-color-icon.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 75%;
@@ -181,7 +179,7 @@
         .price {
           display: flex;
           flex-direction: column;
-          justify-content: start;
+          justify-content: flex-start;
           text-align: center;
           align-items: center;
 
