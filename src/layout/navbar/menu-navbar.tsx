@@ -17,7 +17,7 @@ import Image from 'next/image';
 import './navbar.scss';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import LogoDevfest from '@/images/logo-blanc.png';
+import LogoDevfest from '@/images/logo-long.svg';
 import { Flag } from '@/components/commun/flags';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -74,7 +74,7 @@ const Topbar: React.FC<
               src={LogoDevfest}
               alt='Logo Devfest'
               height='64'
-              width='121'
+              width='226'
             />
           </MyLink>
         </Box>

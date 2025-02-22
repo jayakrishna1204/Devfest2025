@@ -16,7 +16,7 @@ import { MyLink } from '@/components/commun/link';
 import Image from 'next/image';
 import { MyComponent } from '@/types';
 import { getTranslation } from '@/i18n/i18n';
-import LogoLong from '@/images/logo-blanc.png';
+import LogoLong from '@/images/logo-long.svg';
 
 type FooterLink = { label: string; url: string; disabled?: boolean };
 
@@ -142,7 +142,7 @@ export const Footer: MyComponent = async ({ params }) => {
               <Image
                 src={LogoLong}
                 alt='logo devfest'
-                height='79'
+                height='50'
                 width='150'
               />
               <p style={{ marginTop: '5px' }}>{t('organizers')}</p>
