@@ -17,6 +17,7 @@ import Image from 'next/image';
 import './navbar.scss';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import LogoDevfest from '@/images/logo-long.svg';
 import { Flag } from '@/components/commun/flags';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -49,9 +50,7 @@ export const MenuNavbar: React.FC<React.PropsWithChildren> = ({ children }) => {
 
   return (
     <>
-      <Topbar toggleDrawer={toggleDrawer} logo='/images/logo-long.svg'>
-        {children}
-      </Topbar>
+      <Topbar toggleDrawer={toggleDrawer}>{children}</Topbar>
 
       <DrawerMenu isOpen={isOpen} toggleDrawer={toggleDrawer}>
         {children}
@@ -63,9 +62,8 @@ export const MenuNavbar: React.FC<React.PropsWithChildren> = ({ children }) => {
 const Topbar: React.FC<
   React.PropsWithChildren<{
     toggleDrawer: ToggleDrawerType;
-    logo: string;
   }>
-> = ({ children, toggleDrawer, logo }) => {
+> = ({ children, toggleDrawer }) => {
   return (
     <AppBar position='sticky' color='secondary'>
       <Toolbar className='toolbar'>
@@ -73,7 +71,7 @@ const Topbar: React.FC<
           <MyLink href='/'>
             <Image
               className='logo-top-bar'
-              src={logo}
+              src={LogoDevfest}
               alt='Logo Devfest'
               height='64'
               width='226'

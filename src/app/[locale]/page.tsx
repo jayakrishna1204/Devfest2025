@@ -1,11 +1,33 @@
+import { DevfestNumbers, HomeJumbo } from '@/components/home';
+import { CommonParams } from '@/types';
+import '@/components/home/home.scss';
+import { Typography } from '@mui/material';
+import { Youtube } from '@/components/commun/youtube';
+import { getTranslation } from '@/i18n/i18n';
+import { PrimarySection } from '@/components/commun/section/sectionType';
+import { HomeMap } from '@/components/home/map';
 
-export default function Home() {
+export async function generateMetadata({ params }: CommonParams) {
+  const t = await getTranslation(params);
+  return {
+    title: 'Devfest Nantes',
+    description: t('pages.home.description'),
+  };
+}
+
+export default async function Home({ params }: CommonParams) {
+  const t = await getTranslation(params);
   return (
     <>
-        <h1>Welcome to the Devfest Nantes 2025!</h1>
-        <p>
-          The Devfest Nantes is a conference that will take place on November 27th and 28th, 2025.
-        </p>
+      <HomeJumbo params={params} />
+      <PrimarySection>
+        <Typography variant='h1'>{t('pages.home.what-is')}</Typography>
+        <Typography variant='body1'>{t('site.description')}</Typography>
+        <Typography variant='body1'>{t('site.theme')}</Typography>
+        <DevfestNumbers params={params} />
+        <Youtube id='MDrrn0du1-s' title='After Movie 2024' />
+      </PrimarySection>
+      <HomeMap params={params} />
     </>
   );
 }

@@ -29,10 +29,7 @@ const ListMenuButtons: MyComponent = async ({ params }) => {
           style={{ width: '100%', height: '100%' }}
         >
           <ListItemButton>
-            <ListItemText
-              sx={{ textAlign: 'center' }}
-              primaryTypographyProps={{ variant: 'h3' }}
-            >
+            <ListItemText sx={{ textAlign: 'center' }}>
               {t(menuItem.label + '.name', { defaultValue: menuItem.label })}
             </ListItemText>
           </ListItemButton>

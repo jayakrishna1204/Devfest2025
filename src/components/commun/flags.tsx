@@ -1,10 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
+import FlagFR from '@/images/flags/fr.svg';
+import FlagEN from '@/images/flags/en.svg';
 
 export const Flag: React.FC<{
   lang: 'English' | 'French' | 'fr' | 'en';
   size?: 'medium' | 'small' | 'tiny';
-}> = async ({ lang, size = 'medium' }) => {
+}> = ({ lang, size = 'medium' }) => {
   const flagname = lang.toLowerCase().startsWith('f') ? 'fr' : 'en';
 
   const sizes =
@@ -17,7 +19,7 @@ export const Flag: React.FC<{
   return (
     <Image
       alt='logo'
-      src={await import('@/images/flags/' + flagname + '.svg')}
+      src={flagname == 'fr' ? FlagFR : FlagEN}
       {...sizes}
       style={{
         objectFit: 'cover',
