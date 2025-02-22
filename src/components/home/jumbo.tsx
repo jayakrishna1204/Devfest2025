@@ -3,7 +3,6 @@ import React from 'react';
 import { getTranslation } from '@/i18n/i18n';
 import { MyComponent } from '@/types';
 import Image from 'next/image';
-import JumboBlood from '@/images/jumbo-blood.svg';
 import TagLine from '@/images/tagline.svg';
 import './jumbo.scss';
 
@@ -14,9 +13,6 @@ export const HomeJumbo: MyComponent = async ({ params }) => {
     <>
       <div className='jumbo'>
         <div className='jumbo-content'>
-          <div className='jumbo-home-blood'>
-            <Image src={JumboBlood} alt='' />
-          </div>
           <div className='logo-jumbo-home'>
             <Image alt='logo' src={TagLine} />
           </div>
