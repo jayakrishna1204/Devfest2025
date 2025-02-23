@@ -70,7 +70,6 @@ const FullWidthMap: React.FC<React.PropsWithChildren> = ({ children }) => {
         alt='world map'
         src={HomeMapImage}
         style={{ height: '100%', width: '100%', objectFit: 'cover' }}
-        layout='fixed'
       />
       {children}
     </MyContainer>

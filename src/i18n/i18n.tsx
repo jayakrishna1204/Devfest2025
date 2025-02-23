@@ -47,7 +47,7 @@ export const getTranslation = async (
   keyPrefix?: string
 ): Promise<TFunction> => {
   const _params = await params;
-  const locale = _params.locale || i18nConfig.defaultLocale;
+  const locale = _params?.locale || i18nConfig.defaultLocale;
   const instance =
     i18nInstances[locale] ||
     (i18nInstances[locale] = (await initTranslations(locale)).i18n);

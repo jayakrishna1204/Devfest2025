@@ -1,9 +1,9 @@
-import i18nConfig from '@/i18n/i18nConfig';
 import { bodyClass, MuiProvider } from '@/layout/theme';
 import { Footer } from '@/layout/footer/footer';
 import { Navbar } from '@/layout/navbar/navbar';
 import { CommonParams, MyComponent } from '@/types';
 import { getTranslation } from '@/i18n/i18n';
+import i18nConfig from '@/i18n/i18nConfig';
 
 export async function generateMetadata({ params }: CommonParams) {
   const t = await getTranslation(params);
@@ -18,7 +18,8 @@ export function generateStaticParams() {
 }
 
 const RootLayout: MyComponent = async ({ children, params }) => {
-  const { locale } = await params;
+  const _params = await params;
+  const locale = _params?.locale || i18nConfig.defaultLocale;
 
   return (
     <html lang={locale}>

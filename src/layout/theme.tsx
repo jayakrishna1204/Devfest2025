@@ -30,10 +30,6 @@ const theme = createTheme({
     secondary: {
       main: secondary,
     },
-    background: {
-      default: 'transparent',
-      // default: "#fff",
-    },
     text: {
       primary: '#fff',
       secondary: '#fff',
