@@ -1,6 +1,6 @@
 import Script from 'next/script';
 
-const Analytics = () => {
+export const Analytics = () => {
   if (process.env.NODE_ENV === 'development') {
     return null;
   }
