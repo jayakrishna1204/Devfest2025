@@ -50,7 +50,7 @@ export const Footer: MyComponent = async ({ params }) => {
       type: 'instagram',
     },
     {
-      login: 'gdgnante',
+      login: 'gdgnantes',
       type: 'bluesky',
     },
   ];
