@@ -6,6 +6,9 @@ import { getTranslation } from '@/i18n/i18n';
 import i18nConfig from '@/i18n/i18nConfig';
 import { Analytics } from '@/analytics';
 import { Metadata } from 'next';
+import { jsonLd } from '@/jsonLd';
+
+const URLSite = 'https://devfest2025.gdgnantes.com';
 
 export async function generateMetadata({
   params,
@@ -14,9 +17,9 @@ export async function generateMetadata({
   return {
     title: 'Devfest Nantes',
     description: t('pages.home.description'),
-    metadataBase: new URL('https://devfest2025.gdgnantes.com'),
+    metadataBase: new URL(URLSite),
     alternates: {
-      canonical: 'https://devfest2025.gdgnantes.com',
+      canonical: URLSite,
       languages: {
         en: '/en',
         fr: '/',
@@ -36,6 +39,10 @@ const RootLayout: MyComponent = async ({ children, params }) => {
   return (
     <html lang={locale}>
       <body className={bodyClass}>
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Analytics />
         <MuiProvider>
           <Navbar params={params} />
