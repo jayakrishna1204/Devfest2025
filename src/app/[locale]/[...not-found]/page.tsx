@@ -1,8 +1,5 @@
-import { MyComponent } from '@/types';
 import { notFound } from 'next/navigation';
 
-const Error404: MyComponent = async () => {
+export default function Error404() {
   notFound();
-};
-
-export default Error404;
+}
