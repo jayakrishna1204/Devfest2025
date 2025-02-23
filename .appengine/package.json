@@ -1,0 +1,11 @@
+{
+  "name": "devfest2025",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "gcp-build": "echo rien à faire",
+    "start": "node ./server.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
