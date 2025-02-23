@@ -38,13 +38,21 @@ jobs:
           service_account: "github-actions@devfest2025-451108.iam.gserviceaccount.com"
 
       # Build/Deploy
+      # AppEngine sait faire tout ça seul, mais on veut
+      # 1: avoir le résultat du build vite en CI
+      # 2: utiliser seulement le node_modules de nextJs standalone, pour lequel on a pas la liste des dépendances
 
       - run: npm ci --verbose
       - run: npm run build
       - run: cp -a .next/standalone/. .appengine
-      - run: mkdir -p .appengine/.next/cache/images # Next ne peut pas créer le dossier au runtime dans appengine sinon
-      - run: chmod -R 777 .appengine/.next/cache
-      - run: mv .appengine/package-appengine.json .appengine/package.json
+      - run: mkdir -p .next/cache/images # Next ne peut pas créer le dossier au runtime dans appengine sinon
+        working-directory: .appengine
+      - run: chmod -R 777 .next/cache
+        working-directory: .appengine
+      - run: mv package-appengine.json package.json
+        working-directory: .appengine
+      - run: tar -czf node_modules.tar.gz node_modules
+        working-directory: .appengine
 
       - id: "deploy"
         name: "Deploy to App Engine"
