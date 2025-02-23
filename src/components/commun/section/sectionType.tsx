@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import React, { CSSProperties } from 'react';
 import './section.scss';
 import { Container, ContainerProps } from '@mui/material';
-import { DesktopOnlySx, MobileOnlySx } from '@/layout/theme';
+import { DesktopOnlySx, MobileOnlySx } from '@/helpers/responsive';
 
 type MediaDisplayType = 'mobile-only' | 'desktop-only';
 

@@ -19,7 +19,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import LogoDevfest from '@/images/logo-blanc.png';
 import { Flag } from '@/components/commun/flags';
-import { DesktopOnlySx, MobileOnlySx } from '@/layout/theme';
+import { DesktopOnlySx, MobileOnlySx } from '@/helpers/responsive';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ToggleDrawerType = (openTarget: boolean) => (event: any) => void;
