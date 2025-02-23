@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "gcp-build": "echo rien à faire",
+    "gcp-build": "tar -xzf node_modules.tar.gz && rm -f node_modules.tar.gz || true",
     "start": "node ./server.js"
   }
 }
