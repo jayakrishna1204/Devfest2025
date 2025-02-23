@@ -4,8 +4,12 @@ import '@/components/home/home.scss';
 import { Typography } from '@mui/material';
 import { Youtube } from '@/components/commun/youtube';
 import { getTranslation } from '@/i18n/i18n';
-import { PrimarySection } from '@/components/commun/section/sectionType';
+import {
+  PrimarySection,
+  Section,
+} from '@/components/commun/section/sectionType';
 import { HomeMap } from '@/components/home/map';
+import { DevfestPhotos } from '@/components/home/photos';
 
 export async function generateMetadata({ params }: CommonParams) {
   const t = await getTranslation(params);
@@ -28,6 +32,9 @@ export default async function Home({ params }: CommonParams) {
         <Youtube id='MDrrn0du1-s' title='After Movie 2024' />
       </PrimarySection>
       <HomeMap params={params} />
+      <Section fullWidth>
+        <DevfestPhotos params={params} />
+      </Section>
     </>
   );
 }
