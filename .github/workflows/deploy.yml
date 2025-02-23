@@ -51,7 +51,7 @@ jobs:
         working-directory: .appengine
       - run: mv package-appengine.json package.json
         working-directory: .appengine
-      - run: tar -czf node_modules.tar.gz node_modules
+      - run: npm init -y # permet de retrouver les dépendances à partir du node_modules de nextJs standalone
         working-directory: .appengine
 
       - id: "deploy"
