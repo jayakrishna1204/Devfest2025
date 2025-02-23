@@ -3,7 +3,7 @@ import createMDX from '@next/mdx';
 
 const nextConfig: NextConfig = {
   // output: 'export',
-  output: 'standalone',
+  output: process.env.NODE_ENV === 'development' ? undefined : 'standalone',
   pageExtensions: ['md', 'mdx', 'ts', 'tsx'],
 };
 

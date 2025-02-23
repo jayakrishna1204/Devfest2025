@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "node .next/standalone/server.js",
+    "start": "next start",
     "lint": "next lint",
     "debug": "cross-env NODE_OPTIONS='--inspect' next dev",
     "postbuild": "next-sitemap && node copy-assets.js"
