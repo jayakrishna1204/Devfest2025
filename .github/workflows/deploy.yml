@@ -41,12 +41,15 @@ jobs:
 
       - run: npm ci --verbose
       - run: npm run build
-      - run: mkdir -p .next/cache/images # Next ne peut pas créer le dossier dans appengine sinon
+      - run: cp -a .next/standalone/. .appengine
+      - run: mkdir -p .appengine/.next/cache/images # Next ne peut pas créer le dossier au runtime dans appengine sinon
+      - run: sed -i 's#\.next/standalone/#./#' .appengine/package.json
 
       - id: "deploy"
         name: "Deploy to App Engine"
         uses: "google-github-actions/deploy-appengine@v2"
         with:
+          working_directory: ".appengine"
           promote: ${{ steps.get_version.outputs.PROMOTE }}
           version: ${{ steps.get_version.outputs.VERSION }}
           project_id: 'devfest2025-451108'

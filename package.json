@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
+    "start": "node .next/standalone/server.js",
     "lint": "next lint",
     "debug": "cross-env NODE_OPTIONS='--inspect' next dev",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap && node copy-assets.js"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
