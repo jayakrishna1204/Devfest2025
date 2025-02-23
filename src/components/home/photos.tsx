@@ -91,7 +91,7 @@ const Picture: React.FC<{
       ? '(max-width: 640px) 100vw, (max-width: 1280px) 33vw, 25vw'
       : type === 'low'
         ? '(max-width: 640px) 100vw, (max-width: 1280px) 75vw, 50vw'
-        : '(max-width: 640px) 100vw, (max-width: 1280px) 33vw';
+        : '(max-width: 640px) 100vh, (max-width: 1280px) 75vh';
   return (
     <Grid2
       gridColumn={gridColumn}

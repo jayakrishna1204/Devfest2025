@@ -11,14 +11,6 @@ import {
 import { HomeMap } from '@/components/home/map';
 import { DevfestPhotos } from '@/components/home/photos';
 
-export async function generateMetadata({ params }: CommonParams) {
-  const t = await getTranslation(params);
-  return {
-    title: 'Devfest Nantes',
-    description: t('pages.home.description'),
-  };
-}
-
 export default async function Home({ params }: CommonParams) {
   const t = await getTranslation(params);
   return (
