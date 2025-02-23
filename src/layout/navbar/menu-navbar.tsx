@@ -24,7 +24,9 @@ import { DesktopOnlySx, MobileOnlySx } from '@/layout/theme';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ToggleDrawerType = (openTarget: boolean) => (event: any) => void;
 
-export const MenuNavbar: React.FC<React.PropsWithChildren> = ({ children }) => {
+export const MenuNavbar: React.FC<
+  React.PropsWithChildren<{ locale: string }>
+> = ({ children, locale }) => {
   const [isOpen, setDrawerOpen] = React.useState(false);
   const pathname = usePathname().replace(/^\/en\/?/, '/');
 
@@ -51,9 +53,11 @@ export const MenuNavbar: React.FC<React.PropsWithChildren> = ({ children }) => {
 
   return (
     <>
-      <Topbar toggleDrawer={toggleDrawer}>{children}</Topbar>
+      <Topbar toggleDrawer={toggleDrawer} locale={locale}>
+        {children}
+      </Topbar>
 
-      <DrawerMenu isOpen={isOpen} toggleDrawer={toggleDrawer}>
+      <DrawerMenu isOpen={isOpen} toggleDrawer={toggleDrawer} locale={locale}>
         {children}
       </DrawerMenu>
     </>
@@ -63,8 +67,9 @@ export const MenuNavbar: React.FC<React.PropsWithChildren> = ({ children }) => {
 const Topbar: React.FC<
   React.PropsWithChildren<{
     toggleDrawer: ToggleDrawerType;
+    locale: string;
   }>
-> = ({ children, toggleDrawer }) => {
+> = ({ children, toggleDrawer, locale }) => {
   return (
     <AppBar position='sticky'>
       <Toolbar className='toolbar'>
@@ -80,7 +85,12 @@ const Topbar: React.FC<
         </Box>
 
         <Box sx={DesktopOnlySx} className='top-bar-right menu-desktop'>
-          <List>{children}</List>
+          <List>
+            {children}
+            <ListItemButton style={{ width: '100%' }}>
+              <ToggleLanguage locale={locale} />
+            </ListItemButton>
+          </List>
         </Box>
         <Box sx={MobileOnlySx} className='top-bar-right'>
           <IconButton
@@ -100,11 +110,12 @@ const DrawerMenu: React.FC<
   React.PropsWithChildren<{
     toggleDrawer: ToggleDrawerType;
     isOpen: boolean;
+    locale: string;
   }>
-> = ({ children, isOpen, toggleDrawer }) => (
+> = ({ children, isOpen, toggleDrawer, locale }) => (
   <Drawer
     sx={MobileOnlySx}
-    anchor='top'
+    anchor='bottom'
     variant='temporary'
     open={isOpen}
     onClose={toggleDrawer(false)}
@@ -122,6 +133,13 @@ const DrawerMenu: React.FC<
             marginRight: '20px',
           }}
         >
+          <Box
+            alignContent='start'
+            width='100%'
+            marginLeft='calc( 2*var(--mui-spacing))'
+          >
+            <ToggleLanguage locale={locale} />
+          </Box>
           <IconButton aria-label='close menu'>
             <CloseRounded />
           </IconButton>

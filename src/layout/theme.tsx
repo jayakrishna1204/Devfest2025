@@ -74,7 +74,7 @@ const theme = createTheme({
   },
 });
 
-export const bodyClass = ''; // roboto.variable + ' ' + cinzel.variable;
+export const bodyClass = ''; //roboto.variable + ' ' + cinzel.variable;
 export const htmlClass = roboto.variable + ' ' + cinzel.variable;
 
 export const MobileOnlySx = { display: { xs: 'block', sm: 'none' } };

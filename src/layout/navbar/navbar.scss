@@ -1,8 +1,9 @@
 
 .MuiToolbar-root {
   max-width: 1200px;
-  width: 100%;
+  width: calc(100% - 4* var(--mui-spacing));
   margin: auto;
+
 }
 
 .top-bar-right {
@@ -21,12 +22,11 @@
   flex-grow: 1;
 }
 
+.active-link {
+    border-bottom: 1px solid white;
+}
 .top-bar-right.menu-desktop .MuiList-root {
   display: inline-flex;
-
-  .active-link {
-    border-bottom: 1px solid white;
-  }
 }
 
 .logo-top-bar:hover {
