@@ -5,12 +5,23 @@ import { CommonParams, MyComponent } from '@/types';
 import { getTranslation } from '@/i18n/i18n';
 import i18nConfig from '@/i18n/i18nConfig';
 import { Analytics } from '@/analytics';
+import { Metadata } from 'next';
 
-export async function generateMetadata({ params }: CommonParams) {
+export async function generateMetadata({
+  params,
+}: CommonParams): Promise<Metadata> {
   const t = await getTranslation(params);
   return {
     title: 'Devfest Nantes',
     description: t('pages.home.description'),
+    metadataBase: new URL('https://devfest2025.gdgnantes.com'),
+    alternates: {
+      canonical: 'https://devfest2025.gdgnantes.com',
+      languages: {
+        en: '/en',
+        fr: '/',
+      },
+    },
   };
 }
 
