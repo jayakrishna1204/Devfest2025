@@ -4,6 +4,7 @@ import { Navbar } from '@/layout/navbar/navbar';
 import { CommonParams, MyComponent } from '@/types';
 import { getTranslation } from '@/i18n/i18n';
 import i18nConfig from '@/i18n/i18nConfig';
+import { Analytics } from '@mui/icons-material';
 
 export async function generateMetadata({ params }: CommonParams) {
   const t = await getTranslation(params);
@@ -23,6 +24,7 @@ const RootLayout: MyComponent = async ({ children, params }) => {
 
   return (
     <html lang={locale}>
+      <Analytics />
       <body className={bodyClass}>
         <MuiProvider>
           <Navbar params={params} />
