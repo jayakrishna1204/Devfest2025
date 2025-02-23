@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import React, { CSSProperties } from 'react';
 import './section.scss';
 import { Container, ContainerProps } from '@mui/material';
+import { DesktopOnlySx, MobileOnlySx } from '@/layout/theme';
 
 type MediaDisplayType = 'mobile-only' | 'desktop-only';
 
@@ -14,9 +15,9 @@ export const MyContainer: React.FC<
 > = ({ children, mediaDisplay, ...props }) => {
   const sxDisplay =
     mediaDisplay === 'mobile-only'
-      ? { display: { xs: 'block', md: 'none' } }
+      ? MobileOnlySx
       : mediaDisplay === 'desktop-only'
-        ? { display: { xs: 'none', md: 'block' } }
+        ? DesktopOnlySx
         : {};
   return (
     <Container

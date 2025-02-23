@@ -17,8 +17,9 @@ import Image from 'next/image';
 import './navbar.scss';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import LogoDevfest from '@/images/logo-long.svg';
+import LogoDevfest from '@/images/logo-blanc.png';
 import { Flag } from '@/components/commun/flags';
+import { DesktopOnlySx, MobileOnlySx } from '@/layout/theme';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ToggleDrawerType = (openTarget: boolean) => (event: any) => void;
@@ -65,7 +66,7 @@ const Topbar: React.FC<
   }>
 > = ({ children, toggleDrawer }) => {
   return (
-    <AppBar position='sticky' color='secondary'>
+    <AppBar position='sticky'>
       <Toolbar className='toolbar'>
         <Box className='top-bar-left'>
           <MyLink href='/'>
@@ -73,16 +74,16 @@ const Topbar: React.FC<
               className='logo-top-bar'
               src={LogoDevfest}
               alt='Logo Devfest'
-              height='64'
-              width='226'
+              style={{ width: '100px', height: 'auto' }}
             />
           </MyLink>
         </Box>
 
-        <Box className='top-bar-right'>
-          <List className='menu-desktop'>{children}</List>
+        <Box sx={DesktopOnlySx} className='top-bar-right menu-desktop'>
+          <List>{children}</List>
+        </Box>
+        <Box sx={MobileOnlySx} className='top-bar-right'>
           <IconButton
-            className='drawer'
             edge='start'
             aria-label='open menu'
             onClick={toggleDrawer(true)}
@@ -102,14 +103,13 @@ const DrawerMenu: React.FC<
   }>
 > = ({ children, isOpen, toggleDrawer }) => (
   <Drawer
-    className='drawer'
+    sx={MobileOnlySx}
     anchor='top'
     variant='temporary'
     open={isOpen}
     onClose={toggleDrawer(false)}
   >
     <Box
-      className='menu-mobile'
       role='presentation'
       onKeyDown={toggleDrawer(true)}
       onClick={toggleDrawer(false)}
@@ -142,6 +142,7 @@ export const ToggleLanguage: React.FC<{ locale: string }> = ({ locale }) => {
         document.cookie = `NEXT_LOCALE=${targetLocale}; path=/`;
         location.reload();
       }}
+      style={{ width: '100%', textAlign: 'center' }}
     >
       <Flag lang={targetLocale} />
     </Link>

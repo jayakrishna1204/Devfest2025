@@ -8,6 +8,7 @@ import './jumbo.scss';
 
 export const HomeJumbo: MyComponent = async ({ params }) => {
   const t = await getTranslation(params, 'pages.home.jumbo');
+  const tSite = await getTranslation(params);
 
   return (
     <>
@@ -19,7 +20,7 @@ export const HomeJumbo: MyComponent = async ({ params }) => {
 
           <div>
             <Typography variant='h1' textAlign='center'>
-              {t('come-back')}
+              {tSite('site.theme')}
             </Typography>
             {/*<Typography*/}
             {/*  variant="h2"*/}

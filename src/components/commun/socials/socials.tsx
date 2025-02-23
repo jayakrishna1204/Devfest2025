@@ -75,12 +75,7 @@ export const SocialLink: React.FC<
   return (
     <MyLink href={url} aria-label={social.type}>
       {withLogin ? (
-        <Button
-          variant='text'
-          sx={{ color: 'var(--tertiary)' }}
-          size='small'
-          startIcon={icon}
-        >
+        <Button variant='text' size='small' startIcon={icon}>
           {social.type != 'website' &&
             social.type != 'linkedin' &&
             social.login}
