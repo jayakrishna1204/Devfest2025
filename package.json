@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "debug": "cross-env NODE_OPTIONS='--inspect' next dev"
+    "debug": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
@@ -26,6 +27,7 @@
     "install": "^0.13.0",
     "next": "15.1.7",
     "next-i18n-router": "^5.5.1",
+    "next-sitemap": "^4.2.3",
     "npm": "^11.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
