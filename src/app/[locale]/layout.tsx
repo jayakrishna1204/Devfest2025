@@ -16,7 +16,13 @@ export async function generateMetadata({
   const t = await getTranslation(params);
   return {
     title: 'Devfest Nantes',
-    description: t('pages.home.description'),
+    description: t('site.description'),
+    authors: [
+      {
+        name: 'GDG Nantes',
+        url: 'https://gdgnantes.com',
+      },
+    ],
     metadataBase: new URL(URLSite),
     alternates: {
       canonical: URLSite,
@@ -24,6 +30,9 @@ export async function generateMetadata({
         en: '/en',
         fr: '/',
       },
+    },
+    twitter: {
+      site: '@devfestnantes',
     },
   };
 }
