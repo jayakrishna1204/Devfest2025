@@ -45,9 +45,7 @@ jobs:
       - run: npm ci --verbose
       - run: npm run build
       - run: cp -a .next/standalone/. .appengine
-      - run: mkdir -p .next/cache/images # Next ne peut pas créer le dossier au runtime dans appengine sinon
-        working-directory: .appengine
-      - run: chmod -R 777 .next/cache
+      - run: mkdir -p .next/cache/images && touch .next/cache/images/.gitkeep # Next ne peut pas créer le dossier au runtime dans appengine sinon
         working-directory: .appengine
       - run: mv package-appengine.json package.json
         working-directory: .appengine
