@@ -41,7 +41,7 @@ jobs:
 
       - run: npm ci --verbose
       - run: npm run build
-      - run: mkdir -p .next/cache/images
+      - run: chmod 777 .next/cache
 
       - id: "deploy"
         name: "Deploy to App Engine"
