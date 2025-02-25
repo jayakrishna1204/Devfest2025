@@ -86,7 +86,7 @@ export const teamMembers: TeamMember[] = [
   {
     firstName: 'Julien',
     lastName: 'Landuré',
-    title: 'CTO Zenika Nantes',
+    title: 'Founder of TechTown & TechReady',
     socials: [
         { type: 'twitter', login: 'jlandure' },
         { type: 'linkedin', login: 'jlandure' },
@@ -113,7 +113,7 @@ export const teamMembers: TeamMember[] = [
         { type: 'linkedin', login: 'pierrickguyard' },
         { type: 'github', login: 'pguyard' },
     ],
-    image: await import('@/images/team/pierrick.png'),
+    image: await import('@/images/team/pierrick.jpeg'),
   },
   {
     firstName: 'Xavier',
@@ -139,7 +139,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     firstName: 'Jocelyn',
-    lastName: 'Billiec',
+    lastName: 'Biliec',
     title: 'Devops - UTech',
     socials: [
       { type: 'linkedin', login: 'jocebi' },

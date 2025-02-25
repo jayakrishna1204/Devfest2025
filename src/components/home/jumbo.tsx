@@ -58,9 +58,9 @@ export const HomeJumbo: MyComponent = async ({ params }) => {
                 variant='contained'
                 href='https://www.billetweb.fr/reunion-dinformation-partenaire-devfest-2025'
                 target='_blank'
-                aria-label='Devenir Sponsor'
+                aria-label={t('become_sponsor')}
               >
-                Devenir Sponsor 2025
+                {t('become_sponsor')}
               </Button>
             </Stack>
             {/*<Stack direction="row" spacing={3} justifyContent={"center"}>*/}
