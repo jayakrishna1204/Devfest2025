@@ -77,11 +77,11 @@ export const Footer: MyComponent = async ({ params }) => {
   const partnersLinks: FooterLink[] = [
     {
       label: t('partnership-kit'),
-      url: 'https://drive.google.com/drive/folders/1LhZM7gD_vicGYp8VD61P1DeGQDE8tQIS',
+      url: 'hhttps://drive.google.com/drive/folders/1B2HikY25j7-9XlIWZoPDrhqVC7jvDHbj',
     },
     {
       label: t('media-kit'),
-      url: 'https://drive.google.com/drive/folders/1vQbLf3dHeR7ifk_BUEbopSDFCbVx0Zi6',
+      url: 'https://drive.google.com/drive/folders/1rGPDdErUhohlJlrCyen_ixHASzkwjtEU',
     },
   ];
 
