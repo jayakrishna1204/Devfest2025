@@ -43,6 +43,33 @@ a.md-link {
   border-bottom: 2px solid var(--mui-palette-secondary-light);
 }
 
+main>div:not(.jumbo) {
+  h1, h2 {
+
+    &:not(.no-leaf) {
+      text-align: center;
+
+      &:before, &:after {
+        content: "";
+        background-image: url("/images/feuilles-gauche.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: inline-block;
+        vertical-align: middle;
+
+        width: 60px;
+        height: 20px;
+      }
+
+      &:after {
+        background-image: url("/images/feuilles-droite.svg");
+      }
+    }
+  }
+
+}
+
 //.MuiButton-contained.MuiButton-colorSecondary {
 //  color: white;
 //}

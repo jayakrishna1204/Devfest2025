@@ -77,7 +77,7 @@ export const Footer: MyComponent = async ({ params }) => {
   const partnersLinks: FooterLink[] = [
     {
       label: t('partnership-kit'),
-      url: 'hhttps://drive.google.com/drive/folders/1B2HikY25j7-9XlIWZoPDrhqVC7jvDHbj',
+      url: 'https://drive.google.com/drive/folders/1B2HikY25j7-9XlIWZoPDrhqVC7jvDHbj',
     },
     {
       label: t('media-kit'),

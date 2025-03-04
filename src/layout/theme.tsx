@@ -18,12 +18,8 @@ const cinzel = Cinzel({
   variable: '--font-cinzel',
 });
 
-const primary = '#408330';
-// const primary = "#d14f34";
-const secondary = '#FFB74D';
-// const primary = "#c14d32";
-// const secondary = "#36666a";
-// A custom theme for this app
+const primary = '#2f493c';
+const secondary = '#ffeb7c';
 const theme = createTheme({
   cssVariables: true,
   typography: {
@@ -40,6 +36,10 @@ const theme = createTheme({
     text: {
       primary: '#fff',
       secondary: '#fff',
+    },
+    background: {
+      // default: '#000',
+      paper: primary,
     },
   },
   components: {
