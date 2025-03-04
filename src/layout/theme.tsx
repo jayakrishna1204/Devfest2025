@@ -18,8 +18,8 @@ const cinzel = Cinzel({
   variable: '--font-cinzel',
 });
 
-const primary = '#2f493c';
-const secondary = '#ffeb7c';
+const primary = '#3b5a49';
+const secondary = '#b14c36';
 const theme = createTheme({
   cssVariables: true,
   typography: {
