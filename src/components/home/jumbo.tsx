@@ -56,7 +56,7 @@ export const HomeJumbo: MyComponent = async ({ params }) => {
               <Button
                 color='secondary'
                 variant='contained'
-                href='https://www.billetweb.fr/reunion-dinformation-partenaire-devfest-2025'
+                href='https://www.billetweb.fr/partenaire-devfest-nantes-2025'
                 target='_blank'
                 aria-label={t('become_sponsor')}
               >
