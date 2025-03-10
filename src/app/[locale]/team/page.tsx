@@ -26,13 +26,6 @@ export default async function Team({ params }: CommonParams) {
 
   return (
     <>
-      <Typography
-        style={{ textAlign: 'center' }}
-        variant='h1'
-        color='secondary'
-      >
-        {t('pages.team.name')}
-      </Typography>
       <SecondarySection>
         <Intro />
       </SecondarySection>

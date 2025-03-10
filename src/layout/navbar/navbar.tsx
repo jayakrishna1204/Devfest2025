@@ -6,11 +6,11 @@ import { MyLink } from '@/components/commun/link';
 import './navbar.scss';
 import { getTranslation } from '@/i18n/i18n';
 import { MyComponent } from '@/types';
-import { MenuNavbar, ToggleLanguage } from '@/layout/navbar/menu-navbar';
+import { MenuNavbar } from '@/layout/navbar/menu-navbar';
 
-export const Navbar: MyComponent = ({ params }) => {
+export const Navbar: MyComponent = async ({ params }) => {
   return (
-    <MenuNavbar>
+    <MenuNavbar locale={(await params).locale}>
       <ListMenuButtons params={params} />
     </MenuNavbar>
   );
@@ -35,9 +35,6 @@ const ListMenuButtons: MyComponent = async ({ params }) => {
           </ListItemButton>
         </MyLink>
       ))}
-      <ListItemButton aria-label='change language'>
-        <ToggleLanguage locale={(await params).locale} />
-      </ListItemButton>
     </>
   );
 };

@@ -5,7 +5,7 @@ import Image, { StaticImageData } from 'next/image';
 
 import Faucheuses from '@/images/home/album/faucheuses.jpg';
 import EquipeAmphi from '@/images/home/album/equipe-amphi.jpg';
-import Adrien from '@/images/home/album/adrien.png';
+import Adrien from '@/images/home/album/adrien.jpg';
 import AnnabelleJef from '@/images/home/album/annabelle-jef.jpg';
 import Buffet from '@/images/home/album/chef.jpg';
 import Stand from '@/images/home/album/stand.jpg';

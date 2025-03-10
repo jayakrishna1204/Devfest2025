@@ -9,7 +9,7 @@ const Error404: MyComponent = async ({ params }) => {
   const t = await getTranslation(params, '404');
   return (
     <PrimarySection style={{ textAlign: 'center' }}>
-      <Typography variant='h1' textAlign='center' color='var(--primary-dark)'>
+      <Typography variant='h1' textAlign='center'>
         {t('main')}
       </Typography>
       <MyLink href='/'>

@@ -1,21 +1,16 @@
-@font-face {
-  font-family: "Crimson Text", serif;
-  src: url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap");
-  font-display: swap;
-}
+
 
 body {
-  --primary: #000000;
-  --primary-dark: #000000;
-  --primary-light: #3577bc;
-  --secondary-light: #ba433f;
-  --secondary: #ff4e53;
-  --tertiary: #fcefb2;
-  --tertiary-dark: #f9e075;
+  --primary: var(--mui-palette-primary-main);
+  --secondary: var(--mui-palette-secondary-main);
+  --primary-dark: var(--mui-palette-primary-dark);
+  --md-breakpoint: 900px;
+  //--primary: #408330;
+  //--secondary: #FFB74D;
+  //--primary-dark: rgb(44, 91, 33);
 
-  background-color: var(--primary-dark) !important;
-  color: white;
-  font-family: var(--font-roboto), serif;
+  font-family: var(--font-roboto);
+  margin: 0;
 }
 
 a {
@@ -26,13 +21,13 @@ a {
 .secondary,
 .primary-dark {
   a {
-    // color: var(--tertiary);
+     color: var(--secondary);
     font-weight: 500;
   }
 }
 
 a.md-link {
-  color: var(--tertiary);
+  color: var(--secondary);
   font-weight: 500;
 
   &:hover {
@@ -43,3 +38,38 @@ a.md-link {
 .MuiButtonBase-root {
   text-align: center;
 }
+
+.MuiAppBar-root, .MuiDrawer-root > .MuiPaper-root {
+  border-bottom: 2px solid var(--mui-palette-secondary-light);
+}
+
+main>div:not(.jumbo) {
+  h1, h2 {
+
+    &:not(.no-leaf) {
+      text-align: center;
+
+      &:before, &:after {
+        content: "";
+        background-image: url("/images/feuilles-gauche.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: inline-block;
+        vertical-align: middle;
+
+        width: 60px;
+        height: 20px;
+      }
+
+      &:after {
+        background-image: url("/images/feuilles-droite.svg");
+      }
+    }
+  }
+
+}
+
+//.MuiButton-contained.MuiButton-colorSecondary {
+//  color: white;
+//}

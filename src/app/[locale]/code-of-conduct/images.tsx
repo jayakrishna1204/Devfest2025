@@ -1,4 +1,4 @@
-import TShirtSafe from '@/images/tshirt-devfestsafe-and-orga.png';
+import TShirtSafe from '@/images/tshirt-devfestsafe-and-orga.jpg';
 import Image from 'next/image';
 
 export const TShirtDevfestSafe: React.FC = () => {

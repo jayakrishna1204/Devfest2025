@@ -16,7 +16,7 @@ import { MyLink } from '@/components/commun/link';
 import Image from 'next/image';
 import { MyComponent } from '@/types';
 import { getTranslation } from '@/i18n/i18n';
-import LogoLong from '@/images/logo-long.svg';
+import LogoLong from '@/images/logo-blanc.png';
 
 type FooterLink = { label: string; url: string; disabled?: boolean };
 
@@ -77,11 +77,11 @@ export const Footer: MyComponent = async ({ params }) => {
   const partnersLinks: FooterLink[] = [
     {
       label: t('partnership-kit'),
-      url: 'https://drive.google.com/drive/folders/1LhZM7gD_vicGYp8VD61P1DeGQDE8tQIS',
+      url: 'https://drive.google.com/drive/folders/1B2HikY25j7-9XlIWZoPDrhqVC7jvDHbj',
     },
     {
       label: t('media-kit'),
-      url: 'https://drive.google.com/drive/folders/1vQbLf3dHeR7ifk_BUEbopSDFCbVx0Zi6',
+      url: 'https://drive.google.com/drive/folders/1rGPDdErUhohlJlrCyen_ixHASzkwjtEU',
     },
   ];
 
@@ -142,8 +142,7 @@ export const Footer: MyComponent = async ({ params }) => {
               <Image
                 src={LogoLong}
                 alt='logo devfest'
-                height='50'
-                width='150'
+                style={{ width: '150px', height: 'auto' }}
               />
               <p style={{ marginTop: '5px' }}>{t('organizers')}</p>
             </div>

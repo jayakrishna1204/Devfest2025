@@ -1,4 +1,4 @@
-import { bodyClass, MuiProvider } from '@/layout/theme';
+import { bodyClass, htmlClass, MuiProvider } from '@/layout/theme';
 import { Footer } from '@/layout/footer/footer';
 import { Navbar } from '@/layout/navbar/navbar';
 import { CommonParams, MyComponent } from '@/types';
@@ -46,7 +46,7 @@ const RootLayout: MyComponent = async ({ children, params }) => {
   const locale = _params?.locale || i18nConfig.defaultLocale;
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={htmlClass}>
       <body className={bodyClass}>
         <script
           type='application/ld+json'

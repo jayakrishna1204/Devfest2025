@@ -1,7 +1,7 @@
 import { DevfestNumbers, HomeJumbo } from '@/components/home';
 import { CommonParams } from '@/types';
 import '@/components/home/home.scss';
-import { Typography } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import { Youtube } from '@/components/commun/youtube';
 import { getTranslation } from '@/i18n/i18n';
 import {
@@ -10,6 +10,12 @@ import {
 } from '@/components/commun/section/sectionType';
 import { HomeMap } from '@/components/home/map';
 import { DevfestPhotos } from '@/components/home/photos';
+import Affiche from '@/images/affiche.jpg';
+import Image from 'next/image';
+import { MyLink } from '@/components/commun/link';
+import { AccessibilityNew } from '@mui/icons-material';
+import React from 'react';
+import './home.scss';
 
 export default async function Home({ params }: CommonParams) {
   const t = await getTranslation(params);
@@ -21,6 +27,14 @@ export default async function Home({ params }: CommonParams) {
         <Typography variant='body1'>{t('site.description')}</Typography>
         <Typography variant='body1'>{t('site.theme')}</Typography>
         <DevfestNumbers params={params} />
+        <Section fullWidth style={{ textAlign: 'center' }}>
+          <Image
+            src={Affiche}
+            style={{ width: '50%', height: 'auto' }}
+            alt={'Poster'}
+          />
+        </Section>
+        <OurValuesLink params={params} />
         <Youtube id='MDrrn0du1-s' title='After Movie 2024' />
       </PrimarySection>
       <HomeMap params={params} />
@@ -30,3 +44,16 @@ export default async function Home({ params }: CommonParams) {
     </>
   );
 }
+
+const OurValuesLink: React.FC<CommonParams> = async ({ params }) => {
+  const t = await getTranslation(params, 'pages.home.numbers');
+
+  return (
+    <Container className={'our-values-link'}>
+      <MyLink href='/our-values'>
+        <AccessibilityNew sx={{ fontSize: 60 }}></AccessibilityNew>
+        <p>{t('our-values')}</p>
+      </MyLink>
+    </Container>
+  );
+};

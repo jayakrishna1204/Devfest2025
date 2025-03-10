@@ -17,13 +17,16 @@ import Image from 'next/image';
 import './navbar.scss';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import LogoDevfest from '@/images/logo-long.svg';
+import LogoDevfest from '@/images/logo-blanc.png';
 import { Flag } from '@/components/commun/flags';
+import { DesktopOnlySx, MobileOnlySx } from '@/helpers/responsive';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ToggleDrawerType = (openTarget: boolean) => (event: any) => void;
 
-export const MenuNavbar: React.FC<React.PropsWithChildren> = ({ children }) => {
+export const MenuNavbar: React.FC<
+  React.PropsWithChildren<{ locale: string }>
+> = ({ children, locale }) => {
   const [isOpen, setDrawerOpen] = React.useState(false);
   const pathname = usePathname().replace(/^\/en\/?/, '/');
 
@@ -50,9 +53,11 @@ export const MenuNavbar: React.FC<React.PropsWithChildren> = ({ children }) => {
 
   return (
     <>
-      <Topbar toggleDrawer={toggleDrawer}>{children}</Topbar>
+      <Topbar toggleDrawer={toggleDrawer} locale={locale}>
+        {children}
+      </Topbar>
 
-      <DrawerMenu isOpen={isOpen} toggleDrawer={toggleDrawer}>
+      <DrawerMenu isOpen={isOpen} toggleDrawer={toggleDrawer} locale={locale}>
         {children}
       </DrawerMenu>
     </>
@@ -62,10 +67,11 @@ export const MenuNavbar: React.FC<React.PropsWithChildren> = ({ children }) => {
 const Topbar: React.FC<
   React.PropsWithChildren<{
     toggleDrawer: ToggleDrawerType;
+    locale: string;
   }>
-> = ({ children, toggleDrawer }) => {
+> = ({ children, toggleDrawer, locale }) => {
   return (
-    <AppBar position='sticky' color='secondary'>
+    <AppBar position='sticky'>
       <Toolbar className='toolbar'>
         <Box className='top-bar-left'>
           <MyLink href='/'>
@@ -73,16 +79,21 @@ const Topbar: React.FC<
               className='logo-top-bar'
               src={LogoDevfest}
               alt='Logo Devfest'
-              height='64'
-              width='226'
+              style={{ width: '100px', height: 'auto' }}
             />
           </MyLink>
         </Box>
 
-        <Box className='top-bar-right'>
-          <List className='menu-desktop'>{children}</List>
+        <Box sx={DesktopOnlySx} className='top-bar-right menu-desktop'>
+          <List>
+            {children}
+            <ListItemButton style={{ width: '100%' }}>
+              <ToggleLanguage locale={locale} />
+            </ListItemButton>
+          </List>
+        </Box>
+        <Box sx={MobileOnlySx} className='top-bar-right'>
           <IconButton
-            className='drawer'
             edge='start'
             aria-label='open menu'
             onClick={toggleDrawer(true)}
@@ -99,17 +110,17 @@ const DrawerMenu: React.FC<
   React.PropsWithChildren<{
     toggleDrawer: ToggleDrawerType;
     isOpen: boolean;
+    locale: string;
   }>
-> = ({ children, isOpen, toggleDrawer }) => (
+> = ({ children, isOpen, toggleDrawer, locale }) => (
   <Drawer
-    className='drawer'
-    anchor='top'
+    sx={MobileOnlySx}
+    anchor='bottom'
     variant='temporary'
     open={isOpen}
     onClose={toggleDrawer(false)}
   >
     <Box
-      className='menu-mobile'
       role='presentation'
       onKeyDown={toggleDrawer(true)}
       onClick={toggleDrawer(false)}
@@ -122,6 +133,13 @@ const DrawerMenu: React.FC<
             marginRight: '20px',
           }}
         >
+          <Box
+            alignContent='start'
+            width='100%'
+            marginLeft='calc( 2*var(--mui-spacing))'
+          >
+            <ToggleLanguage locale={locale} />
+          </Box>
           <IconButton aria-label='close menu'>
             <CloseRounded />
           </IconButton>
@@ -142,6 +160,7 @@ export const ToggleLanguage: React.FC<{ locale: string }> = ({ locale }) => {
         document.cookie = `NEXT_LOCALE=${targetLocale}; path=/`;
         location.reload();
       }}
+      style={{ width: '100%', textAlign: 'center' }}
     >
       <Flag lang={targetLocale} />
     </Link>

@@ -1,7 +1,7 @@
 {
   "site": {
     "description": "Le DevFest, ou 'Developers Festival', est une conférence technique destinée aux développeuses et développeurs. Elle s'adresse aussi bien aux étudiantes et étudiants, aux professionnels ou tout simplement aux curieuses et curieux technophiles.",
-    "theme": "Cette année le Devfest Nantes sera un évènement effrayant !"
+    "theme": "Cette année plongez dans le monde enchanté des contes et légendes !"
   },
   "pages": {
     "home": {
@@ -27,7 +27,7 @@
         "sessions": "Conférences",
         "tracks": "Tracks",
         "speakers": "Speakers",
-        "our-values": "Nos valeurs"
+        "our-values": "Découvrir nos valeurs"
       },
       "tickets": {
         "name": "Tickets",
