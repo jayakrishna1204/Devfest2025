@@ -48,30 +48,32 @@ export const HomeJumbo: MyComponent = async ({ params }) => {
               <Button
                 color='secondary'
                 variant='contained'
-                href='https://devfest2024.gdgnantes.com'
-                aria-label={t('previous')}
-              >
-                {t('previous')}
-              </Button>
-              <Button
-                color='secondary'
-                variant='contained'
                 href='https://www.billetweb.fr/partenaire-devfest-nantes-2025'
                 target='_blank'
                 aria-label={t('become_sponsor')}
               >
                 {t('become_sponsor')}
               </Button>
+              <Button
+                color="secondary"
+                variant="contained"
+                href="https://conference-hall.io/devfest-nantes-2025"
+                aria-label={t("cfp")}
+              >
+                {t("cfp")}
+              </Button>
+            </Stack>
+            <Stack direction='row' spacing={3} justifyContent={'center'}>
+              <Button
+                color='secondary'
+                variant='contained'
+                href='https://devfest2024.gdgnantes.com'
+                aria-label={t('previous')}
+              >
+                {t('previous')}
+              </Button>
             </Stack>
             {/*<Stack direction="row" spacing={3} justifyContent={"center"}>*/}
-            {/* <Button
-              color="secondary"
-              variant="contained"
-              href="https://conference-hall.io/public/event/AJYPylkzTDd6j3O6ADZn"
-              aria-label={t("cfp")}
-            >
-              {t("cfp")}
-            </Button> */}
             {/* <Button
               color="secondary"
               variant="contained"
