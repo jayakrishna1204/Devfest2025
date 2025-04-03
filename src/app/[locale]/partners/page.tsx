@@ -11,7 +11,7 @@ export default function PartnersPage({ params }: CommonParams) {
     <div>
       <h1>Sponsors</h1>
         {types.map((type) => (
-          <TertiarySection key={type} slim={true} style={{marginBottom: '50px'}}>
+          <TertiarySection key={type} fullWidth={true} style={{marginBottom: '50px'}}>
             <div key={type}>
               <Typography
                 variant='h2'

@@ -28,7 +28,7 @@ export const PartnersList: MyComponent<{ partnerType: PartnerType }> = async ({ 
       {partners.map(partner => (
         <Grid
           key={partner.id}
-          size={{ sm: 12, md: 6, lg: 5 }}
+          size={{ xs: 12, md: 6, lg: 5 }}
           maxWidth={500}
           style={{
             maxHeight: sizes[partnerType]?.height + "px",
