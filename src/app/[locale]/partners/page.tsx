@@ -1,11 +1,11 @@
 import { Typography } from '@mui/material';
 import { PartnersList } from '@/components/partners/partners';
 import { CommonParams } from '@/types';
-import { partnersByTypes } from '@/data/partners/partnersByTypes';
+import { partnersByTypes, PartnerType } from '@/data/partners/partnersByTypes';
 import { TertiarySection } from '@/components/commun/section/sectionType';
 
 export default function PartnersPage({ params }: CommonParams) {
-  const types = Object.keys(partnersByTypes);
+  const types = Object.keys(partnersByTypes) as PartnerType[];
 
   return (
     <div>
