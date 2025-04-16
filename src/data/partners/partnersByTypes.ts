@@ -3,6 +3,7 @@ export type Partner = {
   name: string;
   image: typeof import('*.jpg') | typeof import('*.png') | typeof import('*.webp');
   website: string;
+  hidden?: boolean;
 }
 
 export type PartnerType = 'Platinium' | 'Gold' | 'Virtual' | 'Velotypie';
@@ -25,13 +26,15 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       id: 'apside',
       name: 'Apside',
       image: await import('@/images/partners/apside.png'),
-      website: 'https://www.apside.com/'
+      website: 'https://www.apside.com/',
+      hidden: true
     },
     {
       id: 'u-tech',
       name: 'U-Tech',
       image: await import('@/images/partners/u-tech.png'),
-      website: 'https://www.magasins-u.com/'
+      website: 'https://www.magasins-u.com/',
+      hidden: true
     },
     {
       id: 'sopra-steria',
@@ -49,13 +52,15 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       id: 'bouygues-telecom',
       name: 'Bouygues Telecom',
       image: await import('@/images/partners/bouygues-telecom.png'),
-      website: 'https://www.bouyguestelecom.fr/'
+      website: 'https://www.bouyguestelecom.fr/',
+      hidden: true
     },
     {
       id: 'thales',
       name: 'Thales',
       image: await import('@/images/partners/thales.png'),
-      website: 'https://www.thalesgroup.com/'
+      website: 'https://www.thalesgroup.com/',
+      hidden: true
     },
     {
       id: 'generali',
@@ -67,7 +72,8 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       id: 'dataiku',
       name: 'Dataiku',
       image: await import('@/images/partners/dataiku.png'),
-      website: 'https://www.dataiku.com/'
+      website: 'https://www.dataiku.com/',
+      hidden: true
     }
   ],
   Gold: [
@@ -93,7 +99,8 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       id: 'daveo',
       name: 'Daveo',
       image: await import('@/images/partners/daveo.png'),
-      website: 'https://www.daveo.fr/'
+      website: 'https://www.daveo.fr/',
+      hidden: true
     },
     {
       id: 'mantu',
@@ -141,7 +148,8 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       id: 'orange-business',
       name: 'Orange Business',
       image: await import('@/images/partners/orange-business.png'),
-      website: 'https://www.orange-business.com/'
+      website: 'https://www.orange-business.com/',
+      hidden: true
     },
     {
       id: 'zenika',
@@ -179,7 +187,8 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       id: 'sully-group',
       name: 'Sully Group',
       image: await import('@/images/partners/sully-group.png'),
-      website: 'https://www.sully-group.com/'
+      website: 'https://www.sully-group.com/',
+      hidden: true
     }
   ],
   Velotypie: [
@@ -199,7 +208,8 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       id: 'kanoma',
       name: 'Kanoma',
       image: await import('@/images/partners/kanoma.png'),
-      website: 'https://www.kanoma.fr/'
+      website: 'https://www.kanoma.fr/',
+      hidden: true
     }
   ]
 }

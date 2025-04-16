@@ -9,7 +9,7 @@ import { Grid } from '@mui/system';
 export const PartnersList: MyComponent<{ partnerType: PartnerType }> = async ({
   partnerType,
 }) => {
-  const partners = partnersByTypes[partnerType];
+  const partners = partnersByTypes[partnerType].filter(p => !p.hidden);
 
   const sizes: Record<PartnerType, { width: number; height: number }> = {
     Platinium: { height: 175, width: 300 },
