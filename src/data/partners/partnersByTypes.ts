@@ -27,14 +27,12 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       name: 'Apside',
       image: await import('@/images/partners/apside.png'),
       website: 'https://www.apside.com/',
-      hidden: true
     },
     {
       id: 'u-tech',
       name: 'U-Tech',
       image: await import('@/images/partners/u-tech.png'),
       website: 'https://www.magasins-u.com/',
-      hidden: true
     },
     {
       id: 'sopra-steria',
@@ -53,7 +51,6 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       name: 'Bouygues Telecom',
       image: await import('@/images/partners/bouygues-telecom.png'),
       website: 'https://www.bouyguestelecom.fr/',
-      hidden: true
     },
     {
       id: 'thales',
@@ -100,7 +97,6 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       name: 'Daveo',
       image: await import('@/images/partners/daveo.png'),
       website: 'https://www.daveo.fr/',
-      hidden: true
     },
     {
       id: 'mantu',
@@ -209,7 +205,6 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       name: 'Kanoma',
       image: await import('@/images/partners/kanoma.png'),
       website: 'https://www.kanoma.fr/',
-      hidden: true
     }
   ]
 }
