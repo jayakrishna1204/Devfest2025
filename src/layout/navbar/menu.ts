@@ -33,10 +33,10 @@ export const MENU: Array<MenuItem> = [
   //   label: "jobs",
   //   link: "https://nantes.francedigitaljobs.fr/search-list-jobs?id=&titre=&city=&categorie=&niveau=&type=&teletravail=",
   // },
-  // {
-  //   label: "Tickets",
-  //   link: "https://www.billetweb.fr/billet-devfest-nantes-2024",
-  // },
+  {
+    label: "Tickets",
+    link: "https://www.billetweb.fr/billet-devfest-nantes-2025",
+  },
   {
     label: "📣 CFP",
     link: "https://conference-hall.io/devfest-nantes-2025",

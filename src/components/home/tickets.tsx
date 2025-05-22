@@ -7,8 +7,8 @@ import { getTranslation } from '@/i18n/i18n';
 
 export const Tickets: MyComponent = async ({ params }) => {
   const t = await getTranslation(params, 'pages.home.tickets');
-  const disabled1st = true;
-  const disabled2nd = false;
+  const disabled1st = false;
+  const disabled2nd = true;
 
   return (
     <Grid
@@ -24,21 +24,21 @@ export const Tickets: MyComponent = async ({ params }) => {
         price={110}
         quantity={1200}
         disabled={disabled1st}
-        date='06/06/2024 11h'
+        date='05/06/2024 11h'
       />
       <Ticket
         label={t('2days-2nd')}
         price={110}
         quantity={900}
         disabled={disabled2nd}
-        date='05/09/2024 23h55'
+        date='???'
       />
       <Ticket
         label={t('1day')}
         price={70}
         quantity={500}
         disabled={disabled2nd}
-        date='05/09/2024 23h55'
+        date='???'
       />
     </Grid>
   );
@@ -68,7 +68,7 @@ const Ticket: React.FC<{
           <div className='ticket-wrapper'>
             <div className='ticket-body'>
               <div className='price'>
-                <Typography variant='h2'>
+                <Typography variant='h2' className='no-leaf'>
                   {price} € <span style={{ fontSize: '8px' }}>HT</span>
                 </Typography>
                 <hr />
