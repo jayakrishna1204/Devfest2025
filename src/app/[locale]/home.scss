@@ -18,134 +18,106 @@
     }
   }
 }
-.tickets {
-  .ticket {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
 
-    background-color: #c6353b;
-    background-image: url('/images/jumbo-blood.svg');
-    background-repeat: no-repeat;
-    background-blend-mode: difference;
-    height: 300px;
-    width: 200px;
-    max-width: 200px;
-    color: var(--primary-dark);
-    clip-path: polygon(
-      20px 0,
-      0 20px,
-      0 calc(100% - 20px),
-      20px 100%,
-      calc(100% - 20px) 100%,
-      100% calc(100% - 20px),
-      100% 20px,
-      calc(100% - 20px) 0
-    );
-    border-width: 2px;
-    border-style: dashed none;
-    border-color: var(--primary);
-    border-spacing: 2px;
-    cursor: pointer;
+.ticket-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
 
-    &::before,
-    &::after,
-    .ticket-wrapper::before,
-    .ticket-wrapper::after {
-      content: "";
-      background-color: var(--primary-dark);
-      justify-content: center;
-      display: flex;
-      align-items: center;
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: auto;
-      width: 60px;
-      height: 60px;
-      border-radius: 0 0 18px 0;
-      z-index: 2;
+.ticket {
+  width: 300px;
+  padding: 1.5rem;
+  border-top: 2px dashed #d9b08c;
+  border-bottom: 2px dashed #d9b08c;
+  background: #fffaf4;
+  text-align: center;
+  transition: 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  clip-path: polygon(
+    20px 0,
+    0 20px,
+    0 calc(50% - 20px),
+    20px 50%,
+    0 calc(50% + 20px),
+    0 calc(100% - 20px),
+    20px 100%,
+    calc(100% - 20px) 100%,
+    100% calc(100% - 20px),
+    100% calc(50% + 20px),
+    calc(100% - 20px) 50%,
+    100% calc(50% - 20px),
+    100% 20px,
+    calc(100% - 20px) 0
+  );
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:hover::before {
+    z-index: -1;
+    background: linear-gradient(120deg, #fffaf4 30%, #efdecf 50%, #fffaf4 70%);
+    background-size: 300% 300%;
+    background-position: 130% 0;
+    animation: shine-border 1s linear normal;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    filter: grayscale(100%);
+    cursor: not-allowed;
+    pointer-events: none;
+    border-style: dotted;
+  }
+
+  .ticket-header {
+    font-family: var(--font-cinzel);
+    font-size: 1.6rem;
+    color: #b35f8d;
+    margin-bottom: 1rem;
+    transition: text-shadow 0.3s;
+  }
+
+  .ticket-price {
+    font-size: 1.5rem;
+    color: #aa5a5a;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+
+    .ht {
+      font-size: 0.7rem;
+      vertical-align: super;
     }
-    .ticket-wrapper::before,
-    .ticket-wrapper::after {
-      width: 72px;
-      height: 66px;
-      z-index: 1;
-      background-color: var(--primary);
-    }
+  }
 
-    &::before,
-    .ticket-wrapper::before {
-      top: 0;
-    }
-
-    &::after,
-    .ticket-wrapper::after {
-      bottom: 0;
-      transform: rotate(180deg);
-    }
-
-    &::before {
-      background-color: var(--primary-dark);
-      background-image: url("/images/devfest-color-icon.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 75%;
-    }
-    &::after {
-      opacity: 0.3;
-    }
-
-    &.disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
-
-    .ticket-wrapper {
-      padding: 75px 10px;
-      height: 100%;
-
-      .ticket-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: center;
-        align-items: center;
-        height: 100%;
-
-        .price {
-          display: flex;
-          flex-direction: column;
-          justify-content: start;
-          text-align: center;
-          align-items: center;
-
-          hr {
-            border-bottom-width: 2px;
-            border-radius: 2px;
-            border-color: var(--secondary);
-            width: 66px;
-          }
-
-          h2 {
-            color: var(--primary-dark);
-            margin: 10px 0 5px 0;
-          }
-        }
-        .description {
-          p {
-            margin: 5px 0;
-          }
-
-          .quantity {
-            opacity: 0.75;
-            font-size: 80%;
-          }
-        }
-      }
+  .ticket-info {
+    p {
+      font-size: 0.9rem;
+      color: var(--mui-palette-primary-dark);
+      margin: 0.2rem 0;
     }
   }
 }
+
+@keyframes shine-border {
+  0% {
+    background-position: 130% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
+
+

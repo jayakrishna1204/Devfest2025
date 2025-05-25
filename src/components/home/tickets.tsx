@@ -64,20 +64,13 @@ const Ticket: React.FC<{
         href='https://www.billetweb.fr/billet-devfest-nantes-2025'
         style={{ cursor: 'default' }}
       >
-        <div className={classNames('ticket', disabled && 'disabled')}>
-          <div className='ticket-wrapper'>
-            <div className='ticket-body'>
-              <div className='price'>
-                <Typography variant='h2' className='no-leaf'>
-                  {price} € <span style={{ fontSize: '8px' }}>HT</span>
-                </Typography>
-                <hr />
-              </div>
-              <div className='description'>
-                <p className='label'>{label}</p>
-                <p className='quantity'>{quantity} places</p>
-                <p className='date'>{date}</p>
-              </div>
+        <div className="ticket-wrapper">
+          <div className={"ticket " + (disabled ? "disabled" : "active")}>
+            <div className="ticket-header">✨ {label} ✨</div>
+            <div className="ticket-price">{price} € <span className="ht">HT</span></div>
+            <div className="ticket-info">
+              <p>{quantity} places</p>
+              <p>{date}</p>
             </div>
           </div>
         </div>
