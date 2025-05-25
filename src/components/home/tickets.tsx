@@ -1,5 +1,4 @@
-import { Grid2 as Grid, Typography } from '@mui/material';
-import classNames from 'classnames';
+import { Grid2 as Grid } from '@mui/material';
 import React from 'react';
 import { MyLink } from '@/components/commun/link';
 import { MyComponent } from '@/types';
