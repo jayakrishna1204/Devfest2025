@@ -7,8 +7,8 @@ import { getTranslation } from '@/i18n/i18n';
 
 export const Tickets: MyComponent = async ({ params }) => {
   const t = await getTranslation(params, 'pages.home.tickets');
-  const disabled1st = true;
-  const disabled2nd = false;
+  const disabled1st = false;
+  const disabled2nd = true;
 
   return (
     <Grid
@@ -24,21 +24,21 @@ export const Tickets: MyComponent = async ({ params }) => {
         price={110}
         quantity={1200}
         disabled={disabled1st}
-        date='06/06/2024 11h'
+        date='05/06/2024 11h'
       />
       <Ticket
         label={t('2days-2nd')}
         price={110}
         quantity={900}
         disabled={disabled2nd}
-        date='05/09/2024 23h55'
+        date='???'
       />
       <Ticket
         label={t('1day')}
         price={70}
         quantity={500}
         disabled={disabled2nd}
-        date='05/09/2024 23h55'
+        date='???'
       />
     </Grid>
   );
@@ -64,20 +64,13 @@ const Ticket: React.FC<{
         href='https://www.billetweb.fr/billet-devfest-nantes-2025'
         style={{ cursor: 'default' }}
       >
-        <div className={classNames('ticket', disabled && 'disabled')}>
-          <div className='ticket-wrapper'>
-            <div className='ticket-body'>
-              <div className='price'>
-                <Typography variant='h2'>
-                  {price} € <span style={{ fontSize: '8px' }}>HT</span>
-                </Typography>
-                <hr />
-              </div>
-              <div className='description'>
-                <p className='label'>{label}</p>
-                <p className='quantity'>{quantity} places</p>
-                <p className='date'>{date}</p>
-              </div>
+        <div className="ticket-wrapper">
+          <div className={"ticket " + (disabled ? "disabled" : "active")}>
+            <div className="ticket-header">✨ {label} ✨</div>
+            <div className="ticket-price">{price} € <span className="ht">HT</span></div>
+            <div className="ticket-info">
+              <p>{quantity} places</p>
+              <p>{date}</p>
             </div>
           </div>
         </div>

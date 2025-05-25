@@ -1,4 +1,4 @@
-import { DevfestNumbers, HomeJumbo } from '@/components/home';
+import { DevfestNumbers, HomeJumbo, Tickets } from '@/components/home';
 import { CommonParams } from '@/types';
 import '@/components/home/home.scss';
 import { Container, Typography } from '@mui/material';
@@ -16,6 +16,7 @@ import { MyLink } from '@/components/commun/link';
 import { AccessibilityNew } from '@mui/icons-material';
 import React from 'react';
 import './home.scss';
+import { PartnersList } from '@/components/partners/partners';
 
 export default async function Home({ params }: CommonParams) {
   const t = await getTranslation(params);
@@ -34,10 +35,19 @@ export default async function Home({ params }: CommonParams) {
             alt={'Poster'}
           />
         </Section>
+        
         <OurValuesLink params={params} />
         <Youtube id='MDrrn0du1-s' title='After Movie 2024' />
       </PrimarySection>
       <HomeMap params={params} />
+      <PrimarySection fullWidth>
+        <Typography variant='h2'>{t('pages.home.tickets.name')}</Typography>
+        <Tickets params={params} />
+      </PrimarySection>
+      <PrimarySection fullWidth>
+        <Typography variant='h2'>{t('pages.partners.platinium-partners')}</Typography>
+        <PartnersList params={params} partnerType='Platinium'/>
+      </PrimarySection>
       <Section fullWidth>
         <DevfestPhotos params={params} />
       </Section>
