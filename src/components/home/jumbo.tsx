@@ -64,13 +64,22 @@ export const HomeJumbo: MyComponent = async ({ params }) => {
               </Button>
             </Stack>
             <Stack direction='row' spacing={3} justifyContent={'center'}>
-              <Button
+              {/* <Button
                 color='secondary'
                 variant='contained'
                 href='https://devfest2024.gdgnantes.com'
                 aria-label={t('previous')}
               >
                 {t('previous')}
+              </Button> */}
+              <Button
+                color='secondary'
+                variant='contained'
+                href='https://www.billetweb.fr/billet-devfest-nantes-2025'
+                aria-label={t('buy-tickets')}
+                target='_blank'
+              >
+                {t('buy-tickets')}
               </Button>
             </Stack>
             {/*<Stack direction="row" spacing={3} justifyContent={"center"}>*/}
