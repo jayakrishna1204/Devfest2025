@@ -45,6 +45,10 @@ export default async function Home({ params }: CommonParams) {
         <Tickets params={params} />
       </PrimarySection>
       <PrimarySection fullWidth>
+        <Typography variant='h2'>{t('pages.partners.pxl')}</Typography>
+        <PartnersList params={params} partnerType='PXL'/>
+      </PrimarySection>
+      <PrimarySection fullWidth>
         <Typography variant='h2'>{t('pages.partners.platinium-partners')}</Typography>
         <PartnersList params={params} partnerType='Platinium'/>
       </PrimarySection>

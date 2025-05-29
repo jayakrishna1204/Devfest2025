@@ -6,9 +6,17 @@ export type Partner = {
   hidden?: boolean;
 }
 
-export type PartnerType = 'Platinium' | 'Gold' | 'Virtual' | 'Velotypie';
+export type PartnerType =  'PXL' | 'Platinium' | 'Gold' | 'Virtual' | 'Velotypie';
 
 export const partnersByTypes: Record<PartnerType, Partner[]> = {
+  PXL: [
+    {
+      id: 'dataiku',
+      name: 'Dataiku',
+      image: await import('@/images/partners/dataiku.png'),
+      website: 'https://www.dataiku.com/',
+    }
+  ],
   Platinium: [
     {
       id: 'proginov',
@@ -64,13 +72,6 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       name: 'Generali',
       image: await import('@/images/partners/generali.png'),
       website: 'https://www.generali.fr/'
-    },
-    {
-      id: 'dataiku',
-      name: 'Dataiku',
-      image: await import('@/images/partners/dataiku.png'),
-      website: 'https://www.dataiku.com/',
-      hidden: true
     }
   ],
   Gold: [
@@ -176,6 +177,13 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       name: 'Catamania',
       image: await import('@/images/partners/catamania.png'),
       website: 'https://www.catamania.com/'
+    },
+    {
+      id: 'amiad',
+      name: 'Amiad',
+      image: await import('@/images/partners/amiad.jpg'),
+      website: 'https://www.amiad.com/',
+      hidden: true
     }
   ],
   Virtual: [
@@ -184,7 +192,12 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       name: 'Sully Group',
       image: await import('@/images/partners/sully-group.png'),
       website: 'https://www.sully-group.com/',
-      hidden: true
+    },
+    {
+      id: 'lbc',
+      name: 'Le Bon Coin',
+      image: await import('@/images/partners/lbc.png'),
+      website: 'https://www.leboncoin.fr/',
     }
   ],
   Velotypie: [
