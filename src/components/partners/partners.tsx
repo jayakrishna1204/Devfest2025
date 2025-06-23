@@ -1,5 +1,5 @@
 import { MyComponent } from '@/types';
-import { Partner, partnersByTypes, PartnerType } from '@/data/partners/partnersByTypes';
+import { partnersByTypes, PartnerType } from '@/data/partners/partnersByTypes';
 import React from 'react';
 import { MyLink } from '@/components/commun/link';
 import Image from 'next/image';
