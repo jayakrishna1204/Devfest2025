@@ -1,15 +1,16 @@
 import { MyComponent } from '@/types';
-import { partnersByTypes, PartnerType } from '@/data/partners/partnersByTypes';
+import { Partner, partnersByTypes, PartnerType } from '@/data/partners/partnersByTypes';
 import React from 'react';
 import { MyLink } from '@/components/commun/link';
 import Image from 'next/image';
 import './partners.scss';
 import { Grid } from '@mui/system';
+import { shuffleArray } from '@/helpers/array';
 
 export const PartnersList: MyComponent<{ partnerType: PartnerType }> = async ({
   partnerType,
 }) => {
-  const partners = partnersByTypes[partnerType].filter(p => !p.hidden);
+  const partners = shuffleArray(partnersByTypes[partnerType].filter(p => !p.hidden));
 
   const sizes: Record<PartnerType, { width: number; height: number }> = {
     PXL: { height: 300, width: 515 },
@@ -53,3 +54,4 @@ export const PartnersList: MyComponent<{ partnerType: PartnerType }> = async ({
     </Grid>
   );
 };
+

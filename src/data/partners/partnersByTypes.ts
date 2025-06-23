@@ -64,14 +64,19 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       id: 'thales',
       name: 'Thales',
       image: await import('@/images/partners/thales.png'),
-      website: 'https://www.thalesgroup.com/',
-      hidden: true
+      website: 'https://www.thalesgroup.com/'
     },
     {
       id: 'generali',
       name: 'Generali',
       image: await import('@/images/partners/generali.png'),
       website: 'https://www.generali.fr/'
+    },
+    {
+      id: 'aws',
+      name: 'AWS',
+      image: await import('@/images/partners/aws.png'),
+      website: 'https://aws.amazon.com/fr/',
     }
   ],
   Gold: [
@@ -145,8 +150,7 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       id: 'orange-business',
       name: 'Orange Business',
       image: await import('@/images/partners/orange-business.png'),
-      website: 'https://www.orange-business.com/',
-      hidden: true
+      website: 'https://www.orange-business.com/'
     },
     {
       id: 'zenika',
