@@ -1,0 +1,15 @@
+---
+key: marjorie_aubert
+name: Marjorie Aubert
+company: Comet
+companyLogo: /images/partners/comet.png
+city: Paris, France
+photoUrl: marjorie_aubert.png
+socials:
+  twitter: Tagada2022
+  github: "@Tagada26"
+bio: |-
+  Bonjour à toutes et à tous,
+  Je m’appelle Marjorie, développeuse full-stack chez Comet.
+  Coder à plusieurs est mon quotidien et je co-anime également des katas en mob programming ou software teaming avec le meetup [Mob Programming FR](https://www.meetup.com/paris-mob-programming/)
+  Très heureuse de pouvoir vous rencontrer, et de partager ensemble au DevFest ☀️

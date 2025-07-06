@@ -5,10 +5,10 @@ export const MENU: Array<MenuItem> = [
     label: 'home',
     link: '/',
   },
-  // {
-  //   label: "schedule",
-  //   link: "/schedule",
-  // },
+  {
+    label: "schedule",
+    link: "/schedule",
+  },
   // {
   //   label: "speakers",
   //   link: "/speakers",

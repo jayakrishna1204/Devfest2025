@@ -1,0 +1,13 @@
+---
+key: gerome_grignon
+name: Gérôme Grignon
+company: Lucca
+companyLogo: /images/partners/lucca.png
+city: Nantes, France
+photoUrl: gerome_grignon.png
+socials:
+  twitter: GeromeGrignon
+  github: geromegrignon
+bio: |-
+  Web Developer chez Lucca le jour, mainteneur open-source la nuit.
+  Co-fondateur communauté Angular Devs France

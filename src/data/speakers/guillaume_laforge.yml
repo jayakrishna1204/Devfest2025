@@ -1,0 +1,11 @@
+---
+key: guillaume_laforge
+name: Guillaume Laforge
+company: Google
+companyLogo: /images/partners/google.png
+city: Paris, France
+photoUrl: guillaume_laforge.jpg
+socials:
+  twitter: glaforge
+  github: glaforge
+bio: During the day, **Guillaume Laforge** is **Developer Advocate** for **Google Cloud**, covering a wide range of topics from generative AI, machine learning APIs, serverless development, or service orchestration. At night, Guillaume wears his **Apache Groovy** hat, or you can hear him make jokes on the French podcast **Les Cast Codeurs** !

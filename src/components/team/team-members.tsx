@@ -4,7 +4,7 @@ import { teamMembers } from '@/data/team/team';
 import { Box, Grid2 as Grid, List, Typography } from '@mui/material';
 import '../commun/avatar/avatar.scss';
 import React from 'react';
-import { Avatar } from '@/components/commun/avatar/avatar';
+import { MyAvatar } from '@/components/commun/avatar/avatar';
 import './team-member.scss';
 
 export const TeamMembers: React.FC = async () => {
@@ -26,7 +26,7 @@ export const TeamMembers: React.FC = async () => {
           }}
         >
           <Box className='team-member'>
-            <Avatar
+            <MyAvatar
               src={member.image.default.src}
               alt={`${member.firstName}'s picture`}
               width={100}

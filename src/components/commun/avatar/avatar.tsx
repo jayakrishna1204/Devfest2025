@@ -2,7 +2,7 @@
 import React from 'react';
 import Image, { ImageProps } from 'next/image';
 
-export const Avatar: React.FC<ImageProps> = (props) => {
+export const MyAvatar: React.FC<ImageProps> = (props) => {
   return (
     <div className="avatar-picture-container">
       <Image

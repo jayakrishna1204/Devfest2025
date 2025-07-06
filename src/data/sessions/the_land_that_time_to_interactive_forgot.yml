@@ -1,0 +1,20 @@
+---
+key: the_land_that_time_to_interactive_forgot
+openfeedbackId: thelandthattimetointeractiveforgot
+title: Balancing tight security with fluid devex, powered by GKE
+language: English
+talkType: conference
+tags:
+  - cloud_devops
+complexity: Intermediate
+cancelled: false
+speakers:
+  - natalie_godec
+slot: day-1-conference-1
+room: Jules Verne
+abstract: |-
+  The most secure server is one that is disconnected from the Internet and unplugged. And the most convenient environment for devs is where they have admin access to production and the freedom do what they want. How do you marry the two?
+  
+  Let's look at a real-world scenario where we built a cloud-native fintech platform on GKE. The vision? A robust, flexible, and secure foundation that supports SOC2-compliant deployments and empowers developers to be as productive as possible, contrary to the typical for the financial sector blown-out processes and approval chases.
+  
+  This solution is powered by Google Kubernetes Engine (GKE) and the cloud's niftiest security tools from the Secure Supply Chain toolkit.
