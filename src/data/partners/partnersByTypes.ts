@@ -105,10 +105,10 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       website: 'https://www.daveo.fr/',
     },
     {
-      id: 'mantu',
+      id: 'amaris',
       name: 'Amaris Consulting - Mantu',
-      image: await import('@/images/partners/mantu.png'),
-      website: 'https://www.mantu.com/'
+      image: await import('@/images/partners/amaris.png'),
+      website: 'https://amaris.com/'
     },
     {
       id: 'accenture',

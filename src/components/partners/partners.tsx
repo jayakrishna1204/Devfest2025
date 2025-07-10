@@ -13,7 +13,7 @@ export const PartnersList: MyComponent<{ partnerType: PartnerType }> = async ({
   const partners = shuffleArray(partnersByTypes[partnerType].filter(p => !p.hidden));
 
   const sizes: Record<PartnerType, { width: number; height: number }> = {
-    PXL: { height: 300, width: 515 },
+    PXL: { height: 275, width: 475 },
     Platinium: { height: 175, width: 300 },
     Gold: { height: 140, width: 200 },
     Virtual: { height: 140, width: 200 },
