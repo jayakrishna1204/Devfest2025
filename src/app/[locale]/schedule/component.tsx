@@ -4,7 +4,7 @@ import { LargeSchedule } from '@/app/[locale]/schedule/large';
 import { slots } from '@/data/schedule/slots.json'
 import './schedule.scss'
 import fs from 'fs';
-import { Session, SessionWithoutResolvedSlot } from '@/data/schedule/session';
+import { SessionWithoutResolvedSlot } from '@/data/schedule/session';
 import yaml from 'js-yaml';
 import { Slot } from '@/data/schedule/slots';
 import { PartialSession } from './common';
@@ -27,13 +27,11 @@ export default async function Schedule({ params, day }: CommonParams & { day: 1 
   const fixedSlots: Slot[] = allHoursSlots.filter((s) =>
     ["opening", "lunch", "break", "keynote", "party"].includes(s.type)
   );
-
   
   const files = fs.readdirSync('src/data/sessions');
   const sessionsYamls = files.map(f => fs.readFileSync('src/data/sessions/' + f, 'utf8'));
   const sessionsWithoutResolvedSlot = sessionsYamls.map(yamlContent => yaml.load(yamlContent) as SessionWithoutResolvedSlot);
 
-  
   const sessions: PartialSession[] = sessionsWithoutResolvedSlot
     .filter((s) => s.slot.startsWith("day-" + day))
     .map((s) => {

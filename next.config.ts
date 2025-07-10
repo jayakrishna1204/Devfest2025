@@ -5,15 +5,21 @@ const nextConfig: NextConfig = {
   // output: 'export',
   output: process.env.NODE_ENV === 'development' ? undefined : 'standalone',
   pageExtensions: ['md', 'mdx', 'ts', 'tsx'],
-  webpack: (config) => {
-    // Add YAML loader
-    config.module.rules.push({
-      test: /\.ya?ml$/,
-      use: 'js-yaml-loader',
-    });
-    
-    return config;
+  turbopack: { 
+    rules: {
+      '*.yml': {
+        loaders: ['yaml-loader'],
+        as: 'ts'
+      }
+    }
   },
+  webpack: (config) => {
+    config.module?.rules.push({
+      test: /\.ya?ml$/,
+      use: 'yaml-loader'
+    });
+    return config;
+  }
 };
 
 const withMDX = createMDX({

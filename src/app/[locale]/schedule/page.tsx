@@ -7,10 +7,10 @@ import { getTranslation } from '@/i18n/i18n';
 import Schedule from './component';
 import { PrimarySection } from '@/components/commun/section/sectionType';
 
-export default async function SchedulePage({ params }: CommonParams) {
-  const day: 1 | 2 = 1;
+export default async function SchedulePage({ params, day }: CommonParams & { day?: 1 | 2 }) {
+  const t = await getTranslation(params, 'pages.schedule');
 
-  const t = await getTranslation(params);
+  day = day || 1;
 
   return (
     <>
@@ -19,6 +19,7 @@ export default async function SchedulePage({ params }: CommonParams) {
         direction="row"
         spacing="20px"
         width="100%"
+        marginTop={"20px"}
         justifyContent="center"
     >
         <MyLink href="/schedule/1">
@@ -41,7 +42,7 @@ export default async function SchedulePage({ params }: CommonParams) {
             className={classNames(
                 "button-schedule",
                 "day2",
-                // day == 2 && "current"
+                day == 2 && "current"
             )}
             >
             {t("day2-number")}

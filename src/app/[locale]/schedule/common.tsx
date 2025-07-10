@@ -9,7 +9,7 @@ import {
   Security,
   SmartToy
 } from "@mui/icons-material";
-import { Avatar, Chip, Tooltip } from "@mui/material";
+import { Chip } from "@mui/material";
 import React, { JSX } from 'react';
 import "./schedule.scss";
 import { Session } from '@/data/schedule/session';
@@ -19,7 +19,7 @@ import { RoomName } from '@/data/schedule/schedule';
 import { MyLink } from '@/components/commun/link';
 import fs from 'fs';
 import yaml from 'js-yaml';
-import { MyAvatar } from "@/components/commun/avatar/avatar";
+import { AvatarSpeaker } from "@/components/speaker/avatar";
 
 export type PartialSession = Omit<Session, "abstract"> & { slot: Slot };
 export type PartialSpeaker = Pick<Speaker, "key" | "name" | "photoUrl">;
@@ -140,27 +140,3 @@ export const Speakers: React.FC<{ speakers: string[] }> = ({ speakers }) => {
   );
 };
 
-export const AvatarSpeaker: React.FC<{
-  speaker: PartialSpeaker;
-  size?: "small" | "medium" | "large";
-  noLink?: boolean
-}> = async ({ speaker, size = "small", noLink }) => {
-  const sizePx = size == "large" ? 150 : size == "medium" ? 50 : 24;
-  const Wrapper = noLink
-    ? React.Fragment
-    : ({ children }: { children: React.ReactNode }) => <MyLink href={"/speakers/" + speaker.key}>{children}</MyLink>;
-
-  const image = await import(`@/images/speakers/${speaker.photoUrl}`)
-  return (
-    <Wrapper>
-      <Tooltip title={speaker.name} className="avatar-picture-container">
-        <MyAvatar
-          alt={speaker.name}
-          src={image.default.src}
-          width={sizePx}
-          height={sizePx}
-        />
-      </Tooltip>
-    </Wrapper>
-  );
-};
