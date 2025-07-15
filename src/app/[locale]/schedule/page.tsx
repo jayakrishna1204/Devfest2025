@@ -7,7 +7,14 @@ import { getTranslation } from '@/i18n/i18n';
 import Schedule from './component';
 import { PrimarySection } from '@/components/commun/section/sectionType';
 
-export default async function SchedulePage({ params, day }: CommonParams & { day?: 1 | 2 }) {
+export async function generateMetadata({ params }: CommonParams) {
+  const t = await getTranslation(params);
+  return {
+    title: t('pages.schedule.name'),
+  };
+}
+
+export default async function SchedulePage({ params, day }: CommonParams<{ day?: 1 | 2 }>) {
   const t = await getTranslation(params, 'pages.schedule');
 
   day = day || 1;

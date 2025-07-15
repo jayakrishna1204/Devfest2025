@@ -22,9 +22,9 @@ export async function generateStaticParams() {
   const locales = ['fr', 'en']
 
   return locales.flatMap(locale =>
-    speakers.map(({ slug }) => ({
+    speakers.map((speaker) => ({
       locale,
-      slug
+      slug: speaker.key
     }))
   )
 }
@@ -34,6 +34,7 @@ export default async function SessionPage({ params }: CommonParams<unknown, { sl
 
   const speaker = (await import(`@/data/speakers/${slug}.yml`)).default as Speaker;
   const sessions = await getSessionsBySpeaker(slug);
+
 
   return (
     <>
@@ -112,7 +113,7 @@ const SessionCard: React.FC<{ session: PartialSession }> = ({ session }) => {
           alignItems='center'
           sx={{ minHeight: '60px' }}
         >
-          {session.tags && <Tags tags={session.tags} color='secondary' />}
+          {session.tags && <Tags tags={session.tags} color='info' />}
           <Typography variant='h3' color='inherit' style={{ color: 'white' }}>
             {session.title}
           </Typography>

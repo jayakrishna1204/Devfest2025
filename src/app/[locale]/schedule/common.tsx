@@ -17,9 +17,8 @@ import { Slot } from '@/data/schedule/slots';
 import { Speaker } from '@/data/schedule/speaker';
 import { RoomName } from '@/data/schedule/schedule';
 import { MyLink } from '@/components/commun/link';
-import fs from 'fs';
-import yaml from 'js-yaml';
 import { AvatarSpeaker } from "@/components/speaker/avatar";
+import { getAllSpeakers } from '@/services/speakers';
 
 export type PartialSession = Omit<Session, "abstract"> & { slot: Slot };
 export type PartialSpeaker = Pick<Speaker, "key" | "name" | "photoUrl">;
@@ -77,7 +76,7 @@ const tagLabels: Record<
 };
 export const Tags: React.FC<{
   tags: string[];
-  color?: "primary" | "secondary";
+  color?: "primary" | "secondary" | "info";
 }> = ({ tags, color = "primary" }) => {
   return (
     <div className="tags">
@@ -109,12 +108,9 @@ export const SessionComplexity: React.FC<{
   );
 };
 
-export const Speakers: React.FC<{ speakers: string[] }> = ({ speakers }) => {
-  // TODO: allSpeakers
-  const files = fs.readdirSync('src/data/speakers');
-  const speakersYaml = files.map(f => fs.readFileSync('src/data/speakers/' + f, 'utf8'));
-  const speakersFull = speakersYaml.map(yamlContent => yaml.load(yamlContent) as Speaker).filter(speaker => speakers.includes(speaker.key));
-
+export const Speakers: React.FC<{ speakers: string[] }> = async ({ speakers }) => {
+  const allSpeakers = await getAllSpeakers();
+  const speakersFull = allSpeakers.filter(speaker => speakers.includes(speaker.key));
 
   return (
     <div className="speakers">

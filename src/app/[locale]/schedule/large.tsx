@@ -1,8 +1,6 @@
 import { Stack, Typography } from "@mui/material";
 import classNames from "classnames";
 import React from "react";
-import './schedule.scss'
-
 
 import { PartialSession, Speakers, Tags, rooms } from "./common";
 import "./schedule.scss";
