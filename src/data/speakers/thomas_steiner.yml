@@ -1,7 +1,6 @@
 ---
 key: thomas_steiner
 name: Thomas Steiner
-city: null
-photoUrl: /images/speakers/thomas_steiner.jpg
+photoUrl: thomas_steiner.jpg
 socials: {}
 bio: Thomas Steiner is a Developer Relations Engineer on the Chrome team at Google focused on Web AI and WebAssembly. He blogs on blog.tomayac.com and toots on @tomayac@toot.cafe.

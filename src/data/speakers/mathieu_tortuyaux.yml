@@ -2,9 +2,8 @@
 key: mathieu_tortuyaux
 name: Mathieu Tortuyaux
 company: Microsoft
-companyLogo: /images/partners/microsoft.png
-city: null
-photoUrl: /images/speakers/mathieu_tortuyaux.jpg
+companyLogo: microsoft.png
+photoUrl: mathieu_tortuyaux.jpg
 socials:
   github: tormath1
   twitter: tormath1

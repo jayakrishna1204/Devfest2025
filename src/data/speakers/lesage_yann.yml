@@ -2,8 +2,7 @@
 key: lesage_yann
 name: lesage yann
 company: SFEIR
-companyLogo: /images/partners/sfeir.png
-city: null
-photoUrl: /images/speakers/lesage_yann.jpg
+companyLogo: sfeir.png
+photoUrl: lesage_yann.jpg
 socials: {}
 bio: Après être passé par plusieurs startups, j’entrais chez SFEIR Lille en tant que développeur Fullstack. J’y exerce depuis 2 ans une mission chez Adeo. J'ai aussi pu y faire mes premiers pas en tant que speaker dans des talks internes à SFEIR puis à `Rust Lille` et `front(end & beers) Lille`

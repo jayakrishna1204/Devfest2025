@@ -2,9 +2,8 @@
 key: guillaume_laforge
 name: Guillaume Laforge
 company: Google
-companyLogo: /images/partners/google.png
-city: Paris, France
-photoUrl: /images/speakers/guillaume_laforge.jpg
+companyLogo: google.png
+photoUrl: guillaume_laforge.jpg
 socials:
   github: glaforge
   twitter: glaforge

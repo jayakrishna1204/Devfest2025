@@ -2,9 +2,8 @@
 key: vincent_ogloblinsky
 name: Vincent Ogloblinsky
 company: 'Orange '
-companyLogo: /images/partners/orange_.png
-city: Rennes, France
-photoUrl: /images/speakers/vincent_ogloblinsky.jpg
+companyLogo: orange_.png
+photoUrl: vincent_ogloblinsky.jpg
 socials:
   github: vogloblinsky
   twitter: vogloblinsky

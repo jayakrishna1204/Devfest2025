@@ -2,14 +2,14 @@
 key: proteger_mes_poissons_avec_gemini
 title: Protéger mes poissons avec Gemini
 language: French
-talkType: quickie
+talkType: conference
 tags:
   - bigdata_ai
 complexity: Beginner
 speakers:
   - guillaume_vernade
-slot: day-x-quickie-x
-room: undefined
+slot: day-1-conference-1
+room: Jules Verne
 abstract: |-
   Can an LLM help solve a real-world mystery? 
   In this talk, I'll share my experiment using Gemini to investigate the deaths of my pond's fish. You'll learn how Gemini can analyze video for threats and automate responses, without any pre-training or complex set-up. In a couple of minutes and with a few lines of codes I'll show you how to analyze dozens of videos and get smart responses out of them.

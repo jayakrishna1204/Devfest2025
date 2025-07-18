@@ -9,8 +9,8 @@ complexity: Intermediate
 speakers:
   - cedric_chariere_fiedler
   - clement_gregoire
-slot: day-x-conference-x
-room: undefined
+slot: day-2-conference-5
+room: Titan
 abstract: |-
   Faire tourner une UI Web fluide et responsive, c’est un défi… surtout quand votre navigateur est **embarqué dans un moteur de jeu temps réel**, que vous visez 30 **FPS sur Xbox Series S**, et que votre stack technique commence à prendre de l’âge.
 

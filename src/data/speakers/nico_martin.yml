@@ -2,9 +2,8 @@
 key: nico_martin
 name: Nico Martin
 company: Aity AG
-companyLogo: /images/partners/aity_ag.png
-city: Thun, Switzerland
-photoUrl: /images/speakers/nico_martin.jpg
+companyLogo: aity_ag.png
+photoUrl: nico_martin.jpg
 socials:
   github: nico-martin
   twitter: nic_o_martin

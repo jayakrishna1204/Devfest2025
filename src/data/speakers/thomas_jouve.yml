@@ -2,9 +2,8 @@
 key: thomas_jouve
 name: Thomas Jouve
 company: Sopra Steria
-companyLogo: /images/partners/sopra_steria.png
-city: Clermont-Ferrand, France
-photoUrl: /images/speakers/thomas_jouve.jpg
+companyLogo: sopra_steria.png
+photoUrl: thomas_jouve.jpg
 socials:
   github: tJouve
 bio: |-

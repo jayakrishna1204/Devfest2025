@@ -2,9 +2,8 @@
 key: stephane_philippart
 name: Stéphane Philippart
 company: OVHcloud
-companyLogo: /images/partners/ovhcloud.png
-city: Tours
-photoUrl: /images/speakers/stephane_philippart.jpg
+companyLogo: ovhcloud.png
+photoUrl: stephane_philippart.jpg
 socials:
   github: philippart-s
   twitter: wildagsx

@@ -2,9 +2,8 @@
 key: jeremy_chauvin
 name: Jérémy CHAUVIN
 company: Shodo Lyon
-companyLogo: /images/partners/shodo_lyon.png
-city: Lyon
-photoUrl: /images/speakers/jeremy_chauvin.jpg
+companyLogo: shodo_lyon.png
+photoUrl: jeremy_chauvin.jpg
 socials: {}
 bio: |-
   Développeur un peu touche à tout, je possède une certaine appétence pour le front et les interfaces élégantes et intuitives, même si un bon backend fait toujours plaisir.

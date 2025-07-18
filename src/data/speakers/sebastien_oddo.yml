@@ -2,9 +2,8 @@
 key: sebastien_oddo
 name: Sébastien Oddo
 company: IPPON Technologies
-companyLogo: /images/partners/ippon_technologies.png
-city: Bordeaux, France
-photoUrl: /images/speakers/sebastien_oddo.jpg
+companyLogo: ippon_technologies.png
+photoUrl: sebastien_oddo.jpg
 socials:
   github: Sebi11
   linkedin: https://www.linkedin.com/in/s%C3%A9bastien-oddo/

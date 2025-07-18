@@ -2,9 +2,8 @@
 key: kevin_davin
 name: Kevin Davin
 company: Gradle
-companyLogo: /images/partners/gradle.png
-city: Plaisance-du-Touch, France
-photoUrl: /images/speakers/kevin_davin.jpeg
+companyLogo: gradle.png
+photoUrl: kevin_davin.jpeg
 socials:
   github: davinkevin
   twitter: davinkevin

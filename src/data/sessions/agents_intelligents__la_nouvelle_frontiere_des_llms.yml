@@ -8,8 +8,8 @@ tags:
 complexity: Intermediate
 speakers:
   - guillaume_laforge
-slot: day-x-conference-x
-room: undefined
+slot: day-2-conference-4
+room: Jules Verne
 abstract: |-
   Vous connaissez les **Large Language Models** sur le bout des doigts ? Vous maîtrisez le **Retrieval Augmented Generation** pour aider un LLM à chercher dans vos documents ? Il est temps de plonger dans le monde merveilleux des **agents intelligents** ! 
 

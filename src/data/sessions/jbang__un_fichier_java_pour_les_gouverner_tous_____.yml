@@ -8,8 +8,8 @@ tags:
 complexity: Beginner
 speakers:
   - stephane_philippart
-slot: day-x-quickie-x
-room: undefined
+slot: day-2-quickie-1
+room: Belem
 abstract: |-
   Dans le monde Java, nous sommes habitués à initialiser un projet avec de nombreux fichiers et répertoires. A tel point que des CLI ont vu le jour pour nous aider à créer les projets SpringBoot ou Quarkus par exemple. Vient ensuite le choix du "package manager" : Maven ou Gradle ? Et c'est seulement à partir de là que l'on peut commencer à développer puis exécuter son code 😅.
 

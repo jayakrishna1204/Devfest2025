@@ -2,8 +2,8 @@
 key: maud_nalpas
 name: Maud Nalpas
 company: Google (Chrome)
-companyLogo: /images/partners/google__chrome_.png
-city: Paris
+companyLogo: google__chrome_.png
+photoUrl: undefined.png
 socials: {}
 bio: |-
   Maud is a Developer Relations Engineer at Google Chrome. 

@@ -2,9 +2,8 @@
 key: julien_huang
 name: Julien Huang
 company: Leetchi
-companyLogo: /images/partners/leetchi.png
-city: Asnière-sur-seine, France
-photoUrl: /images/speakers/julien_huang.jpg
+companyLogo: leetchi.png
+photoUrl: julien_huang.jpg
 socials:
   github: huang-julien
   twitter: JulienHuang_dev

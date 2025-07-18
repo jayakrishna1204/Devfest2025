@@ -8,8 +8,8 @@ tags:
 complexity: Beginner
 speakers:
   - esteban_s
-slot: day-x-quickie-x
-room: undefined
+slot: day-2-quickie-2
+room: Titan
 abstract: |-
   Le petit module is-number totalise chaque semaine plus de 70 millions de téléchargements, tandis que des géants comme react plafonnent à seulement 25 millions. Surprenant, non ?
 

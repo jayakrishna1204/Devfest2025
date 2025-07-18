@@ -2,9 +2,8 @@
 key: sasha_denisov
 name: Sasha Denisov
 company: EPAM Systems
-companyLogo: /images/partners/epam_systems.png
-city: Berlin, Germany
-photoUrl: /images/speakers/sasha_denisov.jpg
+companyLogo: epam_systems.png
+photoUrl: sasha_denisov.jpg
 socials:
   github: denisovav
   twitter: shuregdenisov

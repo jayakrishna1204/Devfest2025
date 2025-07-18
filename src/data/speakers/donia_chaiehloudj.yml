@@ -2,9 +2,8 @@
 key: donia_chaiehloudj
 name: Donia Chaiehloudj
 company: Isovalent @Cisco
-companyLogo: /images/partners/isovalent__cisco.png
-city: null
-photoUrl: /images/speakers/donia_chaiehloudj.jpg
+companyLogo: isovalent__cisco.png
+photoUrl: donia_chaiehloudj.jpg
 socials:
   github: doniacld
   linkedin: https://www.linkedin.com/in/donia-chaiehloudj/

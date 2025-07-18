@@ -2,9 +2,8 @@
 key: johan_rouve
 name: Johan Rouve
 company: Comet
-companyLogo: /images/partners/comet.png
-city: Paris, France
-photoUrl: /images/speakers/johan_rouve.jpg
+companyLogo: comet.png
+photoUrl: johan_rouve.jpg
 socials:
   github: ooga
 bio: |-

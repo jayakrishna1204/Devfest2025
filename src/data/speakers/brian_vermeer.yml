@@ -2,9 +2,8 @@
 key: brian_vermeer
 name: Brian Vermeer
 company: Snyk
-companyLogo: /images/partners/snyk.png
-city: Breda, The Netherlands
-photoUrl: /images/speakers/brian_vermeer.jpg
+companyLogo: snyk.png
+photoUrl: brian_vermeer.jpg
 socials:
   linkedin: https://www.linkedin.com/in/brianvermeer/
 bio: |-

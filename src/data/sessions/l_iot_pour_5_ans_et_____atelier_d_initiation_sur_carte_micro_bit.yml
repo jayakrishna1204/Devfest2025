@@ -4,13 +4,13 @@ title: 'L''IOT pour 5 ans et + : atelier d''initiation sur carte micro:bit'
 language: French
 talkType: codelab
 tags:
-  - web
+  - iot_hardware
 complexity: Beginner
 speakers:
   - jonathan_baranzini
   - thomas_cami
-slot: day-x-codelab-x
-room: undefined
+slot: day-2-codelab-2
+room: Les Machines
 abstract: |-
   La carte micro:bit est une mini carte programmable créée en 2015 par la BBC avec pour objectif d'en distribuer aux écoliers britanniques afin de les initier au développement en bloc, javascript ou python.
   Peu chère, aux performances limitées, elle est dotées de plusieurs entrées / sorties permettant différents usages :

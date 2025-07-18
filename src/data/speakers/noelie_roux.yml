@@ -2,9 +2,8 @@
 key: noelie_roux
 name: Noëlie Roux
 company: Jaji
-companyLogo: /images/partners/jaji.png
-city: Paris, France
-photoUrl: /images/speakers/noelie_roux.jpg
+companyLogo: jaji.png
+photoUrl: noelie_roux.jpg
 socials:
   github: Noelierx
   twitter: noelie_roux

@@ -8,8 +8,8 @@ tags:
 complexity: Intermediate
 speakers:
   - lennart
-slot: day-x-conference-x
-room: undefined
+slot: day-2-conference-3
+room: Tour Bretagne
 abstract: |-
   Quantum computing is evolving rapidly—from theoretical promise to early practical applications. But what does that mean for software developers and architects today? This talk takes a grounded look at the current capabilities of quantum systems, the real limitations, and emerging hybrid approaches that combine quantum and classical computation.
 

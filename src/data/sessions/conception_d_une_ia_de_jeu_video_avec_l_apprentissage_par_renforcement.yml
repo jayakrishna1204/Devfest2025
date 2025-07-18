@@ -8,8 +8,8 @@ tags:
 complexity: Intermediate
 speakers:
   - vincent_ogloblinsky
-slot: day-x-quickie-x
-room: undefined
+slot: day-2-quickie-1
+room: Titan
 abstract: |-
   Dans ce talk, venez découvrir la conception d'une intelligence artificielle capable de jouer à un jeu vidéo de palet "fonte/laiton sur planche bois/plomb" grâce à l'apprentissage par renforcement.
 

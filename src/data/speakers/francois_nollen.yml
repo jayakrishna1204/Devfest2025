@@ -2,9 +2,8 @@
 key: francois_nollen
 name: François Nollen
 company: SNCF Connect & Tech
-companyLogo: /images/partners/sncf_connect___tech.png
-city: Paris, France
-photoUrl: /images/speakers/francois_nollen.jpg
+companyLogo: sncf_connect___tech.png
+photoUrl: francois_nollen.jpg
 socials:
   github: francoisno
   twitter: FrancoisN0

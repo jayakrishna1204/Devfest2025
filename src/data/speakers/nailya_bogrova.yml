@@ -2,9 +2,8 @@
 key: nailya_bogrova
 name: Nailya BOGROVA
 company: SII Ouest
-companyLogo: /images/partners/sii_ouest.png
-city: Rennes, France
-photoUrl: /images/speakers/nailya_bogrova.jpg
+companyLogo: sii_ouest.png
+photoUrl: undefined.png
 socials:
   github: Nailja
 bio: |-

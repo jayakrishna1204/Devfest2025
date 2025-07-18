@@ -2,9 +2,8 @@
 key: patrice_de_saint_steban
 name: Patrice De Saint Steban
 company: Zenika
-companyLogo: /images/partners/zenika.png
-city: Nantes, France
-photoUrl: /images/speakers/patrice_de_saint_steban.jpg
+companyLogo: zenika.png
+photoUrl: patrice_de_saint_steban.jpg
 socials:
   github: patou
   twitter: patoudss

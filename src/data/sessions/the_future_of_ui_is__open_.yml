@@ -8,8 +8,8 @@ tags:
 complexity: Intermediate
 speakers:
   - brecht_de_ruyte
-slot: day-x-conference-x
-room: undefined
+slot: day-2-conference-4
+room: Titan
 abstract: |-
   When dealing with more advanced UI elements there are a lot of things that go wrong. They impact performance, accessibility and have the tendency to create frustrations along the way. 
 

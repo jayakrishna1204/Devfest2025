@@ -9,8 +9,8 @@ complexity: Beginner
 speakers:
   - guillaume_membre
   - sebastien_fourreau
-slot: day-x-conference-x
-room: undefined
+slot: day-2-conference-1
+room: Titan
 abstract: |-
   La gestion des coûts est un enjeu majeur sur les plateformes Cloud. Sans une approche rigoureuse, l’élasticité et la flexibilité promises peuvent rapidement se transformer en dépenses imprévisibles. 
 

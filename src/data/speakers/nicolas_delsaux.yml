@@ -2,9 +2,8 @@
 key: nicolas_delsaux
 name: Nicolas Delsaux
 company: Zenika
-companyLogo: /images/partners/zenika.png
-city: null
-photoUrl: /images/speakers/nicolas_delsaux.jpg
+companyLogo: zenika.png
+photoUrl: nicolas_delsaux.jpg
 socials:
   github: riduidel
 bio: |-

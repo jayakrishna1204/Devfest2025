@@ -8,8 +8,8 @@ tags:
 complexity: Beginner
 speakers:
   - francois_eckert
-slot: day-x-quickie-x
-room: undefined
+slot: day-1-quickie-1
+room: Belem
 abstract: |-
   Depuis une dizaine d'années, l'adoption massive d'OpenID Connect a permis de standardiser la façon d'implémenter l'authentification dans nos applications.
 

@@ -2,9 +2,8 @@
 key: matthieu_vincent
 name: Matthieu Vincent
 company: Sopra Steria
-companyLogo: /images/partners/sopra_steria.png
-city: Vichy, France
-photoUrl: /images/speakers/matthieu_vincent.jpg
+companyLogo: sopra_steria.png
+photoUrl: matthieu_vincent.jpg
 socials:
   github: yodamad
   twitter: yodamad03

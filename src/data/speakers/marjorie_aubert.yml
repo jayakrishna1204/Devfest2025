@@ -2,9 +2,8 @@
 key: marjorie_aubert
 name: Marjorie Aubert
 company: Comet
-companyLogo: /images/partners/comet.png
-city: Paris, France
-photoUrl: /images/speakers/marjorie_aubert.jpg
+companyLogo: comet.png
+photoUrl: marjorie_aubert.jpg
 socials:
   github: Tagada26
   twitter: Tagada2022

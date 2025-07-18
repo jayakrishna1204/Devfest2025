@@ -8,8 +8,8 @@ tags:
 complexity: Beginner
 speakers:
   - jerome_tama
-slot: day-x-conference-x
-room: undefined
+slot: day-1-conference-1
+room: Belem
 abstract: |-
   Vous êtes dans la team __Doc as code, Infrastructure as code, Ci as code__ ? La réponse à ces questions vous semble évidente.
 

@@ -2,9 +2,8 @@
 key: nicolas_guillot
 name: Nicolas GUILLOT
 company: alt+1
-companyLogo: /images/partners/alt_1.png
-city: Nantes, France
-photoUrl: /images/speakers/nicolas_guillot.jpg
+companyLogo: alt_1.png
+photoUrl: nicolas_guillot.jpg
 socials:
   linkedin: https://www.linkedin.com/in/guillotnico/
 bio: |-

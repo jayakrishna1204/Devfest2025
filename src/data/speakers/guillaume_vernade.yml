@@ -2,9 +2,8 @@
 key: guillaume_vernade
 name: Guillaume Vernade
 company: Google Deepmind
-companyLogo: /images/partners/google_deepmind.png
-city: Rennes, France
-photoUrl: /images/speakers/guillaume_vernade.jpg
+companyLogo: google_deepmind.png
+photoUrl: guillaume_vernade.jpg
 socials:
   linkedin: https://www.linkedin.com/in/guillaumevernade/
   github: Giom-V

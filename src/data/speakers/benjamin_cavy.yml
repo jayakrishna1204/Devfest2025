@@ -2,9 +2,8 @@
 key: benjamin_cavy
 name: Benjamin Cavy
 company: MAIF
-companyLogo: /images/partners/maif.png
-city: Niort, France
-photoUrl: /images/speakers/benjamin_cavy.jpg
+companyLogo: maif.png
+photoUrl: benjamin_cavy.jpg
 socials:
   github: ptitFicus
   twitter: benjamin_cavy

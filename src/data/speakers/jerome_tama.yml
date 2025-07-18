@@ -2,9 +2,8 @@
 key: jerome_tama
 name: Jérôme Tama
 company: Onepoint
-companyLogo: /images/partners/onepoint.png
-city: Pessac, France
-photoUrl: /images/speakers/jerome_tama.jpg
+companyLogo: onepoint.png
+photoUrl: jerome_tama.jpg
 socials:
   github: jtama
   twitter: jtama_

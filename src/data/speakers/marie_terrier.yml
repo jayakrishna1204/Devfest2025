@@ -2,9 +2,8 @@
 key: marie_terrier
 name: Marie Terrier
 company: Yelda
-companyLogo: /images/partners/yelda.png
-city: Paris, France
-photoUrl: /images/speakers/marie_terrier.jpg
+companyLogo: yelda.png
+photoUrl: undefined.png
 socials:
   github: meelie
   twitter: materrier

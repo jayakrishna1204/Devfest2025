@@ -4,12 +4,12 @@ title: L'aspirant chevalier LynxJS peut-il détrôner monseigneur React Native e
 language: French
 talkType: quickie
 tags:
-  - mobile_iot
+  - mobile
 complexity: Intermediate
 speakers:
   - simon_bernardin
-slot: day-x-quickie-x
-room: undefined
+slot: day-2-quickie-1
+room: Jules Verne
 abstract: |-
   Au royaume des frameworks mobiles...
 

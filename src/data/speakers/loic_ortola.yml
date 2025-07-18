@@ -2,8 +2,7 @@
 key: loic_ortola
 name: Loïc Ortola
 company: Takima
-companyLogo: /images/partners/takima.png
-city: Paris
-photoUrl: /images/speakers/loic_ortola.jpg
+companyLogo: takima.png
+photoUrl: loic_ortola.jpg
 socials: {}
 bio: Quand Loïc n’est pas en train de militer pour qu’on ne copie-colle pas les réponses de StackOverflow sans regarder la doc, il intervient en architecture dans des contextes variés en tant que CTO de Takima. Il s’implique particulièrement à donner des visions d’ensemble concrètes pour que les développeurs puissent mieux dessiner leur système cible, et des retours d’expérience pour faire gagner du temps à ceux qui se lancent, parce que ça, on le trouve pas sur Stack Overflow.

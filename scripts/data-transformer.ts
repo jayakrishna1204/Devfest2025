@@ -3,7 +3,8 @@
 import * as fs from 'fs';
 import yaml from 'js-yaml';
 import { Speaker } from '../src/data/schedule/speaker';
-import data from './export.json';
+import planningData from './export-planning.json';
+import slotsData from '../src/data/schedule/slots.json';
 import { normalize, writeFile } from './helpers';
 import rimraf from 'rimraf';
 import * as path from 'path';
@@ -22,19 +23,46 @@ fs.mkdirSync(outDirSpeakers);
 rimraf.sync(outDirSessions);
 fs.mkdirSync(outDirSessions);
 
-rimraf.sync(outDirImages);
-fs.mkdirSync(outDirImages);
+// rimraf.sync(outDirImages);
+// fs.mkdirSync(outDirImages);
+
+const slots = slotsData.slots;
+const downloadErrors: { name: string; pictureUrl: string; reason: string }[] =
+  [];
 
 transformerSpeakers();
 transformerSessions();
 
 // Fonction pour télécharger une image
-async function downloadImage(url: string, filepath: string): Promise<void> {
+async function downloadImage(
+  url: string,
+  filepath: string,
+  redirectCount = 0
+): Promise<void> {
+  if (redirectCount > 5) {
+    throw new Error('Too many redirects');
+  }
+
   return new Promise((resolve, reject) => {
     const protocol = url.startsWith('https:') ? https : http;
 
     protocol
       .get(url, (response) => {
+        if (
+          response.statusCode &&
+          response.statusCode >= 300 &&
+          response.statusCode < 400 &&
+          response.headers.location
+        ) {
+          // Handle redirect
+          console.log(`Redirecting to ${response.headers.location}`);
+          response.resume(); // Consume response data
+          downloadImage(response.headers.location, filepath, redirectCount + 1)
+            .then(resolve)
+            .catch(reject);
+          return;
+        }
+
         if (response.statusCode === 200) {
           const file = fs.createWriteStream(filepath);
           response.pipe(file);
@@ -44,6 +72,7 @@ async function downloadImage(url: string, filepath: string): Promise<void> {
           });
           file.on('error', reject);
         } else {
+          response.resume(); // Consume response data to free up memory
           reject(new Error(`Failed to download image: ${response.statusCode}`));
         }
       })
@@ -74,12 +103,14 @@ function transformerSpeakers() {
   // Extraire tous les speakers uniques de toutes les sessions
   const allSpeakers = new Map<string, any>();
 
-  data.forEach((session) => {
-    session.speakers.forEach((speaker) => {
-      if (!allSpeakers.has(speaker.id)) {
-        allSpeakers.set(speaker.id, speaker);
-      }
-    });
+  planningData.sessions.forEach((session) => {
+    if (session.proposal?.speakers) {
+      session.proposal.speakers.forEach((speaker) => {
+        if (!allSpeakers.has(speaker.id)) {
+          allSpeakers.set(speaker.id, speaker);
+        }
+      });
+    }
   });
 
   const promises = Array.from(allSpeakers.values()).map(async (speaker) => {
@@ -103,8 +134,14 @@ function transformerSpeakers() {
         } else {
           console.log(`✓ Image already exists: ${imageFileName}`);
         }
-      } catch (error) {
+      } catch (error: any) {
         console.error(`✗ Failed to download image for ${speaker.name}:`, error);
+        downloadErrors.push({
+          name: speaker.name,
+          pictureUrl: speaker.picture,
+          reason: error.message,
+        });
+        imageFileName = null;
       }
     }
 
@@ -114,10 +151,10 @@ function transformerSpeakers() {
       company: speaker.company || undefined,
       companyLogo:
         speaker.company && speaker.company !== 'Freelance'
-          ? `/images/partners/${normalize(speaker.company.toLowerCase())}.png`
+          ? `${normalize(speaker.company.toLowerCase())}.png`
           : undefined,
       city: speaker.location,
-      photoUrl: imageFileName ? `/images/speakers/${imageFileName}` : undefined,
+      photoUrl: imageFileName ? `${imageFileName}` : 'undefined.png',
       socials: {},
       bio: speaker.bio && speaker.bio.length > 1 ? speaker.bio : undefined,
     };
@@ -148,33 +185,70 @@ ${yaml.dump(yamlData, dumpOptions)}`;
   const emails = Array.from(allSpeakers.values())
     .map((s) => s.email)
     .join('\n');
-  fs.writeFileSync('emails_speakers.md', emails);
+  if (emails) {
+    fs.writeFileSync('emails_speakers.md', emails);
+  }
 
-  Promise.all(promises).then(() => console.log('speakers ok'));
+  Promise.allSettled(promises).then(() => {
+    console.log('speakers ok');
+
+    if (downloadErrors.length > 0) {
+      console.log('\n--- Image Download Errors ---');
+      downloadErrors.forEach((err) => {
+        console.log(`- Speaker: ${err.name}`);
+        console.log(`  URL: ${err.pictureUrl}`);
+        console.log(`  Reason: ${err.reason}`);
+      });
+      console.log('---------------------------\n');
+    }
+  });
+}
+
+function findSlot(start: string, talkType: string) {
+  const sessionDate = new Date(start);
+  const sessionTime = start.substring(11, 16); // HH:mm
+
+  const day = sessionDate.getUTCDate() === 16 ? 1 : 2;
+
+  const slot = slots.find((s) => {
+    if (!s.key.startsWith(`day-${day}`)) {
+      return false;
+    }
+    if (s.type !== talkType) {
+      return false;
+    }
+    return s.start === sessionTime;
+  });
+
+  return slot?.key;
 }
 
 function transformerSessions() {
-  const promises = data.map((session) => {
-    const normalizedName = normalize(session.title);
-    console.log(normalizedName);
-    const yamlData: any = {
-      key: normalizedName,
-      title: session.title,
-      language: getLanguage(session.languages),
-      talkType: getTalkType(session.formats),
-      tags: getCategory(session.categories),
-      complexity: getComplexity(session.level),
-      speakers: getSpeakers(session.speakers),
-      slot: 'day-x-' + getTalkType(session.formats) + '-x',
-      room: 'undefined',
-      abstract: session.abstract,
-    };
+  const promises = planningData.sessions
+    .filter((session) => session.proposal)
+    .map((session) => {
+      const normalizedName = normalize(session.title);
+      console.log(normalizedName);
 
-    const sessionData = `---
+      const talkType = getTalkType(session.proposal!.formats);
+      const yamlData: any = {
+        key: normalizedName,
+        title: session.title,
+        language: getLanguage(session.language ? [session.language] : []),
+        talkType: talkType,
+        tags: getCategory(session.proposal!.categories),
+        complexity: getComplexity(session.proposal!.level),
+        speakers: getSpeakers(session.proposal!.speakers),
+        slot: findSlot(session.start, talkType) || 'day-x-conference-x',
+        room: session.track,
+        abstract: session.proposal!.abstract,
+      };
+
+      const sessionData = `---
 ${yaml.dump(yamlData, dumpOptions)}`;
 
-    return writeFile(`${outDirSessions}/${normalizedName}.yml`, sessionData);
-  });
+      return writeFile(`${outDirSessions}/${normalizedName}.yml`, sessionData);
+    });
 
   Promise.all(promises).then(() => console.log('sessions ok'));
 }
@@ -183,11 +257,11 @@ function getTalkType(formats: any[]) {
   if (!formats || formats.length === 0) return 'conference';
 
   const format = formats[0];
-  if (format.name.includes('Quickie')) {
+  if (format.includes('Quickie')) {
     return 'quickie';
-  } else if (format.name.includes('Conference')) {
+  } else if (format.includes('Conference')) {
     return 'conference';
-  } else if (format.name.includes('Codelab')) {
+  } else if (format.includes('Codelab')) {
     return 'codelab';
   }
   return 'conference';
@@ -206,15 +280,16 @@ function getCategory(categories: any[]) {
     'Cloud & DevOps': 'cloud_devops',
     Discovery: 'discovery',
     Languages: 'languages',
-    Mobile: 'mobile_iot',
+    Mobile: 'mobile',
     Security: 'security',
     'UX / UI': 'ux_ui',
     Web: 'web',
+    'IoT and Hardware': 'iot_hardware',
   };
 
   const category = categories[0];
   for (const [key, value] of Object.entries(categoryMap)) {
-    if (category.name.includes(key)) {
+    if (category.includes(key)) {
       return [value];
     }
   }

@@ -2,9 +2,8 @@
 key: thomas_boutin
 name: Thomas Boutin
 company: Ippon Technologies
-companyLogo: /images/partners/ippon_technologies.png
-city: Nantes, France
-photoUrl: /images/speakers/thomas_boutin.jpg
+companyLogo: ippon_technologies.png
+photoUrl: thomas_boutin.jpg
 socials:
   github: Thomas-Boutin
   twitter: tbout1

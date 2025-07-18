@@ -8,8 +8,8 @@ tags:
 complexity: Intermediate
 speakers:
   - modeste_assiongbon
-slot: day-x-codelab-x
-room: undefined
+slot: day-2-codelab-1
+room: Les Machines
 abstract: |-
   Signal et monde asynchrone :
   Depuis Angular 16, les signaux ont été introduits comme une nouvelle primitive pour créer des applications réactives. Par nature, ils sont synchrones, alors que la majorité des applications nécessitent de gérer des opérations asynchrones, souvent déclenchées par des interactions utilisateurs.

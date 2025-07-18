@@ -2,9 +2,8 @@
 key: lucas_audart
 name: Lucas Audart
 company: Kolecto
-companyLogo: /images/partners/kolecto.png
-city: Lyon, France
-photoUrl: /images/speakers/lucas_audart.jpg
+companyLogo: kolecto.png
+photoUrl: lucas_audart.jpg
 socials:
   linkedin: https://www.linkedin.com/in/lucas-audart/
 bio: |-

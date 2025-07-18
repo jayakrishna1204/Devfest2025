@@ -8,8 +8,8 @@ tags:
 complexity: Intermediate
 speakers:
   - thomas_piscitelli
-slot: day-x-conference-x
-room: undefined
+slot: day-2-conference-3
+room: Titan
 abstract: |-
   Il était une fois des architectes et des développeurs lancés, encore et toujours, dans une quête sans fin : celle de l’architecture parfaite. Portés un temps par l’élan des microservices, ils avaient cru trouver la voie… jusqu’à ce que la hype s’essouffle et que le piège du monolithe distribué se referme lentement sur eux. 
 

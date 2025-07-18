@@ -2,9 +2,8 @@
 key: hoani_cross
 name: Hoani Cross
 company: SFEIR
-companyLogo: /images/partners/sfeir.png
-city: Nantes, France
-photoUrl: /images/speakers/hoani_cross.jpg
+companyLogo: sfeir.png
+photoUrl: hoani_cross.jpg
 socials:
   github: hcross
   twitter: hoani

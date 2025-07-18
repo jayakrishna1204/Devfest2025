@@ -2,9 +2,8 @@
 key: simon_bernardin
 name: Simon Bernardin
 company: Mobiapps
-companyLogo: /images/partners/mobiapps.png
-city: Nantes, France
-photoUrl: /images/speakers/simon_bernardin.jpg
+companyLogo: mobiapps.png
+photoUrl: simon_bernardin.jpg
 socials:
   github: Malrok
 bio: |-

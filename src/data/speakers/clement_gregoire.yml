@@ -2,9 +2,8 @@
 key: clement_gregoire
 name: Clément Grégoire
 company: siliceum
-companyLogo: /images/partners/siliceum.png
-city: null
-photoUrl: /images/speakers/clement_gregoire.webp
+companyLogo: siliceum.png
+photoUrl: clement_gregoire.webp
 socials:
   github: lectem/
 bio: Clément works at siliceum, a company he co-founded, where he helps his clients to reach their performance goals. Previously working in the games and embedded industries, he acquired hands-on knowledge on optimizations while releasing titles such as Microsoft Flight Simulator. With more than 8 years of a love-hate relationship with C++ and no fear of legacy code-bases, he also likes reverse-engineering old games in his spare-time.

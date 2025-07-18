@@ -2,9 +2,8 @@
 key: sebastien_ferrer
 name: Sébastien Ferrer
 company: OVHcloud
-companyLogo: /images/partners/ovhcloud.png
-city: Nantes, France
-photoUrl: /images/speakers/sebastien_ferrer.png
+companyLogo: ovhcloud.png
+photoUrl: sebastien_ferrer.png
 socials:
   github: sebferrer
 bio: |-

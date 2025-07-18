@@ -8,8 +8,8 @@ tags:
 complexity: Beginner
 speakers:
   - benjamin_cavy
-slot: day-x-codelab-x
-room: undefined
+slot: day-1-codelab-1
+room: Hangar
 abstract: |-
   Tester unitairement ses composants graphiques c'est bien, tester le bon fonctionnement de toute son application via un navigateur pilotable programmatiquement c'est mieux !
 

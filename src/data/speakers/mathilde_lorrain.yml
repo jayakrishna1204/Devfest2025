@@ -2,9 +2,8 @@
 key: mathilde_lorrain
 name: Mathilde LORRAIN
 company: Takima
-companyLogo: /images/partners/takima.png
-city: null
-photoUrl: /images/speakers/mathilde_lorrain.jpg
+companyLogo: takima.png
+photoUrl: mathilde_lorrain.jpg
 socials:
   twitter: mathildelorrain
 bio: |-

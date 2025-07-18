@@ -1,7 +1,7 @@
 ---
 key: ai_right_in_the_browser_with_chrome_s_built_in_ai_apis
 title: AI right in the browser with Chrome's built-in AI APIs
-language: French
+language: English
 talkType: quickie
 tags:
   - web
@@ -9,8 +9,8 @@ complexity: Intermediate
 speakers:
   - maud_nalpas
   - thomas_steiner
-slot: day-x-quickie-x
-room: undefined
+slot: day-1-quickie-1
+room: Titan
 abstract: |-
   Imagine empowering your web apps with summarization, writing assistance, and translation – privately, without server-side complexity or API keys, and without needing to manage your own AI models.
   Built-in AI, a set of experimental Chrome APIs, can make this a reality.

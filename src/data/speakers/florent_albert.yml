@@ -2,9 +2,8 @@
 key: florent_albert
 name: Florent Albert
 company: Shodo Nantes
-companyLogo: /images/partners/shodo_nantes.png
-city: Nantes, France
-photoUrl: /images/speakers/florent_albert.jpg
+companyLogo: shodo_nantes.png
+photoUrl: florent_albert.jpg
 socials:
   github: hex46
   twitter: hex46_

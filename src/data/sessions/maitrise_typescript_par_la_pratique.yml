@@ -10,8 +10,8 @@ speakers:
   - bastien_tran
   - johan_rouve
   - marjorie_aubert
-slot: day-x-codelab-x
-room: undefined
+slot: day-2-codelab-2
+room: Hangar
 abstract: |-
   Qui n’a jamais mis un type any, car il n’arrivait pas à typer comme il le souhaitait ? Certes, c'est rapide, mais vous perdez la sécurité apportée par TypeScript.
 

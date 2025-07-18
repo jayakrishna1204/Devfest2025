@@ -2,9 +2,8 @@
 key: robin_caroff
 name: Robin Caroff
 company: U TECH
-companyLogo: /images/partners/u_tech.png
-city: Nantes
-photoUrl: /images/speakers/robin_caroff.jpg
+companyLogo: u_tech.png
+photoUrl: robin_caroff.jpg
 socials:
   github: RobinCaroff
 bio: |-

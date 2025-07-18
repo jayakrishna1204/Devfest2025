@@ -2,9 +2,8 @@
 key: bastien_tran
 name: Bastien Tran
 company: Comet
-companyLogo: /images/partners/comet.png
-city: Ivry-sur-Seine, France
-photoUrl: /images/speakers/bastien_tran.jpg
+companyLogo: comet.png
+photoUrl: bastien_tran.jpg
 socials:
   github: basttran
   twitter: hecatonchar

@@ -9,8 +9,8 @@ complexity: Beginner
 speakers:
   - matthieu_vincent
   - thomas_jouve
-slot: day-x-codelab-x
-room: undefined
+slot: day-2-codelab-1
+room: L'atelier
 abstract: |-
   Buzz a raison, on veut des "dashboard everywhere", les données sont partout, mais encore faut-il savoir les rendre visuelles et impactantes ! Que ce soit pour suivre la prod, surveiller l’avancement des projets ou afficher des indicateurs venant de toutes sortes de sources, les dashboards sont devenus un must-have. Si t’as un bon budget, PowerBI fait le job, mais si tu veux une solution open source et flexible, Grafana à son mot à dire.
    

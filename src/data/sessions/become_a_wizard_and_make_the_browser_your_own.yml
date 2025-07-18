@@ -8,8 +8,8 @@ tags:
 complexity: Intermediate
 speakers:
   - oliver_dunk
-slot: day-x-conference-x
-room: undefined
+slot: day-1-conference-4
+room: Tour Bretagne
 abstract: |-
   Imagine being able to control your browser with the wave of a wand! This talk will cover the magic of WebExtensions, and share tales old and new about how you can build extensions for millions of users with just knowledge of HTML, CSS and JavaScript.
 

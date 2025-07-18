@@ -2,9 +2,8 @@
 key: vivien_maleze
 name: Vivien Maleze
 company: Ippon Technologies
-companyLogo: /images/partners/ippon_technologies.png
-city: Bordeaux
-photoUrl: /images/speakers/vivien_maleze.jpeg
+companyLogo: ippon_technologies.png
+photoUrl: vivien_maleze.jpeg
 socials:
   github: vmaleze
   twitter: vmaleze

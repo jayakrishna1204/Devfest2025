@@ -2,9 +2,8 @@
 key: jonathan_baranzini
 name: Jonathan BARANZINI
 company: Talan
-companyLogo: /images/partners/talan.png
-city: Paris (France)
-photoUrl: /images/speakers/jonathan_baranzini.jpg
+companyLogo: talan.png
+photoUrl: jonathan_baranzini.jpg
 socials:
   github: jotitan
 bio: |-

@@ -2,7 +2,6 @@
 key: laurent_mangin
 name: Laurent Mangin
 company: Younup
-companyLogo: /images/partners/younup.png
-city: Nantes, France
-photoUrl: /images/speakers/laurent_mangin.jpg
+companyLogo: younup.png
+photoUrl: laurent_mangin.jpg
 socials: {}

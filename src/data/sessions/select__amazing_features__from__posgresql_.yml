@@ -8,8 +8,8 @@ tags:
 complexity: Intermediate
 speakers:
   - kevin_davin
-slot: day-x-conference-x
-room: undefined
+slot: day-1-conference-1
+room: Titan
 abstract: |-
   C'est unanime, `PostgreSQL` devient le Linux de la base de données pour le bien de tous 🚀!
   Et cela parce que ce moteur de BDD contient des fonctionnalités fantastiques permettant de résoudre des problèmes complexes très simplement!

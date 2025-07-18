@@ -2,9 +2,8 @@
 key: philippe_bousquet
 name: Philippe Bousquet
 company: SQLI
-companyLogo: /images/partners/sqli.png
-city: Bordeaux, France
-photoUrl: /images/speakers/philippe_bousquet.jpg
+companyLogo: sqli.png
+photoUrl: philippe_bousquet.jpg
 socials:
   linkedin: https://www.linkedin.com/in/philippe-bousquet-60845199/
 bio: |-

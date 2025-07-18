@@ -2,9 +2,8 @@
 key: florent_legras
 name: Florent Legras
 company: Sfeir
-companyLogo: /images/partners/sfeir.png
-city: Paris, France
-photoUrl: /images/speakers/florent_legras.jpg
+companyLogo: sfeir.png
+photoUrl: florent_legras.jpg
 socials:
   github: flegras
   twitter: florent_legras

@@ -2,9 +2,8 @@
 key: simon_mellerin
 name: Simon MELLERIN
 company: Makina Corpus
-companyLogo: /images/partners/makina_corpus.png
-city: Nantes, France
-photoUrl: /images/speakers/simon_mellerin.jpg
+companyLogo: makina_corpus.png
+photoUrl: undefined.png
 socials:
   github: SimonMellerin
   linkedin: https://www.linkedin.com/in/simonmellerin/

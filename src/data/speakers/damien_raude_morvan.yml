@@ -2,9 +2,8 @@
 key: damien_raude_morvan
 name: Damien Raude-Morvan
 company: Decathlon
-companyLogo: /images/partners/decathlon.png
-city: Nantes, France
-photoUrl: /images/speakers/damien_raude_morvan.png
+companyLogo: decathlon.png
+photoUrl: damien_raude_morvan.png
 socials:
   github: drazzib
   linkedin: https://www.linkedin.com/in/damienraudemorvan

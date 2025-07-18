@@ -2,9 +2,8 @@
 key: tiffany_souterre
 name: Tiffany Souterre
 company: Microsoft
-companyLogo: /images/partners/microsoft.png
-city: Paris, France
-photoUrl: /images/speakers/tiffany_souterre.jpg
+companyLogo: microsoft.png
+photoUrl: tiffany_souterre.jpg
 socials:
   github: amagash
   twitter: tiffanysouterre

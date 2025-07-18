@@ -9,8 +9,8 @@ complexity: Intermediate
 speakers:
   - denis_germain
   - quentin_joly
-slot: day-x-conference-x
-room: undefined
+slot: day-2-conference-3
+room: Belem
 abstract: |-
   Limits, requests, QoS, PriorityClasses. Vous avez entendu parler de ces termes et vous savez que pour une prod qui fonctionne bien, il faut les spécifier sur vos applications. 
 

@@ -2,9 +2,8 @@
 key: quentin_joly
 name: Quentin JOLY
 company: Lucca
-companyLogo: /images/partners/lucca.png
-city: Bourg-en-Bresse, France
-photoUrl: /images/speakers/quentin_joly.jpg
+companyLogo: lucca.png
+photoUrl: quentin_joly.jpg
 socials:
   github: qjoly
   twitter: thebidouilleur

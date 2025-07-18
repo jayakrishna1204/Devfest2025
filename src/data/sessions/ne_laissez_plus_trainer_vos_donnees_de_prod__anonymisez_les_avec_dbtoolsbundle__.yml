@@ -9,8 +9,8 @@ complexity: Beginner
 speakers:
   - pierre
   - simon_mellerin
-slot: day-x-conference-x
-room: undefined
+slot: day-1-conference-3
+room: Belem
 abstract: |-
   Avez-vous déjà injecté des données de prod en local ? Laissé traîner un backup de prod sur votre machine de dev ?
 

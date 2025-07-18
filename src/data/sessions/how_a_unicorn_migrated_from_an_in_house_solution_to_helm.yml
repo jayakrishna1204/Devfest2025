@@ -8,8 +8,8 @@ tags:
 complexity: Advanced
 speakers:
   - mey_beisaron
-slot: day-x-conference-x
-room: undefined
+slot: day-1-conference-2
+room: Belem
 abstract: |-
   Creating your first Helm Chart is one thing, but migrating 400+ services - all relying on an existing solution - is a whole different story. 
   This is the point where "Helm 101" tutorials become irrelevant. 

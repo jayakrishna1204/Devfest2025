@@ -2,9 +2,8 @@
 key: esteban_s
 name: Estéban S
 company: MaiaSpace
-companyLogo: /images/partners/maiaspace.png
-city: Paris
-photoUrl: /images/speakers/esteban_s.jpg
+companyLogo: maiaspace.png
+photoUrl: esteban_s.jpg
 socials:
   linkedin: https://linkedin.com/in/esteban25
   twitter: soubiran_

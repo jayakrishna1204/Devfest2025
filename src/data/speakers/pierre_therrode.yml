@@ -2,9 +2,8 @@
 key: pierre_therrode
 name: Pierre Therrode
 company: SNCF Connect & Tech
-companyLogo: /images/partners/sncf_connect___tech.png
-city: Paris, France
-photoUrl: /images/speakers/pierre_therrode.jpg
+companyLogo: sncf_connect___tech.png
+photoUrl: pierre_therrode.jpg
 socials:
   github: pi-2r
   twitter: pi2r3
