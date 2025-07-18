@@ -10,7 +10,7 @@ speakers:
   - sebastien_oddo
   - vivien_maleze
 slot: day-2-codelab-2
-room: L'atelier
+room: L'Atelier
 abstract: |-
   Tu déploies des services back en production, mais dès qu’un bug survient ou qu’une latence apparaît, c’est la **chasse au trésor dans les logs** ? Tu te demandes comment avoir une vision claire de ce que fait ton application, sans transformer ton code en **sapin de Noël** 🌲 ?
 

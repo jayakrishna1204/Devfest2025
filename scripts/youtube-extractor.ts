@@ -12,14 +12,14 @@
 //   )
 // )
 
-import fs, {appendFileSync, existsSync, readFileSync} from "fs";
+import {appendFileSync, existsSync, readFileSync} from "fs";
 import {normalize} from "./helpers";
 
 async function getIdsYoutube() {
-  const youtubeMapping = (await import('./youtube.json')).default;
+  const youtubeMapping = (await import('./youtube.json')).default as unknown as {title: string, id: number}[];
   youtubeMapping.forEach(yt => {
     const id = normalize(yt.title)
-    let path = `../data/sessions/${id}.yml`;
+    const path = `../data/sessions/${id}.yml`;
     const existe = existsSync(path);
     if (!existe) {
       console.error(id);

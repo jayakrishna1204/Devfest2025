@@ -31,6 +31,7 @@ export const rooms: RoomName[] = [
   'Les Machines',
   'Hangar',
   "L'Atelier",
+  "Unconf",
 ];
 
 const tagLabels: Record<string, { label: string; icon: JSX.Element }> = {

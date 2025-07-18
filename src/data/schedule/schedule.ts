@@ -14,7 +14,8 @@ export type RoomName =
 | "Tour Bretagne"
 | "Les Machines"
 | "Hangar"
-| "L'Atelier";
+| "L'Atelier"
+| "Unconf";
 
 export type Room = {
   room: RoomName

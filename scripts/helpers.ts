@@ -1,6 +1,6 @@
 import * as fs from "fs";
 
-export const writeFile = (path, data) => {
+export const writeFile = (path: string, data: string) => {
   return new Promise((res) => fs.writeFile(path, data, res));
 };
 

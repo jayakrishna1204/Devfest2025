@@ -6,7 +6,7 @@ import { Speaker } from '../src/data/schedule/speaker';
 import planningData from './export-planning.json';
 import slotsData from '../src/data/schedule/slots.json';
 import { normalize, writeFile } from './helpers';
-import rimraf from 'rimraf';
+import * as rimraf from 'rimraf';
 import * as path from 'path';
 import * as https from 'https';
 import * as http from 'http';
