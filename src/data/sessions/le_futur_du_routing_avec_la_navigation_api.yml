@@ -1,0 +1,16 @@
+---
+key: le_futur_du_routing_avec_la_navigation_api
+title: Le futur du routing avec la Navigation API
+language: French
+talkType: conference
+tags:
+  - web
+complexity: Intermediate
+speakers:
+  - eduardo_san_martin_morote
+slot: day-x-conference-x
+room: undefined
+abstract: |-
+  Aujourd’hui, pratiquement toutes les Single Page Applications (SPA) utilisent un routeur. Chaque framework frontend en propose un (ou plusieurs), avec des API souvent très similaires. On considère généralement que le routing en frontend est un problème résolu. Pourtant, la réalité est toute autre : le routing frontend repose sur des API navigateur franchement vieillissantes.
+
+  Dans cette présentation, nous explorerons les API qui ont façonné le routing tel que nous le connaissons aujourd’hui. Puis, nous découvrirons ce que l’avenir nous réserve avec la **Navigation API**, une nouvelle interface prometteuse qui pourrait bien bouleverser la donne.

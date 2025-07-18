@@ -2,14 +2,13 @@
 key: thierry_chantier
 name: Thierry Chantier
 city: Villeurbanne, France
-photoUrl: thierry_chantier.jpg
+photoUrl: /images/speakers/thierry_chantier.png
 socials:
-  twitter: titimoby
   github: titimoby
 bio: |-
-  Une passion née dans les lectures, le monde informatique et électronique m'a happé dès mon ZX Spectrum pour ne jamais me lâcher.<br/>
+  Une passion née dans les lectures, le monde informatique et électronique m'a happé dès mon ZX Spectrum pour ne jamais me lâché.
   Développeur de métier, du jeu vidéo au monde du master data management, j'ai aussi touché aux univers de la QA et de la mise en production.<br/>
-  Je suis maintenant Developer Advocate, chez OVHcloud, jonglant entre technique, communauté et transmission de savoirs.
+  Je suis maintenant Developer Advocate, chez Dataiku, jonglant entre technique, communauté et transmission de savoirs.
 
   Comme une passion mérite toujours qu'on la transmette, j'ai fondé Mixteen pour essayer d'aider les enfants à appréhender le monde numérique.<br/>
   Cette envie de transmettre c'est aussi manifestée en m'amenant à prendre part à l'organisation de plusieurs MiXiT puis à cofonder le GDG Lyon.<br/>

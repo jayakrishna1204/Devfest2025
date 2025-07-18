@@ -1,0 +1,14 @@
+---
+key: ___ensorcelle_ton_ide__de_zero_a_demo
+title: "🤖\_Ensorcelle ton IDE: de zéro à démo"
+language: French
+talkType: codelab
+tags:
+  - bigdata_ai
+complexity: Beginner
+speakers:
+  - maxime_courant
+  - samuel_berthe
+slot: day-x-codelab-x
+room: undefined
+abstract: "Au royaume des IDE, le codelab «\_Ensorcelle ton\_IDE\_» t’apprend à convertir Cursor ou Windsurf en écuyers‑IA pour bâtir une appli fullstack avec trois incantations et un café.\n\nAu centre du donjon brille le **Model\_Context\_Protocol\_(MCP)**, grand pont‑levis reliant l’IDE à\_Figma, ton navigateur, PostgreSQL et\_GitHub. Le rite débutera par un prompt‑engineering pour créer les spécifications techniques de ton projet. Tu écriras ensuite des **Cursor\_Rules** pour dompter le code.\n\nTa quête démarrera par la métamorphose d’une maquette\_Figma en écrans web et mobile, puis on mettra en place un CRUD pour alimenter le front. Chaque étape réussie ajoute une nouvelle règle au grimoire.\n\nEt pour finir, place au duel de vibe‑coding\_: boucler le projet avec le minimum de prompts, des commits réguliers et des tests unitaires solides. Ainsi naissent les légendes du code.\n\nPré-requis:\nPour franchir la porte, tu devras t'armer de licences gratuites Cursor, ChatGPT et\_Figma, de lames **npx** et **uvx**, et des clés *root* de sa machine."

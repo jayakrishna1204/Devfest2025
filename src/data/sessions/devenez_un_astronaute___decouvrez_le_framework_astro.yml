@@ -1,0 +1,24 @@
+---
+key: devenez_un_astronaute___decouvrez_le_framework_astro
+title: 'Devenez un Astronaute : Découvrez le Framework Astro'
+language: French
+talkType: codelab
+tags:
+  - web
+complexity: Beginner
+speakers:
+  - florent_albert
+  - jeremy_chauvin
+slot: day-x-codelab-x
+room: undefined
+abstract: |-
+  Un nouveau framework est sorti dans l'univers JavaScript 🌌. C'est **Astro 🪐**, qui se veut sans JS, orienté contenu, et UI-agnostic. React, Vue, Svelte… il accepte (presque) tout !
+
+  Vous voulez faire votre blog ou votre portfolio rapidement sans vous prendre la tête sur le framework ou la lib, contrairement à VitePress, Docusaurus, etc. ? Alors **Astro** est fait pour vous !
+
+  Dans cet atelier, vous allez pouvoir construire une petite application très rapidement et simplement ! Tout en découvrant les fonctionnalités sympas d'**Astro** ! Devenez un **Astro**naute avec nous.
+
+  Pré-requis:
+  - Un PC
+  - Une connexion Internet
+  - Node et Npm installés

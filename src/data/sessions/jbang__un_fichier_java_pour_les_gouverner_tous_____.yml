@@ -1,0 +1,22 @@
+---
+key: jbang__un_fichier_java_pour_les_gouverner_tous_____
+title: JBang, un fichier Java pour les gouverner tous ? 💍
+language: French
+talkType: quickie
+tags:
+  - languages
+complexity: Beginner
+speakers:
+  - stephane_philippart
+slot: day-x-quickie-x
+room: undefined
+abstract: |-
+  Dans le monde Java, nous sommes habitués à initialiser un projet avec de nombreux fichiers et répertoires. A tel point que des CLI ont vu le jour pour nous aider à créer les projets SpringBoot ou Quarkus par exemple. Vient ensuite le choix du "package manager" : Maven ou Gradle ? Et c'est seulement à partir de là que l'on peut commencer à développer puis exécuter son code 😅.
+
+  Toutes ces étapes fastidieuses expliquent pourquoi, lorsque que l'on a besoin de faire un développement rapide de quelques lignes pour automatiser une action, on préfère d'autres langages à Java : Python par exemple.
+
+  Et si je vous disais, qu'avec JBang, vous allez pouvoir rester avec votre langage préféré, Java, et développer une classe toute simple (avec des dépendances externes) en quelques secondes !
+
+  C'est le pari (spoiler : réussi) de JBang que je vous propose de découvrir durant une session de live coding.
+
+  A vous les joies du scripting en Java !

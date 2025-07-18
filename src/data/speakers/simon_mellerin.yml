@@ -1,0 +1,13 @@
+---
+key: simon_mellerin
+name: Simon MELLERIN
+company: Makina Corpus
+companyLogo: /images/partners/makina_corpus.png
+city: Nantes, France
+photoUrl: /images/speakers/simon_mellerin.jpg
+socials:
+  github: SimonMellerin
+  linkedin: https://www.linkedin.com/in/simonmellerin/
+bio: |-
+  * PHP/Symfony & Vue.js developper at [Makina Corpus](https://makina-corpus.com/), 
+  * Creator and co-maintainer of [DbToolsBundle](https://dbtoolsbundle.readthedocs.io/en/stable/)

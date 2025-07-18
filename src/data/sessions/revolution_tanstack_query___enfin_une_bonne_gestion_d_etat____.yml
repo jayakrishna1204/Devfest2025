@@ -1,0 +1,14 @@
+---
+key: revolution_tanstack_query___enfin_une_bonne_gestion_d_etat____
+title: 'Révolution TanStack Query : Enfin une bonne gestion d’état 🗂️'
+language: French
+talkType: conference
+tags:
+  - web
+complexity: Beginner
+speakers:
+  - lucas_audart
+  - mickael_alves
+slot: day-x-conference-x
+room: undefined
+abstract: "Gérer l’état dans une application frontend est un défi quotidien… 🤯 Entre Redux, Zustand, Recoil, les React Context ou encore Pinia côté Vue, les options sont nombreuses, mais parfois trop ! Et quand on y ajoute la gestion des appels réseau, du cache, des états de chargement ou d’erreur, le tout peut vite devenir un vrai casse-tête… 💣\n\nC’est là que TanStack Query entre en scène pour améliorer l’experience de vos développeur et de vos utilisateur ! 🤩\_Véritable révolution dans la gestion des données, cet outil met fin au chaos en remplaçant les solutions artisanales et les outils traditionnels souvent trop rigides 🤸🏼 Fini la gestion granulaire de l’état : grâce à un cache performant, une synchronisation automatique et une gestion optimisée des requêtes, TanStack Query simplifie enfin la gestion de l’état, que ce soit dans React ou au-delà ! 🗺️ \n\nDans ce talk, nous verrons comment reprendre le contrôle de vos données, éviter les pièges classiques et adopter les meilleures pratiques pour un état applicatif stable, performant et scalable !\n\nPrêt·e à rejoindre la révolution ? 🚀"
