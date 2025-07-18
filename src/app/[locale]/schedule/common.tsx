@@ -106,7 +106,7 @@ export const SessionComplexity: React.FC<{
       label={complexity}
       variant='outlined'
       size='small'
-      color='secondary'
+      color='info'
       sx={{ fontSize: '10px' }}
     />
   );

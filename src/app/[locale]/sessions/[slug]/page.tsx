@@ -6,7 +6,7 @@ import { Button, Card, IconButton, Stack, Typography } from "@mui/material";
 import fs from "fs";
 import yaml from 'js-yaml';
 import { SessionComplexity, Tags } from "../../schedule/common";
-import { AccessTime, Flag, Slideshow, YouTube } from "@mui/icons-material";
+import { AccessTime, Slideshow, YouTube } from "@mui/icons-material";
 import { MyLink } from "@/components/commun/link";
 import classNames from "classnames";
 import { Markdown } from "@/components/commun/markdown";
@@ -14,6 +14,7 @@ import { Speaker } from "@/data/schedule/speaker";
 import { slots } from '@/data/schedule/slots.json'
 import { AvatarSpeaker } from "@/components/speaker/avatar";
 import './style.scss';
+import { Flag } from '@/components/commun/flags';
 
 
 export default async function SessionPage({ params }: CommonParams<void, { slug: string }>) {
@@ -60,7 +61,7 @@ export default async function SessionPage({ params }: CommonParams<void, { slug:
               >
                 {session.talkType}
               </Typography>
-              <Tags tags={session.tags} color="secondary" />
+              <Tags tags={session.tags} color="info" />
               <SessionComplexity complexity={session.complexity} />
               <Flag lang={session.language} />
             </Stack>
