@@ -1,0 +1,28 @@
+---
+key: la_guerre_des_prompts___attaques___defenses_au_royaume_des_llm________
+title: 'La Guerre des Prompts : attaques & défenses au royaume des LLM ⚔️🛡️🤖'
+language: French
+talkType: codelab
+tags:
+  - bigdata_ai
+complexity: Intermediate
+speakers:
+  - benjamin_bernard
+  - francois_nollen
+  - pierre_therrode
+  - xavier_charef
+slot: day-2-codelab-1
+room: Hangar
+abstract: |-
+  > _Un terrible hiver se prépare au royaume des chatbots. Une armée de ténèbres se lève pour détourner les grands modèles de langages (LLM). Quelques mots bien choisis peuvent suffire à faire tomber les défenses, et tous les coups sont permis._
+
+  Dans cette session, vous découvrirez les attaques les plus fréquentes affectant les chatbots gonflés à l'IAGen. Grâce à l’OWASP Top 10 for LLM, le Secure AI Framework (SAIF), des interventions d’experts au BlackHat, vous comprendrez les risques et menaces qui visent le Prompt.
+
+  Vous pratiquerez des exercices de _jailbreak_ inspirés de publications universitaires et du pentest, s’appuyant sur des vulnérabilités rencontrées en conditions réelles. Avec des outils open source comme Garak, Adversarial Robustness Toolbox, PyRIT (et d'autres) vous testerez la robustesse des LLM et des contre-mesures possibles.
+
+  À l’issue de l'atelier, vous saurez non seulement expliquer les principes du Prompt Injection, mais aussi mettre en oeuvre des protections adaptées pour renforcer la sécurité de vos applications.
+
+  > _Rois, reines, chevaliers et renégats se disputent le royaume des LLM.
+  > Lesquels arriveront à leurs fins ? Les plus forts ? Ou les plus retors ?_
+
+  🧑‍💻 _NB : vous pourrez installer les outils en amont du codelab, instructions à venir : https://doc.tock.ai/codelab.html_

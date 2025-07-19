@@ -8,6 +8,13 @@ export type Partner = {
 
 export type PartnerType =  'PXL' | 'Platinium' | 'Gold' | 'Virtual' | 'Velotypie';
 
+const google = {
+  id: 'google',
+  name: 'Google',
+  image: await import('@/images/partners/google.png'),
+  website: 'https://developers.google.com/'
+};
+
 export const partnersByTypes: Record<PartnerType, Partner[]> = {
   PXL: [
     {
@@ -18,6 +25,7 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
     }
   ],
   Platinium: [
+    google,
     {
       id: 'proginov',
       name: 'Proginov',
@@ -211,12 +219,7 @@ export const partnersByTypes: Record<PartnerType, Partner[]> = {
       image: await import('@/images/partners/arkup.png'),
       website: 'https://www.arkup.fr/arkup/'
     },
-    {
-      id: 'google',
-      name: 'Google',
-      image: await import('@/images/partners/google.png'),
-      website: 'https://developers.google.com/'
-    },
+    google,
     {
       id: 'kanoma',
       name: 'Kanoma',
