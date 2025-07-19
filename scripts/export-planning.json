@@ -2310,35 +2310,6 @@
       }
     },
     {
-      "id": "cmb9gfdbj003xk43mgkfwgw8n",
-      "start": "2025-10-16T09:00:00.000Z",
-      "end": "2025-10-16T09:40:00.000Z",
-      "track": "Jules Verne",
-      "title": "Keynote d'ouverture dasha ilina",
-      "language": null,
-      "proposal": {
-        "id": "cmambx5d503u4po3m0i2grwyb",
-        "abstract": "En 2023, Ilina a passé une année à documenter ce qu'elle appelle le techlore, un « folklore » sur les fonctionnalités complexes et opaques des technologies modernes qui nous entourent. L'artiste aborde les questions relatives à nos données et à notre vie privée, les raccourcis que nous utilisons pour réparer nos appareils et les explications que nous trouvons aux mystères technologiques. Pour ce projet, Ilina a recueilli des contes populaires sur le salut numérique : des histoires quotidiennes d'anthropomorphisation, de piratage et de contournement. Elles montrent comment les gens ordinaires font ce qu'ils peuvent pour affirmer leur contrôle sur la technologie. Dasha Ilina a développé ADVICE WELL TAKEN lors de sa résidence EMAP à IMPAKT en mai et juin 2023, en collaboration avec Supisara Burapachaisri.",
-        "level": "BEGINNER",
-        "formats": [
-          "📣 Conference"
-        ],
-        "categories": [
-          "💡 Discovery"
-        ],
-        "speakers": [
-          {
-            "id": "cmambx5d103u3po3msf030zwv",
-            "name": "dasha ilina",
-            "bio": "Dasha Ilina est une artiste techno-critique russe basée à Paris. En utilisant des approches «low-tech» et «DIY», son travail remet en question le désir d'incorporer la technologie moderne dans nos vies quotidiennes. Sa pratique engage le public afin de faciliter un espace pour le développement d'une pensée critique concernant les impératifs sociaux pour le soin de soi et des autres, la vie privée à l'ère numérique, et l'envie contemporaine réflexive de se tourner vers la technologie pour trouver des réponses. Elle est la fondatrice du Center for Technological Pain, un projet qui propose des solutions DIY aux problèmes de santé provoqués par les technologies numériques pour lequel elle a reçu une mention d'honneur à Ars Electronica. Son projet Technosommeil fait partie de la collection d'œuvres d'art numérique du département du Val-de-Marne (Mallapixels). Le travail d'Ilina a été exposé dans des institutions telles que le Centre Pompidou (FR), MU Artspace (NL), la Gaîté Lyrique (FR), Hartware Medienkunstverein Dortmund (DE), NeMe (CY), ISEA 2023 (FR). Elle est également co-directrice de NØ SCHOOL, une école d'été qui se concentre sur la recherche critique autour des impacts sociaux et environnementaux des technologies de l'information et de la communication.",
-            "company": null,
-            "picture": null,
-            "socialLinks": []
-          }
-        ]
-      }
-    },
-    {
       "id": "cmc20oc150032ol3m7c1fpcjw",
       "start": "2025-10-17T09:00:00.000Z",
       "end": "2025-10-17T11:00:00.000Z",
