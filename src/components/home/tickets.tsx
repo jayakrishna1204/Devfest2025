@@ -6,8 +6,6 @@ import { getTranslation } from '@/i18n/i18n';
 
 export const Tickets: MyComponent = async ({ params }) => {
   const t = await getTranslation(params, 'pages.home.tickets');
-  const disabled1st = false;
-  const disabled2nd = true;
 
   return (
     <Grid
@@ -19,25 +17,16 @@ export const Tickets: MyComponent = async ({ params }) => {
       className='tickets'
     >
       <Ticket
-        label={t('2days-1st')}
-        price={110}
-        quantity={1200}
-        disabled={disabled1st}
-        date='05/06/2024 11h'
-      />
-      <Ticket
         label={t('2days-2nd')}
         price={110}
-        quantity={900}
-        disabled={disabled2nd}
-        date='???'
+        quantity={2500}
+        date='11/09/2025 23h55'
       />
       <Ticket
         label={t('1day')}
         price={70}
         quantity={500}
-        disabled={disabled2nd}
-        date='???'
+        date='11/09/2025 23h55'
       />
     </Grid>
   );
@@ -48,7 +37,7 @@ const Ticket: React.FC<{
   label: string;
   date: string;
   quantity: number;
-  disabled: boolean;
+  disabled?: boolean;
 }> = ({ label, price, quantity, disabled, date }) => {
   return (
     <Grid
