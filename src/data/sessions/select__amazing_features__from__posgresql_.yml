@@ -1,6 +1,6 @@
 ---
 key: select__amazing_features__from__posgresql_
-title: SELECT 'amazing_features' FROM "posgresql"
+title: SELECT 'amazing_features' FROM "postgresql"
 language: French
 talkType: conference
 tags:
