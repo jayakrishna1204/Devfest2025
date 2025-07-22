@@ -1,4 +1,4 @@
-import { Paper, Stack, Typography } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 import classNames from "classnames";
 import React from "react";
 
@@ -35,7 +35,7 @@ export const LargeSchedule: React.FC<{
 
   return (
     <>
-      <Paper elevation={4} className="header-rooms sticky" />
+      <div className="header-rooms sticky" />
       <div className="schedule-large">
         {rooms.map((room) => (
           <Room key={room} name={room} />
