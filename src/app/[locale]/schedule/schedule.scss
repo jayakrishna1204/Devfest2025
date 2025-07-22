@@ -9,6 +9,8 @@
   @media (max-width: 960px) {
     display: none !important;
   }
+
+  margin-top: -75px;
 }
 
 .header-days {
@@ -19,13 +21,13 @@
   @media (max-width: 960px) {
     display: none !important;
   }
-  position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 75px;
   background: var(--primary);
-  z-index: 0;
-  left: 0;
+  margin-left: -24px;
   right: 0;
+
+  border-bottom: 2px solid var(--mui-palette-secondary-light);
 }
 
 .slot {
@@ -217,4 +219,10 @@
 
 .speaker > * > img {
   margin-right: 4px;
+}
+
+.sticky {
+  position: sticky;
+  top: 65px;
+  z-index: 100;
 }
