@@ -1,13 +1,13 @@
 import { CommonParams } from '@/types';
 import { LargeSchedule } from '@/app/[locale]/schedule/large';
-import { slots } from '@/data/schedule/slots.json'
+import Slots from '../../../../data/slots.json'
 import './schedule.scss'
-import { Slot } from '@/data/schedule/slots';
+import { Slot } from '../../../types/schedule/slots';
 import { PartialSession } from './common';
 import { getAllSessions } from '@/services/sessions';
 import { MobileSchedule } from '@/app/[locale]/schedule/mobile';
 
-const typedSlots = slots as Slot[];
+const typedSlots = Slots.slots as Slot[];
 
 export default async function Schedule({ params, day }: CommonParams & { day: 1 | 2 }) {
 

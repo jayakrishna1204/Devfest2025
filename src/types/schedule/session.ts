@@ -1,5 +1,5 @@
-import { RoomName } from '@/data/schedule/schedule';
-import { Slot } from '@/data/schedule/slots';
+import { RoomName } from './schedule';
+import { Slot } from './slots';
 
 export type Session = {
   key: string;

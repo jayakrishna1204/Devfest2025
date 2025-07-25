@@ -9,7 +9,7 @@ import {
   SocialLink,
   SocialWithLogin,
 } from '@/components/commun/socials/socials';
-import { Speaker } from '@/data/schedule/speaker';
+import { Speaker } from '../../../../types/schedule/speaker';
 import { Markdown } from '@/components/commun/markdown';
 import { MyLink } from '@/components/commun/link';
 import { AvatarSpeaker } from '@/components/speaker/avatar';
@@ -29,12 +29,11 @@ export async function generateStaticParams() {
   )
 }
 
-export default async function SessionPage({ params }: CommonParams<unknown, { slug: string }>) {
+export default async function SpeakerPage({ params }: CommonParams<unknown, { slug: string }>) {
   const slug = (await params).slug;
 
-  const speaker = (await import(`@/data/speakers/${slug}.yml`)).default as Speaker;
+  const speaker = (await import(`../../../../../data/speakers/${slug}.yml`)).default as Speaker;
   const sessions = await getSessionsBySpeaker(slug);
-
 
   return (
     <>

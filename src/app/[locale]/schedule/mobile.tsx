@@ -3,7 +3,7 @@ import classNames from "classnames";
 import React from "react";
 import { PartialSession, rooms, Speakers, Tags } from "./common";
 import "./schedule.scss";
-import { Slot } from '@/data/schedule/slots';
+import { Slot } from '../../../types/schedule/slots';
 import { MyLink } from '@/components/commun/link';
 import { Flag } from '@/components/commun/flags';
 import { getTranslation } from '@/i18n/i18n';

@@ -12,10 +12,10 @@ import {
 import { Chip } from '@mui/material';
 import React, { JSX } from 'react';
 import './schedule.scss';
-import { Session } from '@/data/schedule/session';
-import { Slot } from '@/data/schedule/slots';
-import { Speaker } from '@/data/schedule/speaker';
-import { RoomName } from '@/data/schedule/schedule';
+import { Session } from '../../../types/schedule/session';
+import { Slot } from '../../../types/schedule/slots';
+import { Speaker } from '../../../types/schedule/speaker';
+import { RoomName } from '../../../types/schedule/schedule';
 import { MyLink } from '@/components/commun/link';
 import { AvatarSpeaker } from '@/components/speaker/avatar';
 import { getAllSpeakers } from '@/services/speakers';

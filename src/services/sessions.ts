@@ -1,12 +1,12 @@
 import fs from 'fs'
 import path from 'path'
 import yaml from 'yaml'
-import { Session } from '@/data/schedule/session';
-import { slots } from '@/data/schedule/slots.json'
-import { Slot } from '@/data/schedule/slots';
+import { Session } from '../types/schedule/session';
+import Slots from '../../data/slots.json'
+import { Slot } from '../types/schedule/slots';
 
-const sessionsDirectory = path.join(process.cwd(), 'src/data/sessions')
-const typedSlots = slots as Slot[]
+const sessionsDirectory = path.join(process.cwd(), 'data/sessions')
+const typedSlots = Slots.slots as Slot[]
 
 // Cache for all sessions data
 let allSessionsCache: Session[] | null = null

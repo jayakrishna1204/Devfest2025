@@ -4,8 +4,8 @@ import React from "react";
 
 import { PartialSession, Speakers, Tags, rooms } from "./common";
 import "./schedule.scss";
-import { Slot } from '@/data/schedule/slots';
-import {  RoomName } from '@/data/schedule/schedule';
+import { Slot } from '../../../types/schedule/slots';
+import {  RoomName } from '../../../types/schedule/schedule';
 import { getTranslation } from '@/i18n/i18n';
 import { CommonParams } from '@/types';
 import { MyLink } from '@/components/commun/link';

@@ -2,9 +2,9 @@
 
 import * as fs from 'fs';
 import yaml from 'js-yaml';
-import { Speaker } from '../src/data/schedule/speaker';
+import { Speaker } from '../src/types/schedule/speaker';
 import planningData from './export-planning.json';
-import slotsData from '../src/data/schedule/slots.json';
+import slotsData from '../data/slots.json';
 import { normalize, writeFile } from './helpers';
 import * as rimraf from 'rimraf';
 import * as path from 'path';
@@ -13,8 +13,8 @@ import * as http from 'http';
 
 const dumpOptions: yaml.DumpOptions = { lineWidth: -1 };
 
-const outDirSpeakers = '../src/data/speakers';
-const outDirSessions = '../src/data/sessions';
+const outDirSpeakers = '../data/speakers';
+const outDirSessions = '../data/sessions';
 const outDirImages = '../src/images/speakers';
 
 rimraf.sync(outDirSpeakers);

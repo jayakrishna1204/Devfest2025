@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 import { PartnersList } from '@/components/partners/partners';
 import { CommonParams } from '@/types';
-import { partnersByTypes, PartnerType } from '@/data/partners/partnersByTypes';
+import { partnersByTypes, PartnerType } from '../../../types/partners/partnersByTypes';
 import { TertiarySection } from '@/components/commun/section/sectionType';
 import { getTranslation } from '@/i18n/i18n';
 

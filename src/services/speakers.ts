@@ -3,7 +3,7 @@ import path from 'path';
 import yaml from 'yaml';
 import { PartialSpeaker } from '@/app/[locale]/schedule/common';
 
-const speakersDirectory = path.join(process.cwd(), 'src/data/speakers');
+const speakersDirectory = path.join(process.cwd(), 'data/speakers');
 
 export async function getAllSpeakers(): Promise<PartialSpeaker[]> {
   const filenames = fs.readdirSync(speakersDirectory);

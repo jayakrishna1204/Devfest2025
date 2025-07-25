@@ -1,6 +1,6 @@
 import { shuffleArray } from '@/helpers/array';
 import { SocialLink } from '@/components/commun/socials/socials';
-import { teamMembers } from '@/data/team/team';
+import { teamMembers } from '../../types/team/team';
 import { Box, Grid2 as Grid, List, Typography } from '@mui/material';
 import '../commun/avatar/avatar.scss';
 import React from 'react';

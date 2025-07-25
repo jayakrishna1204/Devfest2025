@@ -1,5 +1,5 @@
 import { SecondarySection, TertiarySection } from "@/components/commun/section/sectionType";
-import { SessionWithoutResolvedSlot } from "@/data/schedule/session";
+import { SessionWithoutResolvedSlot } from "../../../../types/schedule/session";
 import { getTranslation } from "@/i18n/i18n";
 import { CommonParams } from "@/types";
 import { Button, Card, IconButton, Stack, Typography } from "@mui/material";
@@ -10,17 +10,31 @@ import { AccessTime, Slideshow, YouTube } from "@mui/icons-material";
 import { MyLink } from "@/components/commun/link";
 import classNames from "classnames";
 import { Markdown } from "@/components/commun/markdown";
-import { Speaker } from "@/data/schedule/speaker";
-import { slots } from '@/data/schedule/slots.json'
+import { Speaker } from "../../../../types/schedule/speaker";
+import Slots from '../../../../../data/slots.json'
 import { AvatarSpeaker } from "@/components/speaker/avatar";
 import './style.scss';
 import { Flag } from '@/components/commun/flags';
+import { getAllSessions } from "@/services/sessions";
+
+export async function generateStaticParams() {
+  const sessions = await getAllSessions();
+
+  const locales = ['fr', 'en']
+
+  return locales.flatMap(locale =>
+    sessions.map((session) => ({
+      locale,
+      slug: session.key
+    }))
+  )
+}
 
 
 export default async function SessionPage({ params }: CommonParams<void, { slug: string }>) {
     const slug = (await params).slug;
 
-    const data = fs.readFileSync(`src/data/sessions/${slug}.yml`, 'utf8');
+    const data = fs.readFileSync(`data/sessions/${slug}.yml`, 'utf8');
     if (!data) {
         throw new Error(`Session with slug "${slug}" not found`);
     }
@@ -140,8 +154,8 @@ export default async function SessionPage({ params }: CommonParams<void, { slug:
 export type PartialSpeaker = Omit<Speaker, "socials" | "bio">;
 
 const SpeakerCard: React.FC<{ speakerKey: string }> = ({ speakerKey }) => {
-  const files = fs.readdirSync('src/data/speakers');
-  const speakersYaml = files.map(f => fs.readFileSync('src/data/speakers/' + f, 'utf8'));
+  const files = fs.readdirSync('data/speakers');
+  const speakersYaml = files.map(f => fs.readFileSync('data/speakers/' + f, 'utf8'));
   const speaker = speakersYaml.map(yamlContent => yaml.load(yamlContent) as Speaker).filter(speaker => speaker.key === speakerKey)[0];
 
   return (
@@ -179,7 +193,7 @@ const SpeakerCard: React.FC<{ speakerKey: string }> = ({ speakerKey }) => {
 
 async function getSessionSlotLabel(slotKey: string, { params }: CommonParams): Promise<string> {
   const t = await getTranslation(params, "pages.schedule");
-  const slot = slots.find((s) => s.key == slotKey);
+  const slot = Slots.slots.find((s) => s.key == slotKey);
   const slotDay = slotKey.startsWith("day-1") ? t("day1") : t("day2");
   return `${slotDay} ${slot?.start}`;
 }
