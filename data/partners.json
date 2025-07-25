@@ -1,0 +1,223 @@
+{
+    "PXL": [
+        {
+            "id": "dataiku",
+            "name": "Dataiku",
+            "image": "dataiku.png",
+            "website": "https://www.dataiku.com/"
+        }
+    ],
+    "Platinium": [
+        {
+            "id": "proginov",
+            "name": "Proginov",
+            "image": "proginov.png",
+            "website": "https://www.proginov.com/"
+        },
+        {
+            "id": "onepoint",
+            "name": "Onepoint",
+            "image": "onepoint.png",
+            "website": "https://www.groupeonepoint.com"
+        },
+        {
+            "id": "apside",
+            "name": "Apside",
+            "image": "apside.png",
+            "website": "https://www.apside.com/"
+        },
+        {
+            "id": "google",
+            "name": "Google",
+            "image": "google.png",
+            "website": "https://developers.google.com/"
+        },
+        {
+            "id": "u-tech",
+            "name": "U-Tech",
+            "image": "u-tech.png",
+            "website": "https://www.magasins-u.com/"
+        },
+        {
+            "id": "sopra-steria",
+            "name": "Sopra Steria",
+            "image": "sopra-steria.png",
+            "website": "https://www.soprasteria.com/"
+        },
+        {
+            "id": "capgemini",
+            "name": "Capgemini",
+            "image": "capgemini.png",
+            "website": "https://www.capgemini.com/"
+        },
+        {
+            "id": "bouygues-telecom",
+            "name": "Bouygues Telecom",
+            "image": "bouygues-telecom.png",
+            "website": "https://www.bouyguestelecom.fr/"
+        },
+        {
+            "id": "thales",
+            "name": "Thales",
+            "image": "thales.png",
+            "website": "https://www.thalesgroup.com/"
+        },
+        {
+            "id": "generali",
+            "name": "Generali",
+            "image": "generali.png",
+            "website": "https://www.generali.fr/"
+        },
+        {
+            "id": "aws",
+            "name": "AWS",
+            "image": "aws.png",
+            "website": "https://aws.amazon.com/fr/"
+        }
+    ],
+    "Gold": [
+        {
+            "id": "epitech",
+            "name": "Epitech",
+            "image": "epitech.png",
+            "website": "https://www.epitech.eu/"
+        },
+        {
+            "id": "lucca",
+            "name": "Lucca",
+            "image": "lucca.png",
+            "website": "https://www.lucca.fr/"
+        },
+        {
+            "id": "sfeir",
+            "name": "SFEIR",
+            "image": "sfeir.png",
+            "website": "https://www.sfeir.com/"
+        },
+        {
+            "id": "daveo",
+            "name": "Daveo",
+            "image": "daveo.png",
+            "website": "https://www.daveo.fr/"
+        },
+        {
+            "id": "amaris",
+            "name": "Amaris Consulting - Mantu",
+            "image": "amaris.png",
+            "website": "https://amaris.com/"
+        },
+        {
+            "id": "accenture",
+            "name": "Accenture",
+            "image": "accenture.png",
+            "website": "https://www.accenture.com/"
+        },
+        {
+            "id": "neosoft",
+            "name": "Neosoft",
+            "image": "neosoft.png",
+            "website": "https://www.neosoft.fr/"
+        },
+        {
+            "id": "sii",
+            "name": "SII",
+            "image": "sii.png",
+            "website": "https://www.sii.fr/"
+        },
+        {
+            "id": "shopopop",
+            "name": "Shopopop",
+            "image": "shopopop.png",
+            "website": "https://www.shopopop.com/"
+        },
+        {
+            "id": "objectware",
+            "name": "Objectware",
+            "image": "objectware.svg",
+            "website": "https://www.objectware.fr/"
+        },
+        {
+            "id": "maif",
+            "name": "MAIF",
+            "image": "maif.png",
+            "website": "https://www.maif.fr/"
+        },
+        {
+            "id": "orange-business",
+            "name": "Orange Business",
+            "image": "orange-business.png",
+            "website": "https://www.orange-business.com/"
+        },
+        {
+            "id": "zenika",
+            "name": "Zenika",
+            "image": "zenika.png",
+            "website": "https://www.zenika.com/"
+        },
+        {
+            "id": "bpce-si",
+            "name": "BPCE SI",
+            "image": "bpce-si.png",
+            "website": "https://www.bpce-si.fr/"
+        },
+        {
+            "id": "sncf-connect-tech",
+            "name": "SNCF Connect & Tech",
+            "image": "sncf-connect-tech.png",
+            "website": "https://www.sncf-connect.com/"
+        },
+        {
+            "id": "qlik",
+            "name": "Qlik (Talend SAS)",
+            "image": "qlik.svg",
+            "website": "https://www.qlik.com/"
+        },
+        {
+            "id": "catamania",
+            "name": "Catamania",
+            "image": "catamania.png",
+            "website": "https://www.catamania.com/"
+        },
+        {
+            "id": "amiad",
+            "name": "Amiad",
+            "image": "amiad.jpg",
+            "website": "https://www.amiad.com/",
+            "hidden": true
+        }
+    ],
+    "Virtual": [
+        {
+            "id": "sully-group",
+            "name": "Sully Group",
+            "image": "sully-group.png",
+            "website": "https://www.sully-group.com/"
+        },
+        {
+            "id": "lbc",
+            "name": "Le Bon Coin",
+            "image": "lbc.png",
+            "website": "https://www.leboncoin.fr/"
+        }
+    ],
+    "Velotypie": [
+        {
+            "id": "arkup",
+            "name": "Arkup",
+            "image": "arkup.png",
+            "website": "https://www.arkup.fr/arkup/"
+        },
+        {
+            "id": "kanoma",
+            "name": "Kanoma",
+            "image": "kanoma.png",
+            "website": "https://www.kanoma.fr/"
+        },
+        {
+            "id": "google",
+            "name": "Google",
+            "image": "google.png",
+            "website": "https://developers.google.com/"
+        }
+    ]
+}

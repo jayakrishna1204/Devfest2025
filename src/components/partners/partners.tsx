@@ -28,7 +28,7 @@ export const PartnersList: MyComponent<{ partnerType: PartnerType }> = async ({
       justifyContent='center'
       columnGap='40px'
     >
-      {partners.map((partner) => (
+      {partners.map(async (partner) => (
         <Grid
           key={partner.id}
           size={{ xs: 12, md: 6, lg: 5 }}
@@ -45,7 +45,7 @@ export const PartnersList: MyComponent<{ partnerType: PartnerType }> = async ({
                 objectFit='contain'
                 layout='fill'
                 alt={partner.name}
-                src={partner.image.default.src}
+                src={(await import(`../../images/partners/${partner.image}`)).default.src}
               />
             </div>
           </MyLink>
