@@ -170,7 +170,7 @@ function transformerSpeakers() {
         } else if (link.includes('github.com')) {
           yamlData.socials.github = link.replace('https://github.com/', '');
         } else if (link.includes('linkedin.com')) {
-          yamlData.socials.linkedin = link;
+          yamlData.socials.linkedin = link.replace(/https:\/\/.+linkedin\.com\/[^/]+\//, '').replace(/\/$/, '');
         }
       });
     }
