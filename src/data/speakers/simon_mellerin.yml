@@ -6,7 +6,7 @@ companyLogo: makina_corpus.png
 photoUrl: simon_mellerin.jpeg
 socials:
   github: SimonMellerin
-  linkedin: https://www.linkedin.com/in/simonmellerin/
+  linkedin: simonmellerin
 bio: |-
   * PHP/Symfony & Vue.js developper at [Makina Corpus](https://makina-corpus.com/), 
   * Creator and co-maintainer of [DbToolsBundle](https://dbtoolsbundle.readthedocs.io/en/stable/)
