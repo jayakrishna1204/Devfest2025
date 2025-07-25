@@ -44,7 +44,7 @@ export const PartnersList: MyComponent<{ partnerType: PartnerType }> = async ({
                 className='partner-logo'
                 style={{objectFit: 'contain'}}
                 fill
-                alt={partner.name}
+                alt={partner.title}
                 src={(await import(`../../images/partners/${partner.image}`)).default.src}
               />
             </div>
