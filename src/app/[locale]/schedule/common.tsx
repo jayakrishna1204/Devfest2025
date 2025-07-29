@@ -74,7 +74,7 @@ const tagLabels: Record<string, { label: string; icon: JSX.Element }> = {
 };
 export const Tags: React.FC<{
   tags: string[];
-  color?: 'primary' | 'secondary' | 'info';
+  color?: 'primary' | 'secondary' | 'white';
 }> = ({ tags, color = 'primary' }) => {
   if (tags.some((tag) => !tagLabels[tag])) {
     console.warn(
@@ -91,7 +91,7 @@ export const Tags: React.FC<{
           label={tagLabels[tag].label}
           variant='outlined'
           size='small'
-          color={color}
+          color={color === 'white' ? 'default' : color}
           sx={{ fontSize: '10px' }}
         />
       ))}
@@ -106,7 +106,7 @@ export const SessionComplexity: React.FC<{
       label={complexity}
       variant='outlined'
       size='small'
-      color='info'
+      color='default'
       sx={{ fontSize: '10px' }}
     />
   );

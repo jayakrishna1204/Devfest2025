@@ -75,7 +75,7 @@ export default async function SessionPage({ params }: CommonParams<void, { slug:
               >
                 {session.talkType}
               </Typography>
-              <Tags tags={session.tags} color="info" />
+              <Tags tags={session.tags} color="white" />
               <SessionComplexity complexity={session.complexity} />
               <Flag lang={session.language} />
             </Stack>

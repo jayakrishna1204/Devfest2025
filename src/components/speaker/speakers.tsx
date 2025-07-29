@@ -55,12 +55,12 @@ export const SpeakersList: React.FC<SpeakersListProps> = async ({ speakers }) =>
                     {speaker.name}
                   </Typography>
                   {speaker.company && (
-                    <Typography variant='body2' className='speaker-company' color='info'>
+                    <Typography variant='body1' className='speaker-company' color='default'>
                       {speaker.company}
                     </Typography>
                   )}
                   {speaker.city && (
-                    <Typography variant='body2' className='speaker-city' color='info'>
+                    <Typography variant='body2' className='speaker-city' color='default'>
                       {speaker.city}
                     </Typography>
                   )}

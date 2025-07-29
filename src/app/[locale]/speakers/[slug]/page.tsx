@@ -112,7 +112,7 @@ const SessionCard: React.FC<{ session: PartialSession }> = ({ session }) => {
           alignItems='center'
           sx={{ minHeight: '60px' }}
         >
-          {session.tags && <Tags tags={session.tags} color='info' />}
+          {session.tags && <Tags tags={session.tags} color='default' />}
           <Typography variant='h3' color='inherit' style={{ color: 'white' }}>
             {session.title}
           </Typography>
