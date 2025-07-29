@@ -47,9 +47,7 @@ export default async function SessionPage({ params }: CommonParams<void, { slug:
   const dateSession = session.slot.startsWith("day-1")
     ? "2024-10-17"
     : "2024-10-18";
-  const urlOpenfeedback = `https://openfeedback.io/devfestnantes24/${dateSession}/${session.openfeedbackId}?hideHeader=true&forceColorScheme=dark`;
-
-  return (
+  const urlOpenfeedback = `https://openfeedback.io/devfestnantes24/${dateSession}/${session.openfeedbackId}?hideHeader=true&forceColorScheme=dark`;  return (
     <>
         <TertiarySection slim>
           <Typography

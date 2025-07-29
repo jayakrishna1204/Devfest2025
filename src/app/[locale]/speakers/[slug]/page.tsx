@@ -15,6 +15,7 @@ import { MyLink } from '@/components/commun/link';
 import { AvatarSpeaker } from '@/components/speaker/avatar';
 import { getAllSpeakers } from '@/services/speakers';
 import { getSessionsBySpeaker } from '@/services/sessions';
+import './style.scss'
 
 export async function generateStaticParams() {
   const speakers = await getAllSpeakers();
@@ -36,7 +37,7 @@ export default async function SpeakerPage({ params }: CommonParams<unknown, { sl
   const sessions = await getSessionsBySpeaker(slug);
 
   return (
-    <>
+    <div className='speaker-section'>
       <TertiarySection slim>
         <Stack spacing={1}>
           <Stack spacing={2} direction='column' alignItems='center'>
@@ -88,7 +89,7 @@ export default async function SpeakerPage({ params }: CommonParams<unknown, { sl
       <SecondarySection slim>
         <Markdown content={speaker.bio} />
       </SecondarySection>
-    </>
+    </div>
   );
 }
 
@@ -112,7 +113,7 @@ const SessionCard: React.FC<{ session: PartialSession }> = ({ session }) => {
           alignItems='center'
           sx={{ minHeight: '60px' }}
         >
-          {session.tags && <Tags tags={session.tags} color='default' />}
+          {session.tags && <Tags tags={session.tags} color='white' />}
           <Typography variant='h3' color='inherit' style={{ color: 'white' }}>
             {session.title}
           </Typography>
