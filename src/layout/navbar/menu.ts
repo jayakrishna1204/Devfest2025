@@ -9,10 +9,10 @@ export const MENU: Array<MenuItem> = [
     label: "schedule",
     link: "/schedule",
   },
-  // {
-  //   label: "speakers",
-  //   link: "/speakers",
-  // },
+  {
+    label: "speakers",
+    link: "/speakers",
+  },
   {
     label: 'team',
     link: '/team',

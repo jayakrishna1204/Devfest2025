@@ -23,8 +23,7 @@ export const AvatarSpeaker: React.FC<{
             <MyAvatar
             alt={speaker.name}
             src={image.default.src}
-            width={sizePx}
-            height={sizePx}
+            size={sizePx}
             />
         </Tooltip>
       </div>
