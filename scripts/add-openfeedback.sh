@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 # Directory containing the session files
 SESSION_DIR="./data/sessions"

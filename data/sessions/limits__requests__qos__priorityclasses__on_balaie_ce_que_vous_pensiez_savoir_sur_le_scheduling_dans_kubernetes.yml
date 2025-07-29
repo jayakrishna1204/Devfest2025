@@ -1,5 +1,6 @@
 ---
 key: limits__requests__qos__priorityclasses__on_balaie_ce_que_vous_pensiez_savoir_sur_le_scheduling_dans_kubernetes
+openfeedbackId: limitsrequestsqospriorityclassesonbalaiecequevouspensiezsavoirsu
 title: Limits, Requests, QoS, PriorityClasses, on balaie ce que vous pensiez savoir sur le scheduling dans Kubernetes
 language: French
 talkType: conference

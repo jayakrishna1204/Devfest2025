@@ -1,5 +1,6 @@
 ---
 key: openrewrite__refactor_as_code
+openfeedbackId: openrewriterefactorascode
 title: 'OpenRewrite: Refactor as code'
 language: French
 talkType: conference

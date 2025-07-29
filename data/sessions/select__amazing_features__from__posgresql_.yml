@@ -1,5 +1,6 @@
 ---
 key: select__amazing_features__from__posgresql_
+openfeedbackId: selectamazingfeaturesfromposgresql
 title: SELECT 'amazing_features' FROM "postgresql"
 language: French
 talkType: conference
