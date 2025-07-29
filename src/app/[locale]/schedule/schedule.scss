@@ -17,11 +17,10 @@
 }
 
 .header-rooms {
-  width: 100vw;
+  width: calc(100% + 48px);
   height: 75px;
   background: var(--primary);
   margin-left: -24px;
-  right: 0;
   box-shadow: var(--mui-shadows-4);
   
   border-bottom: 2px solid var(--mui-palette-secondary-light);

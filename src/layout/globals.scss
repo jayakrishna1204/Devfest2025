@@ -1,4 +1,7 @@
-
+html,
+body {
+  height: 100%;
+}
 
 body {
   --primary: var(--mui-palette-primary-main);
@@ -13,6 +16,9 @@ body {
 
   font-family: var(--font-roboto);
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
@@ -23,7 +29,7 @@ a {
 .secondary,
 .primary-dark {
   a {
-     color: var(--secondary);
+    color: var(--secondary);
     font-weight: 500;
   }
 }
@@ -41,19 +47,21 @@ a.md-link {
   text-align: center;
 }
 
-.MuiAppBar-root, .MuiDrawer-root > .MuiPaper-root {
+.MuiAppBar-root,
+.MuiDrawer-root > .MuiPaper-root {
   border-bottom: 2px solid var(--mui-palette-secondary-light);
 }
 
-main>div:not(.jumbo) {
-  h1, h2 {
-
+main > div:not(.jumbo) {
+  h1,
+  h2 {
     &:not(.no-leaf) {
       text-align: center;
 
-      &:before, &:after {
-        content: "";
-        background-image: url("/images/feuilles-gauche.svg");
+      &:before,
+      &:after {
+        content: '';
+        background-image: url('/images/feuilles-gauche.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -65,11 +73,21 @@ main>div:not(.jumbo) {
       }
 
       &:after {
-        background-image: url("/images/feuilles-droite.svg");
+        background-image: url('/images/feuilles-droite.svg');
       }
     }
   }
+}
 
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+footer {
+  margin-top: auto;
 }
 
 .sr-only {
