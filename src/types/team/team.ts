@@ -18,7 +18,7 @@ export const teamMembers: TeamMember[] = [
       { type: 'linkedin', login: 'arthur-maury' },
       { type: 'github', login: 'ArtyMaury' },
     ],
-    image: await import('@/images/team/arthur.jpg'),
+    image: await import('@/images/team/arthur.jpeg'),
   },
   {
     firstName: 'Aline',
@@ -38,7 +38,7 @@ export const teamMembers: TeamMember[] = [
       { type: 'twitter', login: 'AnnabelleKoster' },
       { type: 'linkedin', login: 'annabelle-koster-31129383' },
     ],
-    image: await import('@/images/team/annabelle.png'),
+    image: await import('@/images/team/annabelle.jpeg'),
   },
   {
     firstName: 'Audrey',
@@ -59,7 +59,7 @@ export const teamMembers: TeamMember[] = [
       { type: 'linkedin', login: 'fouchault' },
       { type: 'github', login: 'afouchault' },
     ],
-    image: await import('@/images/team/aymeric.png'),
+    image: await import('@/images/team/aymeric.jpeg'),
   },
   {
     firstName: 'Benjamin',
@@ -70,7 +70,7 @@ export const teamMembers: TeamMember[] = [
       { type: 'linkedin', login: 'benjamin-petetot-29b99a54' },
       { type: 'github', login: 'bpetetot' },
     ],
-    image: await import('@/images/team/benjamin.png'),
+    image: await import('@/images/team/benjamin.jpeg'),
   },
   {
     firstName: 'Jean-Francois',
@@ -81,7 +81,7 @@ export const teamMembers: TeamMember[] = [
       { type: 'linkedin', login: 'jean-francois-garreau' },
       { type: 'github', login: 'jefBinomed' },
     ],
-    image: await import('@/images/team/jeff.png'),
+    image: await import('@/images/team/jeff.jpg'),
   },
   {
     firstName: 'Julien',
@@ -113,18 +113,7 @@ export const teamMembers: TeamMember[] = [
       { type: 'linkedin', login: 'pierrickguyard' },
       { type: 'github', login: 'pguyard' },
     ],
-    image: await import('@/images/team/pierrick.jpg'),
-  },
-  {
-    firstName: 'Xavier',
-    lastName: 'Marc',
-    title: 'Honor member ❤️',
-    socials: [
-      { type: 'twitter', login: 'xavmrc' },
-      { type: 'linkedin', login: 'xaviermarc' },
-      { type: 'github', login: 'xavmarc' },
-    ],
-    image: await import('@/images/team/xavier.png'),
+    image: await import('@/images/team/pierrick.jpeg'),
   },
   {
     firstName: 'Brian',
@@ -135,7 +124,7 @@ export const teamMembers: TeamMember[] = [
       { type: 'github', login: 'briangtn' },
       { type: 'bluesky', login: 'briangtn' },
     ],
-    image: await import('@/images/team/brian.jpg'),
+    image: await import('@/images/team/brian.jpeg'),
   },
   {
     firstName: 'Jocelyn',
