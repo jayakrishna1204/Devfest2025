@@ -71,7 +71,7 @@ const Topbar: React.FC<
   }>
 > = ({ children, toggleDrawer, locale }) => {
   return (
-    <AppBar position='sticky'>
+    <AppBar position='fixed'>
       <Toolbar className='toolbar'>
         <Box className='top-bar-left'>
           <MyLink href='/'>
