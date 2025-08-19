@@ -179,11 +179,10 @@
             "website": "https://www.catamania.com/"
         },
         {
-            "id": "amiad",
-            "title": "Amiad",
-            "image": "amiad.jpg",
-            "website": "https://www.amiad.com/",
-            "hidden": true
+            "id": "hellowork",
+            "title": "Hellowork",
+            "image": "hellowork.png",
+            "website": "https://www.hellowork.com/"
         }
     ],
     "Virtual": [
