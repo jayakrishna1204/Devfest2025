@@ -19,13 +19,13 @@ export const Tickets: MyComponent = async ({ params }) => {
       <Ticket
         label={t('2days-2nd')}
         price={110}
-        quantity={2500}
+        quantity={2400}
         date='11/09/2025 23h55'
       />
       <Ticket
         label={t('1day')}
         price={70}
-        quantity={500}
+        quantity={700}
         date='11/09/2025 23h55'
       />
     </Grid>
