@@ -44,25 +44,25 @@ export const HomeJumbo: MyComponent = async ({ params }) => {
             </Typography>
           </Stack>
           <Stack className={'jumbo-buttons'} direction='column' spacing={3}>
-            <Stack direction='row' spacing={3} justifyContent={'center'}>
-              <Button
-                color='secondary'
-                variant='contained'
-                href='https://www.billetweb.fr/partenaire-devfest-nantes-2025'
-                target='_blank'
-                aria-label={t('become_sponsor')}
-              >
-                {t('become_sponsor')}
-              </Button>
-              <Button
-                color="secondary"
-                variant="contained"
-                href="https://conference-hall.io/devfest-nantes-2025"
-                aria-label={t("cfp")}
-              >
-                {t("cfp")}
-              </Button>
-            </Stack>
+            {/*<Stack direction='row' spacing={3} justifyContent={'center'}>*/}
+            {/*<Button*/}
+            {/*  color='secondary'*/}
+            {/*  variant='contained'*/}
+            {/*  href='https://www.billetweb.fr/partenaire-devfest-nantes-2025'*/}
+            {/*  target='_blank'*/}
+            {/*  aria-label={t('become_sponsor')}*/}
+            {/*>*/}
+            {/*  {t('become_sponsor')}*/}
+            {/*</Button>*/}
+            {/*<Button*/}
+            {/*  color="secondary"*/}
+            {/*  variant="contained"*/}
+            {/*  href="https://conference-hall.io/devfest-nantes-2025"*/}
+            {/*  aria-label={t("cfp")}*/}
+            {/*>*/}
+            {/*  {t("cfp")}*/}
+            {/*</Button>*/}
+            {/*</Stack>*/}
             <Stack direction='row' spacing={3} justifyContent={'center'}>
               {/* <Button
                 color='secondary'
@@ -91,8 +91,8 @@ export const HomeJumbo: MyComponent = async ({ params }) => {
                 {t('become-volunteer')}
               </Button>
             </Stack>
-            {/*<Stack direction="row" spacing={3} justifyContent={"center"}>*/}
-            {/* <Button
+            <Stack direction='row' spacing={3} justifyContent={'center'}>
+              {/* <Button
               color="secondary"
               variant="contained"
               aria-label={t('schedule')}
@@ -100,61 +100,61 @@ export const HomeJumbo: MyComponent = async ({ params }) => {
             >
               {t('schedule')}
             </Button> */}
-            {/*<Button*/}
-            {/*  color="secondary"*/}
-            {/*  startIcon={<PhotoSharp />}*/}
-            {/*  variant="contained"*/}
-            {/*  href="https://photos.app.goo.gl/iQPsdQ8KKeXH8JrT8"*/}
-            {/*  aria-label="Photos"*/}
-            {/*  target="_blank"*/}
-            {/*>*/}
-            {/*  Photos*/}
-            {/*</Button> */}
-            {/*<Button*/}
-            {/*  color="secondary"*/}
-            {/*  startIcon={<YouTube />}*/}
-            {/*  variant="contained"*/}
-            {/*  href="https://www.youtube.com/watch?v=xuKrkOh_mzk&list=PLuZ_sYdawLiWenx-X315dfZNOaliVnSTY"*/}
-            {/*  aria-label="Videos"*/}
-            {/*  target={"_blank"}*/}
-            {/*>*/}
-            {/*  Videos*/}
-            {/*</Button>*/}
-            {/* <Button
-              color="secondary"
-              variant="contained"
-              href="https://billetterie.gdgnantes.com"
-              aria-label={t('resend-tickets')}
-              target={"_blank"}
+              {/*<Button*/}
+              {/*  color="secondary"*/}
+              {/*  startIcon={<PhotoSharp />}*/}
+              {/*  variant="contained"*/}
+              {/*  href="https://photos.app.goo.gl/iQPsdQ8KKeXH8JrT8"*/}
+              {/*  aria-label="Photos"*/}
+              {/*  target="_blank"*/}
+              {/*>*/}
+              {/*  Photos*/}
+              {/*</Button> */}
+              {/*<Button*/}
+              {/*  color="secondary"*/}
+              {/*  startIcon={<YouTube />}*/}
+              {/*  variant="contained"*/}
+              {/*  href="https://www.youtube.com/watch?v=xuKrkOh_mzk&list=PLuZ_sYdawLiWenx-X315dfZNOaliVnSTY"*/}
+              {/*  aria-label="Videos"*/}
+              {/*  target={"_blank"}*/}
+              {/*>*/}
+              {/*  Videos*/}
+              {/*</Button>*/}
+              <Button
+                color='secondary'
+                variant='contained'
+                href='https://billetterie.gdgnantes.com'
+                aria-label={t('resend-tickets')}
+                target={'_blank'}
               >
-              {t('resend-tickets')}
-              </Button> */}
-            {/*</Stack>*/}
-            {/*  <Stack direction="row" spacing={3} justifyContent={"center"}>*/}
-            {/*      <Button*/}
-            {/*        color="secondary"*/}
-            {/*        variant="contained"*/}
-            {/*        aria-label={"Feedbacks"}*/}
-            {/*        target="_blank"*/}
-            {/*        href="https://openfeedback.io/devfestnantes24"*/}
-            {/*      >*/}
-            {/*        Feedbacks*/}
-            {/*      </Button>*/}
+                {t('resend-tickets')}
+              </Button>
+              {/*</Stack>*/}
+              {/*  <Stack direction="row" spacing={3} justifyContent={"center"}>*/}
+              {/*      <Button*/}
+              {/*        color="secondary"*/}
+              {/*        variant="contained"*/}
+              {/*        aria-label={"Feedbacks"}*/}
+              {/*        target="_blank"*/}
+              {/*        href="https://openfeedback.io/devfestnantes24"*/}
+              {/*      >*/}
+              {/*        Feedbacks*/}
+              {/*      </Button>*/}
 
-            {/*<MobileAppButton label={t('get-app')} />*/}
-            {/*    /!* <Button*/}
-            {/*      color="secondary"*/}
-            {/*      variant="contained"*/}
-            {/*      aria-label={t("offers")}*/}
-            {/*      target={"_blank"}*/}
-            {/*      href="https://nantes.francedigitaljobs.fr/search-list-jobs?id=&titre=&city=&categorie=&niveau=&type=&teletravail="*/}
-            {/*    >*/}
-            {/*      {t('offers')}*/}
-            {/*    </Button> *!/*/}
-            {/*  </Stack>*/}
-            {/*<Stack direction="row" spacing={3} justifyContent={"center"}>*/}
-            {/*  <Button href="/our-values" color="secondary">{t('bring-ecocup')}</Button>*/}
-            {/*</Stack>*/}
+              {/*<MobileAppButton label={t('get-app')} />*/}
+              {/*    /!* <Button*/}
+              {/*      color="secondary"*/}
+              {/*      variant="contained"*/}
+              {/*      aria-label={t("offers")}*/}
+              {/*      target={"_blank"}*/}
+              {/*      href="https://nantes.francedigitaljobs.fr/search-list-jobs?id=&titre=&city=&categorie=&niveau=&type=&teletravail="*/}
+              {/*    >*/}
+              {/*      {t('offers')}*/}
+              {/*    </Button> *!/*/}
+              {/*  </Stack>*/}
+              {/*<Stack direction="row" spacing={3} justifyContent={"center"}>*/}
+              {/*  <Button href="/our-values" color="secondary">{t('bring-ecocup')}</Button>*/}
+            </Stack>
           </Stack>
         </div>
       </div>
