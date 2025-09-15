@@ -81,7 +81,14 @@
       "partners": "Nos partenaires"
     },
     "blog": {
-      "name": "Blog"
+      "name": "Blog",
+      "post": {
+        "not-found": "Article non trouvé",
+        "meta": {
+          "title": "DevFest Nantes Blog",
+          "description": "Article de blog"
+        }
+      }
     },
     "menu": {
       "name": "Menu",

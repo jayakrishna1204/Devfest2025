@@ -84,7 +84,14 @@
       "name": "Speakers"
     },
     "blog": {
-      "name": "Blog"
+      "name": "Blog",
+      "post": {
+        "not-found": "Article not found",
+        "meta": {
+          "title": "DevFest Nantes Blog",
+          "description": "Blog article"
+        }
+      }
     },
     "menu": {
       "name": "Menu",
