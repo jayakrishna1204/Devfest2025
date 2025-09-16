@@ -81,7 +81,7 @@ export const HomeJumbo: MyComponent = async ({ params }) => {
               >
                 {t('buy-tickets')}
               </Button>
-              <Button
+              {/* <Button
                 color='secondary'
                 variant='contained'
                 href='https://forms.gle/E92wkui3v87zP2o88'
@@ -89,7 +89,7 @@ export const HomeJumbo: MyComponent = async ({ params }) => {
                 target='_blank'
               >
                 {t('become-volunteer')}
-              </Button>
+              </Button> */}
             </Stack>
             <Stack direction='row' spacing={3} justifyContent={'center'}>
               {/* <Button
