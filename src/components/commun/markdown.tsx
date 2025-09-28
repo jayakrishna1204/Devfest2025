@@ -2,6 +2,7 @@ import { Typography } from '@mui/material';
 import React, { ComponentProps } from 'react';
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
+import { MyLink } from './link';
 
 export const Markdown: React.FC<{ content?: string; className?: string }> = ({
   content,
@@ -14,14 +15,15 @@ export const Markdown: React.FC<{ content?: string; className?: string }> = ({
     }
 
     return (
-      <a
-        href={href}
+      <MyLink
+        className="md-link"
+        href={href ?? "#"}
         target="_blank"
         rel="noopener noreferrer"
         {...props}
       >
         {children}
-      </a>
+      </MyLink>
     );
   };
 

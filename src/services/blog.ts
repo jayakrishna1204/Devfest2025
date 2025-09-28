@@ -6,8 +6,30 @@ import { BlogPost, BlogPostWithContent } from '@/types/blog';
 const blogDirectory = path.join(process.cwd(), 'data/blog');
 
 const images: Record<string, () => Promise<typeof import ('*.jpg')>> = {
-  'devfest-mini': () => import('@/images/blog/devfest-mini.jpg'),
+  'aws-hero': () => import('@/images/blog/aws-hero.png'),
+  'aws-mini': () => import('@/images/blog/aws-mini.png'),
+  'bouygues-hero': () => import('@/images/blog/bouygues-hero.png'),
+  'capgemini-hero': () => import('@/images/blog/capgemini-hero.png'),
+  'capgemini-mini': () => import('@/images/blog/capgemini-mini.png'),
+  'cgi-hero': () => import('@/images/blog/cgi-hero.png'),
+  'cgi-mini': () => import('@/images/blog/cgi-mini.png'),
+  'dataiku-hero': () => import('@/images/blog/dataiku-hero.png'),
+  'dataiku-mini': () => import('@/images/blog/dataiku-mini.png'),
   'devfest-hero': () => import('@/images/blog/devfest-hero.jpg'),
+  'devfest-mini': () => import('@/images/blog/devfest-mini.jpg'),
+  'generali-hero': () => import('@/images/blog/generali-hero.png'),
+  'generali-mini': () => import('@/images/blog/generali-mini.png'),
+  'google-hero': () => import('@/images/blog/google-hero.png'),
+  'google-mini': () => import('@/images/blog/google-mini.png'),
+  'onepoint-hero': () => import('@/images/blog/onepoint-hero.png'),
+  'onepoint-mini': () => import('@/images/blog/onepoint-mini.png'),
+  'proginov-hero': () => import('@/images/blog/proginov-hero.png'),
+  'proginov-mini': () => import('@/images/blog/proginov-mini.png'),
+  'soprasteria-mini': () => import('@/images/blog/soprasteria-mini.png'),
+  'thales-hero': () => import('@/images/blog/thales-hero.png'),
+  'thales-mini': () => import('@/images/blog/thales-mini.png'),
+  'u-tech-hero': () => import('@/images/blog/u-tech-hero.png'),
+  'u-tech-mini': () => import('@/images/blog/u-tech-mini.png'),
 }
 
 async function loadBlogImage(path: string): Promise<string | undefined> {

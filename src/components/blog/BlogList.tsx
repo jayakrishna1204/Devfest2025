@@ -4,6 +4,25 @@ import { MyLink } from '@/components/commun/link';
 import Image from 'next/image';
 import { BlogPost } from '@/types/blog';
 
+// Fonction pour supprimer le formatage Markdown
+const stripMarkdown = (text: string): string => {
+  return text
+    .replace(/\*\*(.*?)\*\*/g, '$1') // **bold** -> bold
+    .replace(/\*(.*?)\*/g, '$1') // *italic* -> italic
+    .replace(/__(.*?)__/g, '$1') // __bold__ -> bold
+    .replace(/_(.*?)_/g, '$1') // _italic_ -> italic
+    .replace(/`(.*?)`/g, '$1') // `code` -> code
+    .replace(/~~(.*?)~~/g, '$1') // ~~strikethrough~~ -> strikethrough
+    .replace(/\[(.*?)\]\(.*?\)/g, '$1') // [text](url) -> text
+    .replace(/#{1,6}\s+/g, '') // # headers -> headers
+    .replace(/>\s+/g, '') // > blockquote -> blockquote
+    .replace(/[-*+]\s+/g, '') // - list items -> list items
+    .replace(/\d+\.\s+/g, '') // 1. numbered list -> numbered list
+    .replace(/\n/g, ' ') // newlines -> spaces
+    .replace(/\s+/g, ' ') // multiple spaces -> single space
+    .trim();
+};
+
 
 export const BlogList: React.FC<{ posts: BlogPost[] }> = ({ posts }) => {
   const formatDate = (dateString: string) => {
@@ -52,7 +71,7 @@ export const BlogList: React.FC<{ posts: BlogPost[] }> = ({ posts }) => {
                         width: { xs: 200, md: 250 },
                         height: { xs: 200, md: 250 },
                         overflow: 'hidden',
-                        mx: 'auto', // Centre l'image dans sa colonne
+                        mx: { xs: 'auto', md: isEven ? 0 : 'auto' }, // Alignement à gauche pour articles pairs, centré pour mobiles
                       }}
                     >
                       <Image
@@ -79,8 +98,6 @@ export const BlogList: React.FC<{ posts: BlogPost[] }> = ({ posts }) => {
                       flexDirection: 'column',
                       justifyContent: 'space-between',
                       py: 3,
-                      pl: { xs: 0, md: isEven ? 3 : 0 },
-                      pr: { xs: 0, md: isEven ? 0 : 3 },
                     }}
                   >
                     <Box>
@@ -105,7 +122,7 @@ export const BlogList: React.FC<{ posts: BlogPost[] }> = ({ posts }) => {
                           mb: 2,
                         }}
                       >
-                        {post.content}
+                        {stripMarkdown(post.content)}
                       </Typography>
                     </Box>
                     

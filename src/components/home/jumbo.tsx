@@ -1,14 +1,33 @@
-import { Button, Stack, Typography } from '@mui/material';
-import React from 'react';
+'use client';
+
+import { Box, Button, Modal, Paper, Stack, Typography } from '@mui/material';
+import React, { useState, useEffect } from 'react';
 import { getTranslation } from '@/i18n/i18n';
 import { MyComponent } from '@/types';
 import Image from 'next/image';
 import LogoDevfest from '@/images/logo-blanc.png';
 import './jumbo.scss';
+import { Android, Apple } from '@mui/icons-material';
 
-export const HomeJumbo: MyComponent = async ({ params }) => {
-  const t = await getTranslation(params, 'pages.home.jumbo');
-  const tSite = await getTranslation(params);
+export const HomeJumbo: MyComponent = ({ params }) => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [t, setT] = useState<((key: string) => string) | null>(null);
+  const [tSite, setTSite] = useState<((key: string) => string) | null>(null);
+
+  useEffect(() => {
+    const loadTranslations = async () => {
+      const translation = await getTranslation(params, 'pages.home.jumbo');
+      const siteTranslation = await getTranslation(params);
+      setT(() => translation);
+      setTSite(() => siteTranslation);
+    };
+    
+    loadTranslations();
+  }, [params]);
+
+  if (!t || !tSite) {
+    return null; // or a loading spinner
+  }
 
   return (
     <>
@@ -129,6 +148,14 @@ export const HomeJumbo: MyComponent = async ({ params }) => {
               >
                 {t('resend-tickets')}
               </Button>
+              <Button
+                color="secondary"
+                variant="contained"
+                onClick={() => setModalOpen(true)}
+                aria-label={t('get-app')}
+                >
+                {t('get-app')}
+              </Button>
               {/*</Stack>*/}
               {/*  <Stack direction="row" spacing={3} justifyContent={"center"}>*/}
               {/*      <Button*/}
@@ -158,6 +185,37 @@ export const HomeJumbo: MyComponent = async ({ params }) => {
           </Stack>
         </div>
       </div>
+      <Modal open={modalOpen} onClose={() => setModalOpen(false)} className={"modal-apps"}>
+        <Paper className={"modal-content"}>
+          <Box className={"modal-body"}>
+            <Typography variant='h6' textAlign='center' sx={{ mb: 3 }}>
+              {t('thanks-gdg-android')}
+            </Typography>
+            <Stack spacing={[5,5]} direction={["column", "row"]}>
+              <Button
+                color="secondary"
+                variant="contained"
+                href="https://apps.apple.com/fr/app/devfest-nantes/id6443489706"
+                aria-label="iOS app"
+                target={"_blank"}
+                startIcon={<Apple/>}
+              >
+                iOS
+              </Button>
+              <Button
+                color="secondary"
+                variant="contained"
+                href="https://play.google.com/store/apps/details?id=com.gdgnantes.devfest.androidapp&pli=1"
+                aria-label="Android app"
+                target={"_blank"}
+                startIcon={<Android/>}
+              >
+                Android
+              </Button>
+            </Stack>
+          </Box>
+        </Paper>
+      </Modal>
     </>
   );
 };
