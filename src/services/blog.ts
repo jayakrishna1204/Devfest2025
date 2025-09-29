@@ -8,6 +8,7 @@ const blogDirectory = path.join(process.cwd(), 'data/blog');
 const images: Record<string, () => Promise<typeof import ('*.jpg')>> = {
   'aws-hero': () => import('@/images/blog/aws-hero.png'),
   'aws-mini': () => import('@/images/blog/aws-mini.png'),
+  'bouygues-mini': () => import('@/images/blog/bouygues-mini.png'),
   'bouygues-hero': () => import('@/images/blog/bouygues-hero.png'),
   'capgemini-hero': () => import('@/images/blog/capgemini-hero.png'),
   'capgemini-mini': () => import('@/images/blog/capgemini-mini.png'),
@@ -26,6 +27,7 @@ const images: Record<string, () => Promise<typeof import ('*.jpg')>> = {
   'proginov-hero': () => import('@/images/blog/proginov-hero.png'),
   'proginov-mini': () => import('@/images/blog/proginov-mini.png'),
   'soprasteria-mini': () => import('@/images/blog/soprasteria-mini.png'),
+  'soprasteria-hero': () => import('@/images/blog/soprasteria-hero.png'),
   'thales-hero': () => import('@/images/blog/thales-hero.png'),
   'thales-mini': () => import('@/images/blog/thales-mini.png'),
   'u-tech-hero': () => import('@/images/blog/u-tech-hero.png'),
