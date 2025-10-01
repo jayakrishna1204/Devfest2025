@@ -38,7 +38,7 @@ export const MobileAppButton: React.FC<{ label: string }> = ({ label }) => {
               <Button
                 color='secondary'
                 variant='contained'
-                href='https://play.google.com/store/apps/details?id=com.gdgnantes.devfest.androidapp&pli=1'
+                href='https://play.google.com/store/apps/details?id=com.gdgnantes.devfest.mobile.androidapp&pcampaignid=web_share'
                 aria-label='Android app'
                 target={'_blank'}
                 startIcon={<Android />}
