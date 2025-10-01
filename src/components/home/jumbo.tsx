@@ -90,7 +90,7 @@ export const HomeJumbo: MyComponent = ({ params }) => {
                 aria-label={t('previous')}
               >
                 {t('previous')}
-              </Button> */}
+              </Button>
               <Button
                 color='secondary'
                 variant='contained'
@@ -109,16 +109,16 @@ export const HomeJumbo: MyComponent = ({ params }) => {
               >
                 {t('become-volunteer')}
               </Button> */}
-            </Stack>
-            <Stack direction='row' spacing={3} justifyContent={'center'}>
-              {/* <Button
+              <Button
               color="secondary"
               variant="contained"
               aria-label={t('schedule')}
               href="/schedule"
-            >
-              {t('schedule')}
-            </Button> */}
+              >
+                {t('schedule')}
+              </Button> 
+            </Stack>
+            <Stack direction='row' spacing={3} justifyContent={'center'}>
               {/*<Button*/}
               {/*  color="secondary"*/}
               {/*  startIcon={<PhotoSharp />}*/}
