@@ -8,7 +8,7 @@ export const PlanCite = () => {
       src={PlanCiteImage}
       alt='Plan Cité des Congrès'
       objectFit='contain'
-      style={{ maxHeight: '600px', width: '100%' }}
+      style={{ maxHeight: '600px', width: 'auto' }}
     />
   );
 };

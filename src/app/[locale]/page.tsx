@@ -17,6 +17,8 @@ import { AccessibilityNew } from '@mui/icons-material';
 import React from 'react';
 import './home.scss';
 import { PartnersList } from '@/components/partners/partners';
+import { PlanCite } from '@/components/home/plan';
+import { Animations } from '@/components/home/animations';
 
 export default async function Home({ params }: CommonParams) {
   const t = await getTranslation(params);
@@ -35,10 +37,16 @@ export default async function Home({ params }: CommonParams) {
             alt={'Poster'}
           />
         </Section>
-        
+
         <OurValuesLink params={params} />
         <Youtube id='MDrrn0du1-s' title='After Movie 2024' />
       </PrimarySection>
+      <PrimarySection fullWidth style={{ background: 'var(--tertiary)' }}>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <PlanCite />
+        </div>
+      </PrimarySection>
+      <Animations params={params} />
       <HomeMap params={params} />
       <PrimarySection fullWidth>
         <Typography variant='h2'>{t('pages.home.tickets.name')}</Typography>
@@ -46,11 +54,13 @@ export default async function Home({ params }: CommonParams) {
       </PrimarySection>
       <PrimarySection fullWidth>
         <Typography variant='h2'>{t('pages.partners.pxl')}</Typography>
-        <PartnersList params={params} partnerType='PXL'/>
+        <PartnersList params={params} partnerType='PXL' />
       </PrimarySection>
       <PrimarySection fullWidth>
-        <Typography variant='h2'>{t('pages.partners.platinium-partners')}</Typography>
-        <PartnersList params={params} partnerType='Platinium'/>
+        <Typography variant='h2'>
+          {t('pages.partners.platinium-partners')}
+        </Typography>
+        <PartnersList params={params} partnerType='Platinium' />
       </PrimarySection>
       <Section fullWidth>
         <DevfestPhotos params={params} />
