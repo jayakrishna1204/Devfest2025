@@ -1,0 +1,38 @@
+class BasicCalculator {
+    // Additon
+    add(a: number, b: number): number {
+        return a + b;
+    }
+
+    // Subtraction
+    subtract(a: number, b: number): number {
+        return a - b;
+    }
+
+    // Multiplication
+    multiply(a: number, b: number): number {
+        return a * b;
+    }
+
+    // Divison
+    divide(a: number, b: number): number {
+        if (b === 0) {
+            throw new Error("Cannot divide by zero!");
+        }
+        return a / b;
+    }
+
+    // Modulus Calculation
+    modulus(a: number, b: number): number {
+        return a % b;
+    }
+}
+
+// Operation Log
+const calculator = new BasicCalculator();
+
+console.log("Addition: 5 + 3 =", calculator.add(5, 3));
+console.log("Subtraction: 10 - 4 =", calculator.subtract(10, 4));
+console.log("Multiplication: 6 * 7 =", calculator.multiply(6, 7));
+console.log("Division: 15 / 3 =", calculator.divide(15, 3));
+console.log("Modulus: 10 % 3 =", calculator.modulus(10, 3));
